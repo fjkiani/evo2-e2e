@@ -1,0 +1,218 @@
+[
+  {
+    "gene": "TP53",
+    "chrom": "chr17",
+    "pos": 7674220,
+    "ref": "C",
+    "alt": "T",
+    "hgvs": "p.R175H",
+    "source": "AURORA",
+    "variant_type": "hotspot",
+    "note": "Most common TP53 hotspot; 2x enriched in brain mets",
+    "evo2_params": {
+      "context_start": 7670124,
+      "context_end": 7678316,
+      "context_length": 8192,
+      "assembly": "hg38",
+      "scoring_mode": "delta_log_likelihood"
+    }
+  },
+  {
+    "gene": "TP53",
+    "chrom": "chr17",
+    "pos": 7673802,
+    "ref": "G",
+    "alt": "A",
+    "hgvs": "p.R248W",
+    "source": "AURORA",
+    "variant_type": "hotspot",
+    "note": "Gain-of-function TP53; BrM invasion",
+    "evo2_params": {
+      "context_start": 7669706,
+      "context_end": 7677898,
+      "context_length": 8192,
+      "assembly": "hg38",
+      "scoring_mode": "delta_log_likelihood"
+    }
+  },
+  {
+    "gene": "PIK3CA",
+    "chrom": "chr3",
+    "pos": 179234297,
+    "ref": "A",
+    "alt": "G",
+    "hgvs": "p.H1047R",
+    "source": "MSK-MET",
+    "variant_type": "hotspot",
+    "note": "PI3K activation; common in ER+ BrM",
+    "evo2_params": {
+      "context_start": 179230201,
+      "context_end": 179238393,
+      "context_length": 8192,
+      "assembly": "hg38",
+      "scoring_mode": "delta_log_likelihood"
+    }
+  },
+  {
+    "gene": "PIK3CA",
+    "chrom": "chr3",
+    "pos": 179203765,
+    "ref": "A",
+    "alt": "G",
+    "hgvs": "p.E545K",
+    "source": "MSK-MET",
+    "variant_type": "hotspot",
+    "note": "PI3K helical domain hotspot",
+    "evo2_params": {
+      "context_start": 179199669,
+      "context_end": 179207861,
+      "context_length": 8192,
+      "assembly": "hg38",
+      "scoring_mode": "delta_log_likelihood"
+    }
+  },
+  {
+    "gene": "PTEN",
+    "chrom": "chr10",
+    "pos": 89692905,
+    "ref": "G",
+    "alt": "A",
+    "hgvs": "p.R130Q",
+    "source": "MSK-MET",
+    "variant_type": "LOF",
+    "note": "PTEN phosphatase domain; immune evasion + PI3K",
+    "evo2_params": {
+      "context_start": 89688809,
+      "context_end": 89697001,
+      "context_length": 8192,
+      "assembly": "hg38",
+      "scoring_mode": "delta_log_likelihood"
+    }
+  },
+  {
+    "gene": "SMARCA4",
+    "chrom": "chr19",
+    "pos": 11015245,
+    "ref": "C",
+    "alt": "T",
+    "hgvs": "p.R1192C",
+    "source": "MSK_melanoma_2025",
+    "variant_type": "hotspot",
+    "note": "SWI/SNF; predicts shorter OS in BrM; oxphos enrichment",
+    "evo2_params": {
+      "context_start": 11011149,
+      "context_end": 11019341,
+      "context_length": 8192,
+      "assembly": "hg38",
+      "scoring_mode": "delta_log_likelihood"
+    }
+  },
+  {
+    "gene": "ESR1",
+    "chrom": "chr6",
+    "pos": 152098791,
+    "ref": "C",
+    "alt": "G",
+    "hgvs": "p.Y537S",
+    "source": "AURORA",
+    "variant_type": "acquired",
+    "note": "Endocrine resistance; acquired in ER+ brain mets",
+    "evo2_params": {
+      "context_start": 152094695,
+      "context_end": 152102887,
+      "context_length": 8192,
+      "assembly": "hg38",
+      "scoring_mode": "delta_log_likelihood"
+    }
+  },
+  {
+    "gene": "ESR1",
+    "chrom": "chr6",
+    "pos": 152098791,
+    "ref": "T",
+    "alt": "A",
+    "hgvs": "p.D538G",
+    "source": "AURORA",
+    "variant_type": "acquired",
+    "note": "Ligand-independent ER activation in BrM",
+    "evo2_params": {
+      "context_start": 152094695,
+      "context_end": 152102887,
+      "context_length": 8192,
+      "assembly": "hg38",
+      "scoring_mode": "delta_log_likelihood"
+    }
+  },
+  {
+    "gene": "KMT2C",
+    "chrom": "chr7",
+    "pos": 151835898,
+    "ref": "C",
+    "alt": "T",
+    "hgvs": "p.R4854*",
+    "source": "AURORA",
+    "variant_type": "truncating",
+    "note": "KMT2C deletion\u2192H3K4me1 loss\u2192MMP3\u2192BrM invasion",
+    "evo2_params": {
+      "context_start": 151831802,
+      "context_end": 151839994,
+      "context_length": 8192,
+      "assembly": "hg38",
+      "scoring_mode": "delta_log_likelihood"
+    }
+  },
+  {
+    "gene": "EGFR",
+    "chrom": "chr7",
+    "pos": 55191822,
+    "ref": "T",
+    "alt": "G",
+    "hgvs": "p.L858R",
+    "source": "GSE237446",
+    "variant_type": "hotspot",
+    "note": "LUAD BrM EGFR mutation; rescues BACE1-KO phenotype",
+    "evo2_params": {
+      "context_start": 55187726,
+      "context_end": 55195918,
+      "context_length": 8192,
+      "assembly": "hg38",
+      "scoring_mode": "delta_log_likelihood"
+    }
+  },
+  {
+    "gene": "BRCA1",
+    "chrom": "chr17",
+    "pos": 43057051,
+    "ref": "A",
+    "alt": "G",
+    "hgvs": "p.T1685A",
+    "source": "ClinVar",
+    "variant_type": "VUS",
+    "note": "BRCA1 VUS common in hereditary BrM; Evo2 scoring target",
+    "evo2_params": {
+      "context_start": 43052955,
+      "context_end": 43061147,
+      "context_length": 8192,
+      "assembly": "hg38",
+      "scoring_mode": "delta_log_likelihood"
+    }
+  },
+  {
+    "gene": "BACE1",
+    "chrom": "chr11",
+    "pos": 117172841,
+    "ref": "G",
+    "alt": "A",
+    "hgvs": "p.D289N",
+    "source": "GSE237446",
+    "variant_type": "functional",
+    "note": "BACE1 catalytic residue; MEK/ERK signaling to BrM",
+    "evo2_params": {
+      "context_start": 117168745,
+      "context_end": 117176937,
+      "context_length": 8192,
+      "assembly": "hg38",
+      "scoring_mode": "delta_log_likelihood"
+    }
+  }
+]

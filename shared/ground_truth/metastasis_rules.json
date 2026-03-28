@@ -1,0 +1,54 @@
+{
+  "version": "v1.1.0-brain_met",
+  "source": "FDA oncology approvals 2024-2025 + clinical trials + literature",
+  "note": "Extends POC metastasis_rules_v1.0.1.json with brain-met-specific steps",
+  "steps": {
+    "primary_tumor_escape": {
+      "description": "Escape from primary tumor site (breast, lung, melanoma)",
+      "primary_genes": ["MMP2", "MMP9", "EGFR", "KMT2C", "TP53"],
+      "negative_controls": ["ABL1", "BCR", "FLT3"]
+    },
+    "intravasation": {
+      "description": "Entry into blood or lymphatic vessels",
+      "primary_genes": ["TWIST1", "KMT2C", "MMP2", "MMP9"],
+      "negative_controls": ["IDH1", "IDH2"]
+    },
+    "circulation_survival": {
+      "description": "Survival as circulating tumor cell, resist anoikis",
+      "primary_genes": ["BCL2", "BACE1"],
+      "negative_controls": ["DNMT3A", "NPM1"]
+    },
+    "bbb_transit": {
+      "description": "Cross blood-brain barrier — BBB-specific step",
+      "primary_genes": ["CXCR4", "ICAM1", "CLDN5", "CCL2", "MMP2", "MMP9"],
+      "negative_controls": ["IDH1", "IDH2", "FLT3", "JAK2", "TERT"],
+      "bbb_note": "Genes must have brain-extravasation-specific evidence (not general metastasis)"
+    },
+    "cns_colonization": {
+      "description": "Establish micrometastases in brain parenchyma",
+      "primary_genes": ["BACE1", "CXCR4", "PTEN", "TP53", "PIK3CA", "CDKN2A", "BRCA1"],
+      "negative_controls": ["IDH1", "IDH2", "ABL1"]
+    },
+    "brain_niche_adaptation": {
+      "description": "Adapt to brain microenvironment (astrocytes, neurons)",
+      "primary_genes": ["SMARCA4", "STAT3", "ESR1", "BACE1", "CCL2"],
+      "negative_controls": ["FLT3", "JAK2", "TERT"]
+    },
+    "brm_angiogenesis": {
+      "description": "Angiogenic adaptation specific to brain metastatic niche",
+      "primary_genes": ["VEGFA", "PIK3CA"],
+      "negative_controls": ["ABL1", "BCR"]
+    }
+  },
+  "calibration": {
+    "poc_auroc": 0.976,
+    "poc_auroc_sd": 0.035,
+    "poc_precision_at_3": 1.000,
+    "poc_saturation_band": "0.352-0.355",
+    "saturation_fix": "step-z-score normalization in TargetLockScorer.score_genes()",
+    "weight_changes": {
+      "chromatin": {"poc": 0.15, "production": 0.10, "reason": "ablation -0.013 AUROC"},
+      "regulatory": {"poc": 0.15, "production": 0.20, "reason": "BBB splice isoforms important"}
+    }
+  }
+}
