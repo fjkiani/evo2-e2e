@@ -1,0 +1,29 @@
+{
+  "name": "BrM_guide_BIN1",
+  "sequences": [
+    {
+      "proteinChain": null,
+      "rnaSequence": {
+        "sequence": "GCAACTGCAGCTCCGCAGATGTTTTAGAGCTAGAAATAGCAAGTTAAAATAAGGCTAGTCCGTTATCAACTTGAAAAAGTGGCACCGAGTCGGTGC",
+        "count": 1
+      }
+    },
+    {
+      "dnaSequence": {
+        "sequence": "TGCAACTGCAGCTCCGCAGATAGGATCTGCGGAGCTGCAGTTGCAAGCTNNNNNNNNNNN",
+        "count": 1
+      }
+    },
+    {
+      "dnaSequence": {
+        "sequence": "NNNNNNNNNNNAGCTTGCAACTGCAGCTCCGCAGATCCTATCTGCGGAGCTGCAGTTGCA",
+        "count": 1
+      }
+    }
+  ],
+  "modelSeeds": [
+    42
+  ],
+  "dialect": "alphafold3",
+  "version": 2
+}

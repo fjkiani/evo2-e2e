@@ -1,0 +1,58 @@
+{
+  "jobs": [
+    {
+      "gene": "FAM72A",
+      "spacer": "GCAGCAGTCAGACTCGTGAC",
+      "rna_len": 96,
+      "dna_len": 60,
+      "known_crispr": false,
+      "source": "PAM-scan exon2 (synthetic)",
+      "af3_spec": "/home/user/workspace/evo2_e2e/data/brain_met/af3_job_FAM72A.json"
+    },
+    {
+      "gene": "SLC25A32",
+      "spacer": "ACTGGAAGATCGTCATCAAC",
+      "rna_len": 96,
+      "dna_len": 60,
+      "known_crispr": false,
+      "source": "PAM-scan exon3 (synthetic)",
+      "af3_spec": "/home/user/workspace/evo2_e2e/data/brain_met/af3_job_SLC25A32.json"
+    },
+    {
+      "gene": "ATP10D",
+      "spacer": "CGTAGATCACGGTGCTGCAT",
+      "rna_len": 96,
+      "dna_len": 60,
+      "known_crispr": false,
+      "source": "PAM-scan exon4 (synthetic)",
+      "af3_spec": "/home/user/workspace/evo2_e2e/data/brain_met/af3_job_ATP10D.json"
+    },
+    {
+      "gene": "BACE1",
+      "spacer": "GGATCATCAGCATGGTGGCC",
+      "rna_len": 96,
+      "dna_len": 60,
+      "known_crispr": true,
+      "source": "Chafe et al. 2025 Sci Transl Med validated sgRNA",
+      "af3_spec": "/home/user/workspace/evo2_e2e/data/brain_met/af3_job_BACE1.json"
+    },
+    {
+      "gene": "BIN1",
+      "spacer": "GCAACTGCAGCTCCGCAGAT",
+      "rna_len": 96,
+      "dna_len": 60,
+      "known_crispr": false,
+      "source": "PAM-scan exon2 (synthetic)",
+      "af3_spec": "/home/user/workspace/evo2_e2e/data/brain_met/af3_job_BIN1.json"
+    }
+  ],
+  "criteria": {
+    "plddt_min": 50,
+    "iptm_min": 0.3,
+    "disorder_max": 0.5,
+    "no_clash": true
+  },
+  "status": "PENDING_SUBMISSION",
+  "note": "AF3 Server does not have a public compute API \u2014 submit via web or institutional access",
+  "next_action": "Submit each af3_job_*.json to https://alphafoldserver.com"
+}

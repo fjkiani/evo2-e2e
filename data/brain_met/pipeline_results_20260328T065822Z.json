@@ -1,0 +1,2328 @@
+{
+  "run_info": {
+    "timestamp": "20260328T065822Z",
+    "seed": 42,
+    "disease": "brain_met",
+    "fast_mode": true,
+    "use_enformer": true,
+    "n_genes": 29,
+    "n_positives": 20,
+    "n_negatives": 9,
+    "n_steps": 7,
+    "elapsed_s": 160.9
+  },
+  "validation_metrics": {
+    "primary_tumor_escape": {
+      "auroc": 0.6389,
+      "auprc": 0.5507,
+      "precision_at_3": 0.667,
+      "n_pos": 9,
+      "n_total": 29
+    },
+    "intravasation": {
+      "auroc": 0.4583,
+      "auprc": 0.2473,
+      "precision_at_3": 0.333,
+      "n_pos": 5,
+      "n_total": 29
+    },
+    "circulation_survival": {
+      "auroc": 0.359,
+      "auprc": 0.1024,
+      "precision_at_3": 0.0,
+      "n_pos": 3,
+      "n_total": 29
+    },
+    "bbb_transit": {
+      "auroc": 0.3896,
+      "auprc": 0.2372,
+      "precision_at_3": 0.333,
+      "n_pos": 7,
+      "n_total": 29
+    },
+    "cns_colonization": {
+      "auroc": 0.6714,
+      "auprc": 0.7519,
+      "precision_at_3": 1.0,
+      "n_pos": 15,
+      "n_total": 29
+    },
+    "brain_niche_adaptation": {
+      "auroc": 0.6522,
+      "auprc": 0.3253,
+      "precision_at_3": 0.333,
+      "n_pos": 6,
+      "n_total": 29
+    },
+    "brm_angiogenesis": {
+      "auroc": 0.8929,
+      "auprc": 0.25,
+      "precision_at_3": 0.0,
+      "n_pos": 1,
+      "n_total": 29
+    }
+  },
+  "gene_scores": {
+    "primary_tumor_escape": [
+      {
+        "gene": "PIK3CA",
+        "step": "primary_tumor_escape",
+        "calibrated_score": 0.9160907520896697,
+        "target_lock_score": 0.5811787912148257,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "KMT2C",
+        "step": "primary_tumor_escape",
+        "calibrated_score": 0.8938275263024326,
+        "target_lock_score": 0.552594133202869,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "CCL2",
+        "step": "primary_tumor_escape",
+        "calibrated_score": 0.8674212188522797,
+        "target_lock_score": 0.5248706879744958,
+        "label": false,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "VEGFA",
+        "step": "primary_tumor_escape",
+        "calibrated_score": 0.8374429341492582,
+        "target_lock_score": 0.4985852816213408,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "DNMT3A",
+        "step": "primary_tumor_escape",
+        "calibrated_score": 0.8343285704812791,
+        "target_lock_score": 0.4960886128527335,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "TP53",
+        "step": "primary_tumor_escape",
+        "calibrated_score": 0.7550175180972691,
+        "target_lock_score": 0.4420860714544643,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "IDH1",
+        "step": "primary_tumor_escape",
+        "calibrated_score": 0.5898724841277045,
+        "target_lock_score": 0.35827625141311414,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "CDKN2A",
+        "step": "primary_tumor_escape",
+        "calibrated_score": 0.5827499669703402,
+        "target_lock_score": 0.3550469105032741,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "ESR1",
+        "step": "primary_tumor_escape",
+        "calibrated_score": 0.5631178226322817,
+        "target_lock_score": 0.34622212957690246,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "NPM1",
+        "step": "primary_tumor_escape",
+        "calibrated_score": 0.4902054322555348,
+        "target_lock_score": 0.314,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Evo2 scoring_mode=curated_fallback_missing_alleles (not live inference)",
+          "Missing valid ref/alt: ref=C alt=CT",
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "SMARCA4",
+        "step": "primary_tumor_escape",
+        "calibrated_score": 0.45282995290852035,
+        "target_lock_score": 0.29749795311742966,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "MMP9",
+        "step": "primary_tumor_escape",
+        "calibrated_score": 0.4324990820686739,
+        "target_lock_score": 0.28843432052444856,
+        "label": true,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "MMP2",
+        "step": "primary_tumor_escape",
+        "calibrated_score": 0.4245181894471266,
+        "target_lock_score": 0.28485033495521195,
+        "label": true,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "BACE1",
+        "step": "primary_tumor_escape",
+        "calibrated_score": 0.4216985001849151,
+        "target_lock_score": 0.28357996406963676,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "BCR",
+        "step": "primary_tumor_escape",
+        "calibrated_score": 0.40154644881663915,
+        "target_lock_score": 0.2744281650668864,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "TERT",
+        "step": "primary_tumor_escape",
+        "calibrated_score": 0.3998262833096944,
+        "target_lock_score": 0.2736404196821141,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "BRCA1",
+        "step": "primary_tumor_escape",
+        "calibrated_score": 0.3816331728369003,
+        "target_lock_score": 0.2652350895341568,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "CLDN5",
+        "step": "primary_tumor_escape",
+        "calibrated_score": 0.3739972734744219,
+        "target_lock_score": 0.261662801603826,
+        "label": false,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "BCL2",
+        "step": "primary_tumor_escape",
+        "calibrated_score": 0.3493518455249472,
+        "target_lock_score": 0.2499198592470343,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "ABL1",
+        "step": "primary_tumor_escape",
+        "calibrated_score": 0.3478346464556386,
+        "target_lock_score": 0.2491850989292842,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "IDH2",
+        "step": "primary_tumor_escape",
+        "calibrated_score": 0.33334835954610487,
+        "target_lock_score": 0.24209109048661792,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "FLT3",
+        "step": "primary_tumor_escape",
+        "calibrated_score": 0.3269219599285221,
+        "target_lock_score": 0.2388953398222361,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "CXCR4",
+        "step": "primary_tumor_escape",
+        "calibrated_score": 0.3251062702080544,
+        "target_lock_score": 0.23798662186916353,
+        "label": false,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "JAK2",
+        "step": "primary_tumor_escape",
+        "calibrated_score": 0.3068603529034933,
+        "target_lock_score": 0.22870124776880607,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "EGFR",
+        "step": "primary_tumor_escape",
+        "calibrated_score": 0.3014754780532195,
+        "target_lock_score": 0.22590329646663077,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "TWIST1",
+        "step": "primary_tumor_escape",
+        "calibrated_score": 0.2810155728921911,
+        "target_lock_score": 0.21500000000000002,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "ICAM1",
+        "step": "primary_tumor_escape",
+        "calibrated_score": 0.2810155728921911,
+        "target_lock_score": 0.21500000000000002,
+        "label": false,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "PTEN",
+        "step": "primary_tumor_escape",
+        "calibrated_score": 0.2810155728921911,
+        "target_lock_score": 0.21500000000000002,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "STAT3",
+        "step": "primary_tumor_escape",
+        "calibrated_score": 0.2810155728921911,
+        "target_lock_score": 0.21500000000000002,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      }
+    ],
+    "intravasation": [
+      {
+        "gene": "PIK3CA",
+        "step": "intravasation",
+        "calibrated_score": 0.9160907520896697,
+        "target_lock_score": 0.5811787912148257,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "KMT2C",
+        "step": "intravasation",
+        "calibrated_score": 0.8938275263024326,
+        "target_lock_score": 0.552594133202869,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "CCL2",
+        "step": "intravasation",
+        "calibrated_score": 0.8674212188522797,
+        "target_lock_score": 0.5248706879744958,
+        "label": false,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "VEGFA",
+        "step": "intravasation",
+        "calibrated_score": 0.8374429341492582,
+        "target_lock_score": 0.4985852816213408,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "DNMT3A",
+        "step": "intravasation",
+        "calibrated_score": 0.8343285704812791,
+        "target_lock_score": 0.4960886128527335,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "TP53",
+        "step": "intravasation",
+        "calibrated_score": 0.7550175180972691,
+        "target_lock_score": 0.4420860714544643,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "IDH1",
+        "step": "intravasation",
+        "calibrated_score": 0.5898724841277045,
+        "target_lock_score": 0.35827625141311414,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "CDKN2A",
+        "step": "intravasation",
+        "calibrated_score": 0.5827499669703402,
+        "target_lock_score": 0.3550469105032741,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "ESR1",
+        "step": "intravasation",
+        "calibrated_score": 0.5631178226322817,
+        "target_lock_score": 0.34622212957690246,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "NPM1",
+        "step": "intravasation",
+        "calibrated_score": 0.4902054322555348,
+        "target_lock_score": 0.314,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Evo2 scoring_mode=curated_fallback_missing_alleles (not live inference)",
+          "Missing valid ref/alt: ref=C alt=CT",
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "SMARCA4",
+        "step": "intravasation",
+        "calibrated_score": 0.45282995290852035,
+        "target_lock_score": 0.29749795311742966,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "MMP9",
+        "step": "intravasation",
+        "calibrated_score": 0.4324990820686739,
+        "target_lock_score": 0.28843432052444856,
+        "label": true,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "MMP2",
+        "step": "intravasation",
+        "calibrated_score": 0.4245181894471266,
+        "target_lock_score": 0.28485033495521195,
+        "label": true,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "BACE1",
+        "step": "intravasation",
+        "calibrated_score": 0.4216985001849151,
+        "target_lock_score": 0.28357996406963676,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "BCR",
+        "step": "intravasation",
+        "calibrated_score": 0.40154644881663915,
+        "target_lock_score": 0.2744281650668864,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "TERT",
+        "step": "intravasation",
+        "calibrated_score": 0.3998262833096944,
+        "target_lock_score": 0.2736404196821141,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "BRCA1",
+        "step": "intravasation",
+        "calibrated_score": 0.3816331728369003,
+        "target_lock_score": 0.2652350895341568,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "CLDN5",
+        "step": "intravasation",
+        "calibrated_score": 0.3739972734744219,
+        "target_lock_score": 0.261662801603826,
+        "label": false,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "BCL2",
+        "step": "intravasation",
+        "calibrated_score": 0.3493518455249472,
+        "target_lock_score": 0.2499198592470343,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "ABL1",
+        "step": "intravasation",
+        "calibrated_score": 0.3478346464556386,
+        "target_lock_score": 0.2491850989292842,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "IDH2",
+        "step": "intravasation",
+        "calibrated_score": 0.33334835954610487,
+        "target_lock_score": 0.24209109048661792,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "FLT3",
+        "step": "intravasation",
+        "calibrated_score": 0.3269219599285221,
+        "target_lock_score": 0.2388953398222361,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "CXCR4",
+        "step": "intravasation",
+        "calibrated_score": 0.3251062702080544,
+        "target_lock_score": 0.23798662186916353,
+        "label": false,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "JAK2",
+        "step": "intravasation",
+        "calibrated_score": 0.3068603529034933,
+        "target_lock_score": 0.22870124776880607,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "EGFR",
+        "step": "intravasation",
+        "calibrated_score": 0.3014754780532195,
+        "target_lock_score": 0.22590329646663077,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "TWIST1",
+        "step": "intravasation",
+        "calibrated_score": 0.2810155728921911,
+        "target_lock_score": 0.21500000000000002,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "ICAM1",
+        "step": "intravasation",
+        "calibrated_score": 0.2810155728921911,
+        "target_lock_score": 0.21500000000000002,
+        "label": true,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "PTEN",
+        "step": "intravasation",
+        "calibrated_score": 0.2810155728921911,
+        "target_lock_score": 0.21500000000000002,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "STAT3",
+        "step": "intravasation",
+        "calibrated_score": 0.2810155728921911,
+        "target_lock_score": 0.21500000000000002,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      }
+    ],
+    "circulation_survival": [
+      {
+        "gene": "PIK3CA",
+        "step": "circulation_survival",
+        "calibrated_score": 0.9160907520896697,
+        "target_lock_score": 0.5811787912148257,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "KMT2C",
+        "step": "circulation_survival",
+        "calibrated_score": 0.8938275263024326,
+        "target_lock_score": 0.552594133202869,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "CCL2",
+        "step": "circulation_survival",
+        "calibrated_score": 0.8674212188522797,
+        "target_lock_score": 0.5248706879744958,
+        "label": false,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "VEGFA",
+        "step": "circulation_survival",
+        "calibrated_score": 0.8374429341492582,
+        "target_lock_score": 0.4985852816213408,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "DNMT3A",
+        "step": "circulation_survival",
+        "calibrated_score": 0.8343285704812791,
+        "target_lock_score": 0.4960886128527335,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "TP53",
+        "step": "circulation_survival",
+        "calibrated_score": 0.7550175180972691,
+        "target_lock_score": 0.4420860714544643,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "IDH1",
+        "step": "circulation_survival",
+        "calibrated_score": 0.5898724841277045,
+        "target_lock_score": 0.35827625141311414,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "CDKN2A",
+        "step": "circulation_survival",
+        "calibrated_score": 0.5827499669703402,
+        "target_lock_score": 0.3550469105032741,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "ESR1",
+        "step": "circulation_survival",
+        "calibrated_score": 0.5631178226322817,
+        "target_lock_score": 0.34622212957690246,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "NPM1",
+        "step": "circulation_survival",
+        "calibrated_score": 0.4902054322555348,
+        "target_lock_score": 0.314,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Evo2 scoring_mode=curated_fallback_missing_alleles (not live inference)",
+          "Missing valid ref/alt: ref=C alt=CT",
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "SMARCA4",
+        "step": "circulation_survival",
+        "calibrated_score": 0.45282995290852035,
+        "target_lock_score": 0.29749795311742966,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "MMP9",
+        "step": "circulation_survival",
+        "calibrated_score": 0.4324990820686739,
+        "target_lock_score": 0.28843432052444856,
+        "label": false,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "MMP2",
+        "step": "circulation_survival",
+        "calibrated_score": 0.4245181894471266,
+        "target_lock_score": 0.28485033495521195,
+        "label": false,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "BACE1",
+        "step": "circulation_survival",
+        "calibrated_score": 0.4216985001849151,
+        "target_lock_score": 0.28357996406963676,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "BCR",
+        "step": "circulation_survival",
+        "calibrated_score": 0.40154644881663915,
+        "target_lock_score": 0.2744281650668864,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "TERT",
+        "step": "circulation_survival",
+        "calibrated_score": 0.3998262833096944,
+        "target_lock_score": 0.2736404196821141,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "BRCA1",
+        "step": "circulation_survival",
+        "calibrated_score": 0.3816331728369003,
+        "target_lock_score": 0.2652350895341568,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "CLDN5",
+        "step": "circulation_survival",
+        "calibrated_score": 0.3739972734744219,
+        "target_lock_score": 0.261662801603826,
+        "label": false,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "BCL2",
+        "step": "circulation_survival",
+        "calibrated_score": 0.3493518455249472,
+        "target_lock_score": 0.2499198592470343,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "ABL1",
+        "step": "circulation_survival",
+        "calibrated_score": 0.3478346464556386,
+        "target_lock_score": 0.2491850989292842,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "IDH2",
+        "step": "circulation_survival",
+        "calibrated_score": 0.33334835954610487,
+        "target_lock_score": 0.24209109048661792,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "FLT3",
+        "step": "circulation_survival",
+        "calibrated_score": 0.3269219599285221,
+        "target_lock_score": 0.2388953398222361,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "CXCR4",
+        "step": "circulation_survival",
+        "calibrated_score": 0.3251062702080544,
+        "target_lock_score": 0.23798662186916353,
+        "label": true,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "JAK2",
+        "step": "circulation_survival",
+        "calibrated_score": 0.3068603529034933,
+        "target_lock_score": 0.22870124776880607,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "EGFR",
+        "step": "circulation_survival",
+        "calibrated_score": 0.3014754780532195,
+        "target_lock_score": 0.22590329646663077,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "TWIST1",
+        "step": "circulation_survival",
+        "calibrated_score": 0.2810155728921911,
+        "target_lock_score": 0.21500000000000002,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "ICAM1",
+        "step": "circulation_survival",
+        "calibrated_score": 0.2810155728921911,
+        "target_lock_score": 0.21500000000000002,
+        "label": false,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "PTEN",
+        "step": "circulation_survival",
+        "calibrated_score": 0.2810155728921911,
+        "target_lock_score": 0.21500000000000002,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "STAT3",
+        "step": "circulation_survival",
+        "calibrated_score": 0.2810155728921911,
+        "target_lock_score": 0.21500000000000002,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      }
+    ],
+    "bbb_transit": [
+      {
+        "gene": "PIK3CA",
+        "step": "bbb_transit",
+        "calibrated_score": 0.9160907520896697,
+        "target_lock_score": 0.5811787912148257,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "KMT2C",
+        "step": "bbb_transit",
+        "calibrated_score": 0.8938275263024326,
+        "target_lock_score": 0.552594133202869,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "CCL2",
+        "step": "bbb_transit",
+        "calibrated_score": 0.8674212188522797,
+        "target_lock_score": 0.5248706879744958,
+        "label": true,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "VEGFA",
+        "step": "bbb_transit",
+        "calibrated_score": 0.8374429341492582,
+        "target_lock_score": 0.4985852816213408,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "DNMT3A",
+        "step": "bbb_transit",
+        "calibrated_score": 0.8343285704812791,
+        "target_lock_score": 0.4960886128527335,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "TP53",
+        "step": "bbb_transit",
+        "calibrated_score": 0.7550175180972691,
+        "target_lock_score": 0.4420860714544643,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "IDH1",
+        "step": "bbb_transit",
+        "calibrated_score": 0.5898724841277045,
+        "target_lock_score": 0.35827625141311414,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "CDKN2A",
+        "step": "bbb_transit",
+        "calibrated_score": 0.5827499669703402,
+        "target_lock_score": 0.3550469105032741,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "ESR1",
+        "step": "bbb_transit",
+        "calibrated_score": 0.5631178226322817,
+        "target_lock_score": 0.34622212957690246,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "NPM1",
+        "step": "bbb_transit",
+        "calibrated_score": 0.4902054322555348,
+        "target_lock_score": 0.314,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Evo2 scoring_mode=curated_fallback_missing_alleles (not live inference)",
+          "Missing valid ref/alt: ref=C alt=CT",
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "SMARCA4",
+        "step": "bbb_transit",
+        "calibrated_score": 0.45282995290852035,
+        "target_lock_score": 0.29749795311742966,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "MMP9",
+        "step": "bbb_transit",
+        "calibrated_score": 0.4324990820686739,
+        "target_lock_score": 0.28843432052444856,
+        "label": true,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "MMP2",
+        "step": "bbb_transit",
+        "calibrated_score": 0.4245181894471266,
+        "target_lock_score": 0.28485033495521195,
+        "label": true,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "BACE1",
+        "step": "bbb_transit",
+        "calibrated_score": 0.4216985001849151,
+        "target_lock_score": 0.28357996406963676,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "BCR",
+        "step": "bbb_transit",
+        "calibrated_score": 0.40154644881663915,
+        "target_lock_score": 0.2744281650668864,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "TERT",
+        "step": "bbb_transit",
+        "calibrated_score": 0.3998262833096944,
+        "target_lock_score": 0.2736404196821141,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "BRCA1",
+        "step": "bbb_transit",
+        "calibrated_score": 0.3816331728369003,
+        "target_lock_score": 0.2652350895341568,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "CLDN5",
+        "step": "bbb_transit",
+        "calibrated_score": 0.3739972734744219,
+        "target_lock_score": 0.261662801603826,
+        "label": true,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "BCL2",
+        "step": "bbb_transit",
+        "calibrated_score": 0.3493518455249472,
+        "target_lock_score": 0.2499198592470343,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "ABL1",
+        "step": "bbb_transit",
+        "calibrated_score": 0.3478346464556386,
+        "target_lock_score": 0.2491850989292842,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "IDH2",
+        "step": "bbb_transit",
+        "calibrated_score": 0.33334835954610487,
+        "target_lock_score": 0.24209109048661792,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "FLT3",
+        "step": "bbb_transit",
+        "calibrated_score": 0.3269219599285221,
+        "target_lock_score": 0.2388953398222361,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "CXCR4",
+        "step": "bbb_transit",
+        "calibrated_score": 0.3251062702080544,
+        "target_lock_score": 0.23798662186916353,
+        "label": true,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "JAK2",
+        "step": "bbb_transit",
+        "calibrated_score": 0.3068603529034933,
+        "target_lock_score": 0.22870124776880607,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "EGFR",
+        "step": "bbb_transit",
+        "calibrated_score": 0.3014754780532195,
+        "target_lock_score": 0.22590329646663077,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "TWIST1",
+        "step": "bbb_transit",
+        "calibrated_score": 0.2810155728921911,
+        "target_lock_score": 0.21500000000000002,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "ICAM1",
+        "step": "bbb_transit",
+        "calibrated_score": 0.2810155728921911,
+        "target_lock_score": 0.21500000000000002,
+        "label": true,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "PTEN",
+        "step": "bbb_transit",
+        "calibrated_score": 0.2810155728921911,
+        "target_lock_score": 0.21500000000000002,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "STAT3",
+        "step": "bbb_transit",
+        "calibrated_score": 0.2810155728921911,
+        "target_lock_score": 0.21500000000000002,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      }
+    ],
+    "cns_colonization": [
+      {
+        "gene": "PIK3CA",
+        "step": "cns_colonization",
+        "calibrated_score": 0.9160907520896697,
+        "target_lock_score": 0.5811787912148257,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "KMT2C",
+        "step": "cns_colonization",
+        "calibrated_score": 0.8938275263024326,
+        "target_lock_score": 0.552594133202869,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "CCL2",
+        "step": "cns_colonization",
+        "calibrated_score": 0.8674212188522797,
+        "target_lock_score": 0.5248706879744958,
+        "label": true,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "VEGFA",
+        "step": "cns_colonization",
+        "calibrated_score": 0.8374429341492582,
+        "target_lock_score": 0.4985852816213408,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "DNMT3A",
+        "step": "cns_colonization",
+        "calibrated_score": 0.8343285704812791,
+        "target_lock_score": 0.4960886128527335,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "TP53",
+        "step": "cns_colonization",
+        "calibrated_score": 0.7550175180972691,
+        "target_lock_score": 0.4420860714544643,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "IDH1",
+        "step": "cns_colonization",
+        "calibrated_score": 0.5898724841277045,
+        "target_lock_score": 0.35827625141311414,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "CDKN2A",
+        "step": "cns_colonization",
+        "calibrated_score": 0.5827499669703402,
+        "target_lock_score": 0.3550469105032741,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "ESR1",
+        "step": "cns_colonization",
+        "calibrated_score": 0.5631178226322817,
+        "target_lock_score": 0.34622212957690246,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "NPM1",
+        "step": "cns_colonization",
+        "calibrated_score": 0.4902054322555348,
+        "target_lock_score": 0.314,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Evo2 scoring_mode=curated_fallback_missing_alleles (not live inference)",
+          "Missing valid ref/alt: ref=C alt=CT",
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "SMARCA4",
+        "step": "cns_colonization",
+        "calibrated_score": 0.45282995290852035,
+        "target_lock_score": 0.29749795311742966,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "MMP9",
+        "step": "cns_colonization",
+        "calibrated_score": 0.4324990820686739,
+        "target_lock_score": 0.28843432052444856,
+        "label": false,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "MMP2",
+        "step": "cns_colonization",
+        "calibrated_score": 0.4245181894471266,
+        "target_lock_score": 0.28485033495521195,
+        "label": true,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "BACE1",
+        "step": "cns_colonization",
+        "calibrated_score": 0.4216985001849151,
+        "target_lock_score": 0.28357996406963676,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "BCR",
+        "step": "cns_colonization",
+        "calibrated_score": 0.40154644881663915,
+        "target_lock_score": 0.2744281650668864,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "TERT",
+        "step": "cns_colonization",
+        "calibrated_score": 0.3998262833096944,
+        "target_lock_score": 0.2736404196821141,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "BRCA1",
+        "step": "cns_colonization",
+        "calibrated_score": 0.3816331728369003,
+        "target_lock_score": 0.2652350895341568,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "CLDN5",
+        "step": "cns_colonization",
+        "calibrated_score": 0.3739972734744219,
+        "target_lock_score": 0.261662801603826,
+        "label": false,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "BCL2",
+        "step": "cns_colonization",
+        "calibrated_score": 0.3493518455249472,
+        "target_lock_score": 0.2499198592470343,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "ABL1",
+        "step": "cns_colonization",
+        "calibrated_score": 0.3478346464556386,
+        "target_lock_score": 0.2491850989292842,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "IDH2",
+        "step": "cns_colonization",
+        "calibrated_score": 0.33334835954610487,
+        "target_lock_score": 0.24209109048661792,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "FLT3",
+        "step": "cns_colonization",
+        "calibrated_score": 0.3269219599285221,
+        "target_lock_score": 0.2388953398222361,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "CXCR4",
+        "step": "cns_colonization",
+        "calibrated_score": 0.3251062702080544,
+        "target_lock_score": 0.23798662186916353,
+        "label": true,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "JAK2",
+        "step": "cns_colonization",
+        "calibrated_score": 0.3068603529034933,
+        "target_lock_score": 0.22870124776880607,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "EGFR",
+        "step": "cns_colonization",
+        "calibrated_score": 0.3014754780532195,
+        "target_lock_score": 0.22590329646663077,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "TWIST1",
+        "step": "cns_colonization",
+        "calibrated_score": 0.2810155728921911,
+        "target_lock_score": 0.21500000000000002,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "ICAM1",
+        "step": "cns_colonization",
+        "calibrated_score": 0.2810155728921911,
+        "target_lock_score": 0.21500000000000002,
+        "label": false,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "PTEN",
+        "step": "cns_colonization",
+        "calibrated_score": 0.2810155728921911,
+        "target_lock_score": 0.21500000000000002,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "STAT3",
+        "step": "cns_colonization",
+        "calibrated_score": 0.2810155728921911,
+        "target_lock_score": 0.21500000000000002,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      }
+    ],
+    "brain_niche_adaptation": [
+      {
+        "gene": "PIK3CA",
+        "step": "brain_niche_adaptation",
+        "calibrated_score": 0.9160907520896697,
+        "target_lock_score": 0.5811787912148257,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "KMT2C",
+        "step": "brain_niche_adaptation",
+        "calibrated_score": 0.8938275263024326,
+        "target_lock_score": 0.552594133202869,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "CCL2",
+        "step": "brain_niche_adaptation",
+        "calibrated_score": 0.8674212188522797,
+        "target_lock_score": 0.5248706879744958,
+        "label": true,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "VEGFA",
+        "step": "brain_niche_adaptation",
+        "calibrated_score": 0.8374429341492582,
+        "target_lock_score": 0.4985852816213408,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "DNMT3A",
+        "step": "brain_niche_adaptation",
+        "calibrated_score": 0.8343285704812791,
+        "target_lock_score": 0.4960886128527335,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "TP53",
+        "step": "brain_niche_adaptation",
+        "calibrated_score": 0.7550175180972691,
+        "target_lock_score": 0.4420860714544643,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "IDH1",
+        "step": "brain_niche_adaptation",
+        "calibrated_score": 0.5898724841277045,
+        "target_lock_score": 0.35827625141311414,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "CDKN2A",
+        "step": "brain_niche_adaptation",
+        "calibrated_score": 0.5827499669703402,
+        "target_lock_score": 0.3550469105032741,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "ESR1",
+        "step": "brain_niche_adaptation",
+        "calibrated_score": 0.5631178226322817,
+        "target_lock_score": 0.34622212957690246,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "NPM1",
+        "step": "brain_niche_adaptation",
+        "calibrated_score": 0.4902054322555348,
+        "target_lock_score": 0.314,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Evo2 scoring_mode=curated_fallback_missing_alleles (not live inference)",
+          "Missing valid ref/alt: ref=C alt=CT",
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "SMARCA4",
+        "step": "brain_niche_adaptation",
+        "calibrated_score": 0.45282995290852035,
+        "target_lock_score": 0.29749795311742966,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "MMP9",
+        "step": "brain_niche_adaptation",
+        "calibrated_score": 0.4324990820686739,
+        "target_lock_score": 0.28843432052444856,
+        "label": false,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "MMP2",
+        "step": "brain_niche_adaptation",
+        "calibrated_score": 0.4245181894471266,
+        "target_lock_score": 0.28485033495521195,
+        "label": false,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "BACE1",
+        "step": "brain_niche_adaptation",
+        "calibrated_score": 0.4216985001849151,
+        "target_lock_score": 0.28357996406963676,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "BCR",
+        "step": "brain_niche_adaptation",
+        "calibrated_score": 0.40154644881663915,
+        "target_lock_score": 0.2744281650668864,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "TERT",
+        "step": "brain_niche_adaptation",
+        "calibrated_score": 0.3998262833096944,
+        "target_lock_score": 0.2736404196821141,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "BRCA1",
+        "step": "brain_niche_adaptation",
+        "calibrated_score": 0.3816331728369003,
+        "target_lock_score": 0.2652350895341568,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "CLDN5",
+        "step": "brain_niche_adaptation",
+        "calibrated_score": 0.3739972734744219,
+        "target_lock_score": 0.261662801603826,
+        "label": false,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "BCL2",
+        "step": "brain_niche_adaptation",
+        "calibrated_score": 0.3493518455249472,
+        "target_lock_score": 0.2499198592470343,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "ABL1",
+        "step": "brain_niche_adaptation",
+        "calibrated_score": 0.3478346464556386,
+        "target_lock_score": 0.2491850989292842,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "IDH2",
+        "step": "brain_niche_adaptation",
+        "calibrated_score": 0.33334835954610487,
+        "target_lock_score": 0.24209109048661792,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "FLT3",
+        "step": "brain_niche_adaptation",
+        "calibrated_score": 0.3269219599285221,
+        "target_lock_score": 0.2388953398222361,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "CXCR4",
+        "step": "brain_niche_adaptation",
+        "calibrated_score": 0.3251062702080544,
+        "target_lock_score": 0.23798662186916353,
+        "label": false,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "JAK2",
+        "step": "brain_niche_adaptation",
+        "calibrated_score": 0.3068603529034933,
+        "target_lock_score": 0.22870124776880607,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "EGFR",
+        "step": "brain_niche_adaptation",
+        "calibrated_score": 0.3014754780532195,
+        "target_lock_score": 0.22590329646663077,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "TWIST1",
+        "step": "brain_niche_adaptation",
+        "calibrated_score": 0.2810155728921911,
+        "target_lock_score": 0.21500000000000002,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "ICAM1",
+        "step": "brain_niche_adaptation",
+        "calibrated_score": 0.2810155728921911,
+        "target_lock_score": 0.21500000000000002,
+        "label": false,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "PTEN",
+        "step": "brain_niche_adaptation",
+        "calibrated_score": 0.2810155728921911,
+        "target_lock_score": 0.21500000000000002,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "STAT3",
+        "step": "brain_niche_adaptation",
+        "calibrated_score": 0.2810155728921911,
+        "target_lock_score": 0.21500000000000002,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      }
+    ],
+    "brm_angiogenesis": [
+      {
+        "gene": "PIK3CA",
+        "step": "brm_angiogenesis",
+        "calibrated_score": 0.9160907520896697,
+        "target_lock_score": 0.5811787912148257,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "KMT2C",
+        "step": "brm_angiogenesis",
+        "calibrated_score": 0.8938275263024326,
+        "target_lock_score": 0.552594133202869,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "CCL2",
+        "step": "brm_angiogenesis",
+        "calibrated_score": 0.8674212188522797,
+        "target_lock_score": 0.5248706879744958,
+        "label": false,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "VEGFA",
+        "step": "brm_angiogenesis",
+        "calibrated_score": 0.8374429341492582,
+        "target_lock_score": 0.4985852816213408,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "DNMT3A",
+        "step": "brm_angiogenesis",
+        "calibrated_score": 0.8343285704812791,
+        "target_lock_score": 0.4960886128527335,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "TP53",
+        "step": "brm_angiogenesis",
+        "calibrated_score": 0.7550175180972691,
+        "target_lock_score": 0.4420860714544643,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "IDH1",
+        "step": "brm_angiogenesis",
+        "calibrated_score": 0.5898724841277045,
+        "target_lock_score": 0.35827625141311414,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "CDKN2A",
+        "step": "brm_angiogenesis",
+        "calibrated_score": 0.5827499669703402,
+        "target_lock_score": 0.3550469105032741,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "ESR1",
+        "step": "brm_angiogenesis",
+        "calibrated_score": 0.5631178226322817,
+        "target_lock_score": 0.34622212957690246,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "NPM1",
+        "step": "brm_angiogenesis",
+        "calibrated_score": 0.4902054322555348,
+        "target_lock_score": 0.314,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Evo2 scoring_mode=curated_fallback_missing_alleles (not live inference)",
+          "Missing valid ref/alt: ref=C alt=CT",
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "SMARCA4",
+        "step": "brm_angiogenesis",
+        "calibrated_score": 0.45282995290852035,
+        "target_lock_score": 0.29749795311742966,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "MMP9",
+        "step": "brm_angiogenesis",
+        "calibrated_score": 0.4324990820686739,
+        "target_lock_score": 0.28843432052444856,
+        "label": false,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "MMP2",
+        "step": "brm_angiogenesis",
+        "calibrated_score": 0.4245181894471266,
+        "target_lock_score": 0.28485033495521195,
+        "label": false,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "BACE1",
+        "step": "brm_angiogenesis",
+        "calibrated_score": 0.4216985001849151,
+        "target_lock_score": 0.28357996406963676,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "BCR",
+        "step": "brm_angiogenesis",
+        "calibrated_score": 0.40154644881663915,
+        "target_lock_score": 0.2744281650668864,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "TERT",
+        "step": "brm_angiogenesis",
+        "calibrated_score": 0.3998262833096944,
+        "target_lock_score": 0.2736404196821141,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "BRCA1",
+        "step": "brm_angiogenesis",
+        "calibrated_score": 0.3816331728369003,
+        "target_lock_score": 0.2652350895341568,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "CLDN5",
+        "step": "brm_angiogenesis",
+        "calibrated_score": 0.3739972734744219,
+        "target_lock_score": 0.261662801603826,
+        "label": false,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "BCL2",
+        "step": "brm_angiogenesis",
+        "calibrated_score": 0.3493518455249472,
+        "target_lock_score": 0.2499198592470343,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "ABL1",
+        "step": "brm_angiogenesis",
+        "calibrated_score": 0.3478346464556386,
+        "target_lock_score": 0.2491850989292842,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "IDH2",
+        "step": "brm_angiogenesis",
+        "calibrated_score": 0.33334835954610487,
+        "target_lock_score": 0.24209109048661792,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "FLT3",
+        "step": "brm_angiogenesis",
+        "calibrated_score": 0.3269219599285221,
+        "target_lock_score": 0.2388953398222361,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "CXCR4",
+        "step": "brm_angiogenesis",
+        "calibrated_score": 0.3251062702080544,
+        "target_lock_score": 0.23798662186916353,
+        "label": false,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "JAK2",
+        "step": "brm_angiogenesis",
+        "calibrated_score": 0.3068603529034933,
+        "target_lock_score": 0.22870124776880607,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "EGFR",
+        "step": "brm_angiogenesis",
+        "calibrated_score": 0.3014754780532195,
+        "target_lock_score": 0.22590329646663077,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "TWIST1",
+        "step": "brm_angiogenesis",
+        "calibrated_score": 0.2810155728921911,
+        "target_lock_score": 0.21500000000000002,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "ICAM1",
+        "step": "brm_angiogenesis",
+        "calibrated_score": 0.2810155728921911,
+        "target_lock_score": 0.21500000000000002,
+        "label": false,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "PTEN",
+        "step": "brm_angiogenesis",
+        "calibrated_score": 0.2810155728921911,
+        "target_lock_score": 0.21500000000000002,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "STAT3",
+        "step": "brm_angiogenesis",
+        "calibrated_score": 0.2810155728921911,
+        "target_lock_score": 0.21500000000000002,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      }
+    ]
+  }
+}

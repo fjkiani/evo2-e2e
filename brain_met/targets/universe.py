@@ -260,76 +260,104 @@ BRAIN_MET_UNIVERSE: List[BrMGene] = [
     ),
 
     # ────────────────────────────────────────────────────────────────────────
-    # HARD NEGATIVES — essential in general tumor biology, NOT brain-met relevant
-    # Policy: gene must be well-established in cancer BUT have NO published
-    # evidence for BBB transit, CNS colonization, or brain-specific adaptation
+    # HARD NEGATIVES — Solid tumor genes that look BrM-relevant but aren't
+    #
+    # Policy (2026-03-28 honest audit):
+    #   Every negative MUST be a solid tumor gene. No hematologic cancers.
+    #   Each gene must have strong primary tumor evidence BUT no published
+    #   brain-extravasation, CNS colonization, or brain-niche-adaptation data.
+    #   Evo2 must distinguish these from true BrM drivers without label hints.
     # ────────────────────────────────────────────────────────────────────────
     BrMGene(
-        symbol="ABL1", chrom="chr9", pos=130713881, ref="G", alt="A",
+        symbol="MYC", chrom="chr8", pos=127735434, ref="G", alt="A",
         primary_steps=[], secondary_steps=[],
         bbb_relevant=False, cns_specific=False, is_positive=False,
-        label_source="Hard negative control",
-        notes="CML driver via BCR-ABL fusion; no brain metastasis biology. "
-              "Important in general cancer, not in CNS trafficking.",
+        label_source="Hard negative — general oncogene",
+        notes="MYC amplification drives proliferation in virtually every cancer. "
+              "No published brain-extravasation-specific role. Strong general oncogene, "
+              "weak BrM specificity. Evo2 must distinguish c-Myc from true CNS drivers.",
     ),
     BrMGene(
-        symbol="BCR", chrom="chr22", pos=23524426, ref="C", alt="T",
+        symbol="AKT1", chrom="chr14", pos=104769349, ref="A", alt="G",
         primary_steps=[], secondary_steps=[],
         bbb_relevant=False, cns_specific=False, is_positive=False,
-        label_source="Hard negative control",
-        notes="BCR-ABL fusion in CML; hematologic, no brain met role.",
+        label_source="Hard negative — general PI3K effector",
+        notes="AKT1 E17K: PI3K/AKT axis activated in many cancers. "
+              "NOT specifically enriched in BrM vs bone or liver metastasis. "
+              "Hard negative: shares PI3K biology with PIK3CA (a true BrM driver) "
+              "but lacks the CNS-specific enrichment data.",
     ),
     BrMGene(
-        symbol="FLT3", chrom="chr13", pos=28033987, ref="A", alt="T",
+        symbol="CDH1", chrom="chr16", pos=68771039, ref="C", alt="T",
         primary_steps=[], secondary_steps=[],
         bbb_relevant=False, cns_specific=False, is_positive=False,
-        label_source="Hard negative control",
-        notes="AML driver; no brain colonization biology. Strong tumor gene, wrong context.",
+        label_source="Hard negative — EMT suppressor, wrong direction",
+        notes="CDH1 (E-cadherin) LOF drives EMT and local invasion, but "
+              "actually helps CNS colonization INHIBITION — cells need to re-express "
+              "E-cadherin to colonize brain niche (mesenchymal→epithelial reversal). "
+              "Loss promotes escape from primary but is NOT a BrM colonization driver.",
     ),
     BrMGene(
-        symbol="DNMT3A", chrom="chr2", pos=25234373, ref="C", alt="T",
+        symbol="APC", chrom="chr5", pos=112707498, ref="C", alt="T",
         primary_steps=[], secondary_steps=[],
         bbb_relevant=False, cns_specific=False, is_positive=False,
-        label_source="Hard negative control",
-        notes="Hematologic epigenetic driver; no solid tumor BrM evidence.",
+        label_source="Hard negative — CRC driver, no BrM data",
+        notes="APC tumor suppressor: colorectal cancer gatekeeper. "
+              "Drives local colon tumorigenesis via WNT/beta-catenin. "
+              "No published evidence for brain-specific metastasis. "
+              "CRC rarely metastasizes to brain (<5% vs >30% for lung/breast).",
     ),
     BrMGene(
-        symbol="JAK2", chrom="chr9", pos=5073770, ref="G", alt="T",
+        symbol="SMAD4", chrom="chr18", pos=51030213, ref="G", alt="A",
         primary_steps=[], secondary_steps=[],
         bbb_relevant=False, cns_specific=False, is_positive=False,
-        label_source="Hard negative control",
-        notes="MPN driver V617F; no brain metastasis biology (hematologic).",
+        label_source="Hard negative — TGF-beta pathway, GI cancers",
+        notes="SMAD4 LOF: TGF-beta pathway inactivation in pancreatic and CRC. "
+              "Important for local invasion but pancreatic cancer rarely reaches brain. "
+              "No evidence for BBB transit or CNS colonization.",
     ),
     BrMGene(
-        symbol="NPM1", chrom="chr5", pos=171410141, ref="C", alt="CT",
+        symbol="KRAS", chrom="chr12", pos=25245351, ref="C", alt="G",
         primary_steps=[], secondary_steps=[],
         bbb_relevant=False, cns_specific=False, is_positive=False,
-        label_source="Hard negative control",
-        notes="AML frameshift mutation; no solid tumor BrM involvement.",
+        label_source="Hard negative — lung/pancreatic primary, not brain-tropic",
+        notes="KRAS G12D: dominant oncogene in lung/pancreatic cancers. "
+              "LUAD KRAS mutants DO metastasize but KRAS itself has no "
+              "brain-specific colonization role distinct from other metastatic sites. "
+              "Contrast with BACE1/EGFR which specifically drive BRAIN colonization. "
+              "Key test: can Evo2 distinguish KRAS (general driver) from EGFR (BrM-specific)?",
     ),
     BrMGene(
-        symbol="IDH1", chrom="chr2", pos=209113112, ref="C", alt="T",
+        symbol="VEGFB", chrom="chr11", pos=64087770, ref="G", alt="A",
         primary_steps=[], secondary_steps=[],
         bbb_relevant=False, cns_specific=False, is_positive=False,
-        label_source="Hard negative control — NOT glioma IDH",
-        notes="IDH1 R132H is a primary GLIOMA driver, not a BrM driver. "
-              "Brain-originated vs brain-metastasized are distinct biology. "
-              "This is the key hard negative for brain-met specificity.",
+        label_source="Hard negative — angiogenesis, not BrM-specific",
+        notes="VEGFB: VEGF family member, angiogenic. Different from VEGFA (our positive). "
+              "VEGFB promotes fatty acid uptake and cardiac/skeletal muscle vascularization "
+              "with limited tumor angiogenesis role. No BrM-specific evidence. "
+              "Hard test: Evo2 must separate VEGFB (non-BrM angio) from VEGFA (BrM angio).",
     ),
     BrMGene(
-        symbol="IDH2", chrom="chr15", pos=90088702, ref="G", alt="A",
+        symbol="MAPK1", chrom="chr22", pos=21867796, ref="G", alt="A",
         primary_steps=[], secondary_steps=[],
         bbb_relevant=False, cns_specific=False, is_positive=False,
-        label_source="Hard negative control — NOT glioma IDH",
-        notes="IDH2 R140Q/R172K: glioma/AML drivers, not BrM drivers. "
-              "Manuscript explicitly cites IDH1/IDH2 as prospective validation negatives.",
+        label_source="Hard negative — general MAPK, no BrM specificity",
+        notes="MAPK1 (ERK2): universal MAPK effector downstream of BRAF/RAS. "
+              "General proliferation signal, not specifically enriched in BrM. "
+              "Contrast with BACE1 which SPECIFICALLY activates EGFR→MEK→ERK in brain. "
+              "The whole pathway exists; but MAPK1 itself lacks BrM-specific evidence.",
     ),
     BrMGene(
-        symbol="TERT", chrom="chr5", pos=1295113, ref="G", alt="A",
+        symbol="ERBB2", chrom="chr17", pos=39688484, ref="A", alt="G",
         primary_steps=[], secondary_steps=[],
         bbb_relevant=False, cns_specific=False, is_positive=False,
-        label_source="Hard negative control",
-        notes="Telomerase; general immortalization, no brain-specific colonization evidence.",
+        label_source="Hard negative — breast primary amplification, not brain-tropic per se",
+        notes="ERBB2 (HER2) amplification: breast cancer primary driver. "
+              "HER2+ cancers DO metastasize to brain, but ERBB2 itself is an "
+              "amplification event (not a specific CNS invasion gene like EGFR L858R). "
+              "Deliberately included as a BORDERLINE hard negative. If Evo2 scores it "
+              "high, it may be correct (HER2+ does enrich for BrM) — this is an "
+              "ambiguous negative that tests the scorer's calibration, not just its direction.",
     ),
 ]
 
@@ -369,6 +397,9 @@ def as_scoring_input(gene: BrMGene, step: str) -> Dict:
         "alt": gene.alt,
         "hgvs_p": gene.aurora_variant,
         "consequence": None,
+        # Pass step context so scorer can apply mission-fit discount
+        "primary_steps":   [str(s) for s in gene.primary_steps],
+        "secondary_steps": [str(s) for s in gene.secondary_steps],
     }
 
 

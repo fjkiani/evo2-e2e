@@ -1,0 +1,1719 @@
+{
+  "run_info": {
+    "timestamp": "2026-03-28T09:03:13Z",
+    "dataset": "GSE237446 (Chafe et al. Sci Transl Med 2025)",
+    "screen_type": "in_vivo_CRISPRa_enrichment",
+    "positive_lfc_means": "activation PROMOTES brain metastasis",
+    "n_genes_scored": 189,
+    "n_valid_pairs": 189,
+    "pearson_r": 0.016198672442641438,
+    "p_value": 1.6493399690252952,
+    "dry_run": false,
+    "evo2_model": "crispro-evo2-v9 (evo2_1b_base, A100)",
+    "evo2_method": "conditional_ll at TSS position (C>T or G>A synthetic variant)",
+    "elapsed_s": 95.5
+  },
+  "scores": [
+    {
+      "gene": "ATP10D",
+      "crispr_lfc": 13.48559571623303,
+      "is_brain_enriched": true,
+      "delta_ll": -0.16781651973724365,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 26.74
+    },
+    {
+      "gene": "BIN1",
+      "crispr_lfc": 13.235383788701839,
+      "is_brain_enriched": true,
+      "delta_ll": -0.18523359298706055,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 25.95
+    },
+    {
+      "gene": "SLC45A4",
+      "crispr_lfc": 12.779264990608745,
+      "is_brain_enriched": true,
+      "delta_ll": 0.3923065662384033,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 23.67
+    },
+    {
+      "gene": "PTPRC",
+      "crispr_lfc": 12.43030758586118,
+      "is_brain_enriched": true,
+      "delta_ll": 0.22972345352172852,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 27.5
+    },
+    {
+      "gene": "SLC25A32",
+      "crispr_lfc": 11.480672013276072,
+      "is_brain_enriched": true,
+      "delta_ll": -0.22767281532287598,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 9.11
+    },
+    {
+      "gene": "MGAT4D",
+      "crispr_lfc": 11.2318972398629,
+      "is_brain_enriched": true,
+      "delta_ll": 0.39504146575927734,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 8.43
+    },
+    {
+      "gene": "RPS27A",
+      "crispr_lfc": 10.126848215889357,
+      "is_brain_enriched": true,
+      "delta_ll": -0.1764674186706543,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 9.31
+    },
+    {
+      "gene": "SIRT3",
+      "crispr_lfc": 9.987906906048153,
+      "is_brain_enriched": true,
+      "delta_ll": -0.2864605188369751,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 7.63
+    },
+    {
+      "gene": "DNAAF5",
+      "crispr_lfc": 9.929779276006752,
+      "is_brain_enriched": true,
+      "delta_ll": -0.2571737766265869,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 4.71
+    },
+    {
+      "gene": "HSPB1",
+      "crispr_lfc": 9.795782205566486,
+      "is_brain_enriched": true,
+      "delta_ll": -0.4265131950378418,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 3.83
+    },
+    {
+      "gene": "NPEPPS",
+      "crispr_lfc": 9.783593328140679,
+      "is_brain_enriched": true,
+      "delta_ll": -0.32946908473968506,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 3.14
+    },
+    {
+      "gene": "SYS1",
+      "crispr_lfc": 9.589833031196472,
+      "is_brain_enriched": true,
+      "delta_ll": -0.22728312015533447,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 2.89
+    },
+    {
+      "gene": "KCNK5",
+      "crispr_lfc": 9.277730726519843,
+      "is_brain_enriched": true,
+      "delta_ll": -0.19684946537017822,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 2.87
+    },
+    {
+      "gene": "ANKRD36",
+      "crispr_lfc": 9.23835128961668,
+      "is_brain_enriched": true,
+      "delta_ll": -0.41566264629364014,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 2.45
+    },
+    {
+      "gene": "ZNF764",
+      "crispr_lfc": 9.210237870900485,
+      "is_brain_enriched": true,
+      "delta_ll": 0.45768702030181885,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 2.83
+    },
+    {
+      "gene": "PC",
+      "crispr_lfc": 9.194907486710154,
+      "is_brain_enriched": true,
+      "delta_ll": -0.42940616607666016,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 2.44
+    },
+    {
+      "gene": "CHMP3",
+      "crispr_lfc": 9.173516886062872,
+      "is_brain_enriched": true,
+      "delta_ll": -0.006848335266113281,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 2.17
+    },
+    {
+      "gene": "TFEB",
+      "crispr_lfc": 9.075309258109636,
+      "is_brain_enriched": true,
+      "delta_ll": -0.4062502384185791,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 2.13
+    },
+    {
+      "gene": "ADAMDEC1",
+      "crispr_lfc": 9.061623233786877,
+      "is_brain_enriched": true,
+      "delta_ll": -0.17567360401153564,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.93
+    },
+    {
+      "gene": "SLC25A52",
+      "crispr_lfc": 9.037080182258906,
+      "is_brain_enriched": true,
+      "delta_ll": -0.5282078981399536,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 2.1
+    },
+    {
+      "gene": "NOM1",
+      "crispr_lfc": 9.011204224168141,
+      "is_brain_enriched": true,
+      "delta_ll": -0.2974783182144165,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 2.01
+    },
+    {
+      "gene": "SAFB",
+      "crispr_lfc": 8.919934396890719,
+      "is_brain_enriched": true,
+      "delta_ll": -0.2775883674621582,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 2.13
+    },
+    {
+      "gene": "DENND5B",
+      "crispr_lfc": 8.858088790724198,
+      "is_brain_enriched": true,
+      "delta_ll": 0.2842963933944702,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.86
+    },
+    {
+      "gene": "FAM72A",
+      "crispr_lfc": 8.774228117580675,
+      "is_brain_enriched": true,
+      "delta_ll": -0.3180086612701416,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.77
+    },
+    {
+      "gene": "SH2D5",
+      "crispr_lfc": 8.723030131319321,
+      "is_brain_enriched": true,
+      "delta_ll": 0.49068307876586914,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.77
+    },
+    {
+      "gene": "TAMM41",
+      "crispr_lfc": 8.638423764829554,
+      "is_brain_enriched": true,
+      "delta_ll": -0.38407015800476074,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.84
+    },
+    {
+      "gene": "AQP6",
+      "crispr_lfc": 8.576158423693327,
+      "is_brain_enriched": true,
+      "delta_ll": -0.1287553310394287,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.86
+    },
+    {
+      "gene": "KLHL12",
+      "crispr_lfc": 8.504306786600672,
+      "is_brain_enriched": true,
+      "delta_ll": -0.08512592315673828,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.82
+    },
+    {
+      "gene": "LIN28A",
+      "crispr_lfc": 8.49764025864567,
+      "is_brain_enriched": true,
+      "delta_ll": -0.132582426071167,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.84
+    },
+    {
+      "gene": "SDC2",
+      "crispr_lfc": 8.48867972376312,
+      "is_brain_enriched": true,
+      "delta_ll": -0.39256954193115234,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.56
+    },
+    {
+      "gene": "IGSF5",
+      "crispr_lfc": 8.420462079593609,
+      "is_brain_enriched": true,
+      "delta_ll": -0.4165818691253662,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.75
+    },
+    {
+      "gene": "BTNL2",
+      "crispr_lfc": 8.39996105122676,
+      "is_brain_enriched": true,
+      "delta_ll": -0.34856128692626953,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.81
+    },
+    {
+      "gene": "GOLGA5",
+      "crispr_lfc": 8.349178310222817,
+      "is_brain_enriched": true,
+      "delta_ll": -0.21662044525146484,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.7
+    },
+    {
+      "gene": "PYGL",
+      "crispr_lfc": 8.346567585375,
+      "is_brain_enriched": true,
+      "delta_ll": 0.26974189281463623,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.44
+    },
+    {
+      "gene": "CHD2",
+      "crispr_lfc": 8.32127070053722,
+      "is_brain_enriched": true,
+      "delta_ll": 0.264565110206604,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.71
+    },
+    {
+      "gene": "ZNF438",
+      "crispr_lfc": 8.285888649137627,
+      "is_brain_enriched": true,
+      "delta_ll": -0.3152894973754883,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.56
+    },
+    {
+      "gene": "ALMS1",
+      "crispr_lfc": 8.216493507112135,
+      "is_brain_enriched": true,
+      "delta_ll": -0.35644733905792236,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.42
+    },
+    {
+      "gene": "MUC5AC",
+      "crispr_lfc": 8.168574918413269,
+      "is_brain_enriched": true,
+      "delta_ll": -0.5025292634963989,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.49
+    },
+    {
+      "gene": "GALT",
+      "crispr_lfc": 8.132650738785559,
+      "is_brain_enriched": true,
+      "delta_ll": -0.7663371562957764,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.48
+    },
+    {
+      "gene": "ADCY4",
+      "crispr_lfc": 8.106467726507033,
+      "is_brain_enriched": true,
+      "delta_ll": -0.21993577480316162,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.38
+    },
+    {
+      "gene": "EBP",
+      "crispr_lfc": 8.021643182844478,
+      "is_brain_enriched": true,
+      "delta_ll": -0.17174172401428223,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.37
+    },
+    {
+      "gene": "PCDHGB2",
+      "crispr_lfc": 7.988117628024664,
+      "is_brain_enriched": true,
+      "delta_ll": -0.11118829250335693,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.24
+    },
+    {
+      "gene": "ADGRG1",
+      "crispr_lfc": 7.962207358171758,
+      "is_brain_enriched": true,
+      "delta_ll": -0.5821012258529663,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.14
+    },
+    {
+      "gene": "ADAMTS2",
+      "crispr_lfc": 7.9430735988702175,
+      "is_brain_enriched": true,
+      "delta_ll": -0.4227182865142822,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.45
+    },
+    {
+      "gene": "EEF1A2",
+      "crispr_lfc": 7.929381363914017,
+      "is_brain_enriched": true,
+      "delta_ll": -0.381162166595459,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.09
+    },
+    {
+      "gene": "SENP8",
+      "crispr_lfc": 7.882382499241302,
+      "is_brain_enriched": true,
+      "delta_ll": 0.374165415763855,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.42
+    },
+    {
+      "gene": "IFFO1",
+      "crispr_lfc": 7.8724866925729415,
+      "is_brain_enriched": true,
+      "delta_ll": -0.7131750583648682,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.17
+    },
+    {
+      "gene": "ZNF48",
+      "crispr_lfc": 7.8724365781562415,
+      "is_brain_enriched": true,
+      "delta_ll": 0.3274585008621216,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.46
+    },
+    {
+      "gene": "EIF5B",
+      "crispr_lfc": 7.838864456931609,
+      "is_brain_enriched": true,
+      "delta_ll": -0.4486647844314575,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 3.93
+    },
+    {
+      "gene": "NFE4",
+      "crispr_lfc": 7.817573296955177,
+      "is_brain_enriched": true,
+      "delta_ll": -0.44219255447387695,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.09
+    },
+    {
+      "gene": "FOXJ3",
+      "crispr_lfc": 7.752497246631495,
+      "is_brain_enriched": true,
+      "delta_ll": 0.2812786102294922,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.03
+    },
+    {
+      "gene": "INPP5K",
+      "crispr_lfc": 7.748948583460646,
+      "is_brain_enriched": true,
+      "delta_ll": -0.19969260692596436,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.08
+    },
+    {
+      "gene": "FNDC8",
+      "crispr_lfc": 7.742488356300441,
+      "is_brain_enriched": true,
+      "delta_ll": -0.2812100648880005,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.15
+    },
+    {
+      "gene": "PRKD3",
+      "crispr_lfc": 7.736640760301526,
+      "is_brain_enriched": true,
+      "delta_ll": -0.4864373207092285,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.17
+    },
+    {
+      "gene": "CHRNA1",
+      "crispr_lfc": 7.733121415356605,
+      "is_brain_enriched": true,
+      "delta_ll": 0.10944986343383789,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.1
+    },
+    {
+      "gene": "GPM6B",
+      "crispr_lfc": 7.717221953287637,
+      "is_brain_enriched": true,
+      "delta_ll": 0.21273183822631836,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.09
+    },
+    {
+      "gene": "NT5C3B",
+      "crispr_lfc": 7.711524408288123,
+      "is_brain_enriched": true,
+      "delta_ll": -0.5792176723480225,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.17
+    },
+    {
+      "gene": "TTYH3",
+      "crispr_lfc": 7.678255922222936,
+      "is_brain_enriched": true,
+      "delta_ll": 0.0679558515548706,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 5.47
+    },
+    {
+      "gene": "LRRC45",
+      "crispr_lfc": 7.665968134277684,
+      "is_brain_enriched": true,
+      "delta_ll": -0.5501009225845337,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.11
+    },
+    {
+      "gene": "NRSN1",
+      "crispr_lfc": 7.647848548830001,
+      "is_brain_enriched": true,
+      "delta_ll": -0.4249180555343628,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.12
+    },
+    {
+      "gene": "TJP1",
+      "crispr_lfc": 7.644750904239912,
+      "is_brain_enriched": true,
+      "delta_ll": 0.40072131156921387,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.1
+    },
+    {
+      "gene": "MAMSTR",
+      "crispr_lfc": 7.618909931150227,
+      "is_brain_enriched": true,
+      "delta_ll": -0.1540849208831787,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.15
+    },
+    {
+      "gene": "TAL1",
+      "crispr_lfc": 7.573653952670744,
+      "is_brain_enriched": true,
+      "delta_ll": -0.5173202753067017,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.13
+    },
+    {
+      "gene": "ZNF3",
+      "crispr_lfc": 7.564378841362315,
+      "is_brain_enriched": true,
+      "delta_ll": -0.5473809242248535,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.12
+    },
+    {
+      "gene": "BLOC1S5",
+      "crispr_lfc": 7.539290775892557,
+      "is_brain_enriched": true,
+      "delta_ll": 0.3281538486480713,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.11
+    },
+    {
+      "gene": "HSPG2",
+      "crispr_lfc": 7.512630588393793,
+      "is_brain_enriched": true,
+      "delta_ll": -0.7941346168518066,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.09
+    },
+    {
+      "gene": "GSKIP",
+      "crispr_lfc": 7.505142910322223,
+      "is_brain_enriched": true,
+      "delta_ll": -0.2618192434310913,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.15
+    },
+    {
+      "gene": "CCDC54",
+      "crispr_lfc": 7.431976771384281,
+      "is_brain_enriched": true,
+      "delta_ll": -0.14721345901489258,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.12
+    },
+    {
+      "gene": "ASCC3",
+      "crispr_lfc": 7.410358103065493,
+      "is_brain_enriched": true,
+      "delta_ll": 0.3620023727416992,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.13
+    },
+    {
+      "gene": "ERGIC1",
+      "crispr_lfc": 7.372073833599786,
+      "is_brain_enriched": true,
+      "delta_ll": -0.29223644733428955,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.13
+    },
+    {
+      "gene": "TYK2",
+      "crispr_lfc": 7.368705310639764,
+      "is_brain_enriched": true,
+      "delta_ll": 0.3411674499511719,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.18
+    },
+    {
+      "gene": "BRPF1",
+      "crispr_lfc": 7.346956576766915,
+      "is_brain_enriched": true,
+      "delta_ll": -0.40879952907562256,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.23
+    },
+    {
+      "gene": "PPM1M",
+      "crispr_lfc": 7.325283393882255,
+      "is_brain_enriched": true,
+      "delta_ll": 0.33240246772766113,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.11
+    },
+    {
+      "gene": "ABCA6",
+      "crispr_lfc": 7.316757099110105,
+      "is_brain_enriched": true,
+      "delta_ll": 0.2079693078994751,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.04
+    },
+    {
+      "gene": "TIAM1",
+      "crispr_lfc": 7.301239801826444,
+      "is_brain_enriched": true,
+      "delta_ll": 0.31291794776916504,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.14
+    },
+    {
+      "gene": "BACE1",
+      "crispr_lfc": 7.280542570185814,
+      "is_brain_enriched": true,
+      "delta_ll": 0.051003456115722656,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.09
+    },
+    {
+      "gene": "SLC25A30",
+      "crispr_lfc": 7.242955165366187,
+      "is_brain_enriched": true,
+      "delta_ll": -0.19000542163848877,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.07
+    },
+    {
+      "gene": "PROM1",
+      "crispr_lfc": 7.235120019888033,
+      "is_brain_enriched": true,
+      "delta_ll": -0.26005423069000244,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.14
+    },
+    {
+      "gene": "ZNF462",
+      "crispr_lfc": 7.233068853727842,
+      "is_brain_enriched": true,
+      "delta_ll": -0.2994946241378784,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.11
+    },
+    {
+      "gene": "C14orf93",
+      "crispr_lfc": 7.218961525299962,
+      "is_brain_enriched": true,
+      "delta_ll": 0.4624131917953491,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.08
+    },
+    {
+      "gene": "ERICH2",
+      "crispr_lfc": 7.209174522589032,
+      "is_brain_enriched": true,
+      "delta_ll": 0.3406360149383545,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.06
+    },
+    {
+      "gene": "PLAC8L1",
+      "crispr_lfc": 7.206298617432786,
+      "is_brain_enriched": true,
+      "delta_ll": 0.059842467308044434,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.12
+    },
+    {
+      "gene": "SSX4B",
+      "crispr_lfc": 7.203795211759291,
+      "is_brain_enriched": true,
+      "delta_ll": -0.05942261219024658,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.06
+    },
+    {
+      "gene": "CPA6",
+      "crispr_lfc": 7.203492178743198,
+      "is_brain_enriched": true,
+      "delta_ll": -0.6030032634735107,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.95
+    },
+    {
+      "gene": "NME3",
+      "crispr_lfc": 7.20063018210562,
+      "is_brain_enriched": true,
+      "delta_ll": 0.427614688873291,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.11
+    },
+    {
+      "gene": "TMSB10",
+      "crispr_lfc": 7.180478188873669,
+      "is_brain_enriched": true,
+      "delta_ll": -0.4090374708175659,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.1
+    },
+    {
+      "gene": "GALNT9",
+      "crispr_lfc": 7.15422899607777,
+      "is_brain_enriched": true,
+      "delta_ll": -0.3168138265609741,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.21
+    },
+    {
+      "gene": "ZBTB7A",
+      "crispr_lfc": 7.147653880774955,
+      "is_brain_enriched": true,
+      "delta_ll": -0.03296709060668945,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.09
+    },
+    {
+      "gene": "BCCIP",
+      "crispr_lfc": 7.087936440019293,
+      "is_brain_enriched": true,
+      "delta_ll": -0.7294653654098511,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.13
+    },
+    {
+      "gene": "CPLX1",
+      "crispr_lfc": 7.0623770869263645,
+      "is_brain_enriched": true,
+      "delta_ll": -0.25704216957092285,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.06
+    },
+    {
+      "gene": "OOSP2",
+      "crispr_lfc": 7.045834042520717,
+      "is_brain_enriched": true,
+      "delta_ll": -0.08592641353607178,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.11
+    },
+    {
+      "gene": "PARG",
+      "crispr_lfc": 7.0416902523938605,
+      "is_brain_enriched": true,
+      "delta_ll": -0.46506452560424805,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.06
+    },
+    {
+      "gene": "SLC6A6",
+      "crispr_lfc": 7.036870090875916,
+      "is_brain_enriched": true,
+      "delta_ll": -0.0038328170776367188,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.26
+    },
+    {
+      "gene": "ZMYND8",
+      "crispr_lfc": 6.975785791411164,
+      "is_brain_enriched": true,
+      "delta_ll": -0.07512450218200684,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.09
+    },
+    {
+      "gene": "KRT36",
+      "crispr_lfc": 6.9722853286914015,
+      "is_brain_enriched": true,
+      "delta_ll": -0.5580509901046753,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.04
+    },
+    {
+      "gene": "MGAM",
+      "crispr_lfc": 6.966557866314528,
+      "is_brain_enriched": true,
+      "delta_ll": -0.1546037197113037,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.06
+    },
+    {
+      "gene": "LRRC7",
+      "crispr_lfc": -10.822163890162729,
+      "is_brain_enriched": false,
+      "delta_ll": -0.3057938814163208,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.12
+    },
+    {
+      "gene": "IFT43",
+      "crispr_lfc": -10.836060588944623,
+      "is_brain_enriched": false,
+      "delta_ll": 0.23518776893615723,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.16
+    },
+    {
+      "gene": "ZDHHC20",
+      "crispr_lfc": -10.837410987017826,
+      "is_brain_enriched": false,
+      "delta_ll": -0.6573840379714966,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.1
+    },
+    {
+      "gene": "HMBS",
+      "crispr_lfc": -10.8440067555697,
+      "is_brain_enriched": false,
+      "delta_ll": -0.40144670009613037,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.14
+    },
+    {
+      "gene": "GINS4",
+      "crispr_lfc": -10.845175002017251,
+      "is_brain_enriched": false,
+      "delta_ll": -0.22635674476623535,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.07
+    },
+    {
+      "gene": "MRPS21",
+      "crispr_lfc": -10.849046115088,
+      "is_brain_enriched": false,
+      "delta_ll": -0.2078014612197876,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.15
+    },
+    {
+      "gene": "PROSER1",
+      "crispr_lfc": -10.866025665314153,
+      "is_brain_enriched": false,
+      "delta_ll": -0.28218257427215576,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.04
+    },
+    {
+      "gene": "SCGB1D1",
+      "crispr_lfc": -10.88695103470817,
+      "is_brain_enriched": false,
+      "delta_ll": -0.23325109481811523,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.16
+    },
+    {
+      "gene": "CYP3A4",
+      "crispr_lfc": -10.893942412525696,
+      "is_brain_enriched": false,
+      "delta_ll": 0.34997689723968506,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.14
+    },
+    {
+      "gene": "SLC22A13",
+      "crispr_lfc": -10.895031277673265,
+      "is_brain_enriched": false,
+      "delta_ll": 0.19732260704040527,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.09
+    },
+    {
+      "gene": "TEC",
+      "crispr_lfc": -10.90044598042972,
+      "is_brain_enriched": false,
+      "delta_ll": -0.5328359603881836,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.08
+    },
+    {
+      "gene": "MCFD2",
+      "crispr_lfc": -10.910127759931841,
+      "is_brain_enriched": false,
+      "delta_ll": -0.33369362354278564,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.1
+    },
+    {
+      "gene": "NEURL2",
+      "crispr_lfc": -10.911487336160263,
+      "is_brain_enriched": false,
+      "delta_ll": -0.6110564470291138,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.09
+    },
+    {
+      "gene": "MRPS18A",
+      "crispr_lfc": -10.925221738469128,
+      "is_brain_enriched": false,
+      "delta_ll": -0.34709692001342773,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.2
+    },
+    {
+      "gene": "TRAK2",
+      "crispr_lfc": -10.939403881036261,
+      "is_brain_enriched": false,
+      "delta_ll": 0.44219040870666504,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.15
+    },
+    {
+      "gene": "VRTN",
+      "crispr_lfc": -10.949714660695152,
+      "is_brain_enriched": false,
+      "delta_ll": -0.3360178470611572,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.12
+    },
+    {
+      "gene": "NNMT",
+      "crispr_lfc": -10.959648076495327,
+      "is_brain_enriched": false,
+      "delta_ll": -0.24609768390655518,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.08
+    },
+    {
+      "gene": "ORC6",
+      "crispr_lfc": -10.970934833942707,
+      "is_brain_enriched": false,
+      "delta_ll": -0.3618882894515991,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.08
+    },
+    {
+      "gene": "GMNN",
+      "crispr_lfc": -11.034956126729995,
+      "is_brain_enriched": false,
+      "delta_ll": -0.6727869510650635,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.07
+    },
+    {
+      "gene": "KLHL20",
+      "crispr_lfc": -11.042841790389446,
+      "is_brain_enriched": false,
+      "delta_ll": 0.5167713165283203,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.08
+    },
+    {
+      "gene": "ARHGEF17",
+      "crispr_lfc": -11.067096536489556,
+      "is_brain_enriched": false,
+      "delta_ll": -0.5255811214447021,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.16
+    },
+    {
+      "gene": "REV1",
+      "crispr_lfc": -11.069479171610794,
+      "is_brain_enriched": false,
+      "delta_ll": -0.575527548789978,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.05
+    },
+    {
+      "gene": "C6",
+      "crispr_lfc": -11.086732132307834,
+      "is_brain_enriched": false,
+      "delta_ll": 0.2566627264022827,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.06
+    },
+    {
+      "gene": "THOP1",
+      "crispr_lfc": -11.096106495819987,
+      "is_brain_enriched": false,
+      "delta_ll": -0.19531238079071045,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.16
+    },
+    {
+      "gene": "DEFB135",
+      "crispr_lfc": -11.098604322830404,
+      "is_brain_enriched": false,
+      "delta_ll": -0.4903141260147095,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.06
+    },
+    {
+      "gene": "TRAF4",
+      "crispr_lfc": -11.12636071992962,
+      "is_brain_enriched": false,
+      "delta_ll": -0.28983020782470703,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.12
+    },
+    {
+      "gene": "MAFF",
+      "crispr_lfc": -11.133036405069832,
+      "is_brain_enriched": false,
+      "delta_ll": -0.4144209623336792,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.12
+    },
+    {
+      "gene": "KRTAP10-11",
+      "crispr_lfc": -11.137673741000887,
+      "is_brain_enriched": false,
+      "delta_ll": -0.7756772041320801,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.09
+    },
+    {
+      "gene": "PRMT2",
+      "crispr_lfc": -11.172207206317971,
+      "is_brain_enriched": false,
+      "delta_ll": -0.5742975473403931,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.1
+    },
+    {
+      "gene": "PRSS37",
+      "crispr_lfc": -11.178045940652755,
+      "is_brain_enriched": false,
+      "delta_ll": -0.5309648513793945,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.08
+    },
+    {
+      "gene": "LAMB1",
+      "crispr_lfc": -11.191490117091485,
+      "is_brain_enriched": false,
+      "delta_ll": -0.1528240442276001,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.07
+    },
+    {
+      "gene": "TCEA3",
+      "crispr_lfc": -11.193517914599823,
+      "is_brain_enriched": false,
+      "delta_ll": -0.44325947761535645,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.08
+    },
+    {
+      "gene": "OR10A5",
+      "crispr_lfc": -11.202391641275192,
+      "is_brain_enriched": false,
+      "delta_ll": 0.431665301322937,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.18
+    },
+    {
+      "gene": "LHFPL3",
+      "crispr_lfc": -11.225814610702939,
+      "is_brain_enriched": false,
+      "delta_ll": -0.27905964851379395,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.11
+    },
+    {
+      "gene": "PHTF2",
+      "crispr_lfc": -11.260015032137447,
+      "is_brain_enriched": false,
+      "delta_ll": -0.1785193681716919,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.1
+    },
+    {
+      "gene": "KRTAP16-1",
+      "crispr_lfc": -11.263431436190114,
+      "is_brain_enriched": false,
+      "delta_ll": 0.3746497631072998,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.06
+    },
+    {
+      "gene": "TNFRSF18",
+      "crispr_lfc": -11.268141994596613,
+      "is_brain_enriched": false,
+      "delta_ll": -0.3036313056945801,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.09
+    },
+    {
+      "gene": "ZNF747",
+      "crispr_lfc": -11.30300091369771,
+      "is_brain_enriched": false,
+      "delta_ll": 0.41296112537384033,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.03
+    },
+    {
+      "gene": "RBP1",
+      "crispr_lfc": -11.307311553429841,
+      "is_brain_enriched": false,
+      "delta_ll": 0.41372406482696533,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.06
+    },
+    {
+      "gene": "UQCR11",
+      "crispr_lfc": -11.325454920561809,
+      "is_brain_enriched": false,
+      "delta_ll": -0.24852073192596436,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.14
+    },
+    {
+      "gene": "MROH5",
+      "crispr_lfc": -11.326507091662421,
+      "is_brain_enriched": false,
+      "delta_ll": 0.4535038471221924,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.03
+    },
+    {
+      "gene": "CYP2F1",
+      "crispr_lfc": -11.3433866563771,
+      "is_brain_enriched": false,
+      "delta_ll": -0.4539337158203125,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.06
+    },
+    {
+      "gene": "MORF4L2",
+      "crispr_lfc": -11.358943314665012,
+      "is_brain_enriched": false,
+      "delta_ll": 0.09858071804046631,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.15
+    },
+    {
+      "gene": "RTN4IP1",
+      "crispr_lfc": -11.379346484593324,
+      "is_brain_enriched": false,
+      "delta_ll": -0.4394505023956299,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.09
+    },
+    {
+      "gene": "LCE5A",
+      "crispr_lfc": -11.386764129139056,
+      "is_brain_enriched": false,
+      "delta_ll": -0.21853280067443848,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.1
+    },
+    {
+      "gene": "RNF121",
+      "crispr_lfc": -11.387880476443357,
+      "is_brain_enriched": false,
+      "delta_ll": -0.4864109754562378,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.16
+    },
+    {
+      "gene": "TAS2R5",
+      "crispr_lfc": -11.397164956182856,
+      "is_brain_enriched": false,
+      "delta_ll": 0.0008600950241088867,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.09
+    },
+    {
+      "gene": "SUN1",
+      "crispr_lfc": -11.414170122291402,
+      "is_brain_enriched": false,
+      "delta_ll": -0.009754300117492676,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.16
+    },
+    {
+      "gene": "CCDC174",
+      "crispr_lfc": -11.41624704212122,
+      "is_brain_enriched": false,
+      "delta_ll": -0.11820340156555176,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.12
+    },
+    {
+      "gene": "RBMS2",
+      "crispr_lfc": -11.423702800561518,
+      "is_brain_enriched": false,
+      "delta_ll": -0.1357593536376953,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.12
+    },
+    {
+      "gene": "BHLHE22",
+      "crispr_lfc": -11.459192014551444,
+      "is_brain_enriched": false,
+      "delta_ll": -0.4058424234390259,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.11
+    },
+    {
+      "gene": "SYNPO2L",
+      "crispr_lfc": -11.476428376865716,
+      "is_brain_enriched": false,
+      "delta_ll": -0.5800021886825562,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.06
+    },
+    {
+      "gene": "ZCCHC13",
+      "crispr_lfc": -11.499944961192153,
+      "is_brain_enriched": false,
+      "delta_ll": 0.34325218200683594,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.08
+    },
+    {
+      "gene": "PPM1A",
+      "crispr_lfc": -11.508263754394983,
+      "is_brain_enriched": false,
+      "delta_ll": 0.3232182264328003,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.12
+    },
+    {
+      "gene": "PRKAB1",
+      "crispr_lfc": -11.515313773736507,
+      "is_brain_enriched": false,
+      "delta_ll": -0.2793010473251343,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.14
+    },
+    {
+      "gene": "NIT1",
+      "crispr_lfc": -11.5355541360541,
+      "is_brain_enriched": false,
+      "delta_ll": -0.42428767681121826,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.08
+    },
+    {
+      "gene": "WRAP53",
+      "crispr_lfc": -11.536942086607917,
+      "is_brain_enriched": false,
+      "delta_ll": 0.5262393951416016,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.05
+    },
+    {
+      "gene": "SERPINE1",
+      "crispr_lfc": -11.544566076996785,
+      "is_brain_enriched": false,
+      "delta_ll": -0.42368972301483154,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.14
+    },
+    {
+      "gene": "FMNL2",
+      "crispr_lfc": -11.564071449304434,
+      "is_brain_enriched": false,
+      "delta_ll": -0.2752028703689575,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.15
+    },
+    {
+      "gene": "UBP1",
+      "crispr_lfc": -11.60112161888547,
+      "is_brain_enriched": false,
+      "delta_ll": -0.1300748586654663,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.08
+    },
+    {
+      "gene": "ROBO1",
+      "crispr_lfc": -11.609597345696837,
+      "is_brain_enriched": false,
+      "delta_ll": -0.11682307720184326,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.06
+    },
+    {
+      "gene": "THOC7",
+      "crispr_lfc": -11.667085132024743,
+      "is_brain_enriched": false,
+      "delta_ll": -0.14857196807861328,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.07
+    },
+    {
+      "gene": "OR4A5",
+      "crispr_lfc": -11.717219002715325,
+      "is_brain_enriched": false,
+      "delta_ll": 0.48685401678085327,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.17
+    },
+    {
+      "gene": "AKIRIN1",
+      "crispr_lfc": -11.72001679526812,
+      "is_brain_enriched": false,
+      "delta_ll": -0.4815922975540161,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.14
+    },
+    {
+      "gene": "OR52A1",
+      "crispr_lfc": -11.748097580172884,
+      "is_brain_enriched": false,
+      "delta_ll": -0.16856133937835693,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.14
+    },
+    {
+      "gene": "TMEM130",
+      "crispr_lfc": -11.76582770500355,
+      "is_brain_enriched": false,
+      "delta_ll": 0.5754945278167725,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.1
+    },
+    {
+      "gene": "CFC1B",
+      "crispr_lfc": -11.767269700102455,
+      "is_brain_enriched": false,
+      "delta_ll": -0.35525333881378174,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.15
+    },
+    {
+      "gene": "OR1J2",
+      "crispr_lfc": -11.78162887249751,
+      "is_brain_enriched": false,
+      "delta_ll": -0.2175285816192627,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.21
+    },
+    {
+      "gene": "OR52E4",
+      "crispr_lfc": -11.79017109537118,
+      "is_brain_enriched": false,
+      "delta_ll": -0.4315608739852905,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.17
+    },
+    {
+      "gene": "SLC30A7",
+      "crispr_lfc": -11.802781340214242,
+      "is_brain_enriched": false,
+      "delta_ll": -0.1807788610458374,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.08
+    },
+    {
+      "gene": "MPND",
+      "crispr_lfc": -11.832440448622119,
+      "is_brain_enriched": false,
+      "delta_ll": -0.37728357315063477,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.11
+    },
+    {
+      "gene": "DPF1",
+      "crispr_lfc": -11.840588001003667,
+      "is_brain_enriched": false,
+      "delta_ll": 0.06250357627868652,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.16
+    },
+    {
+      "gene": "ANAPC13",
+      "crispr_lfc": -11.926775708411528,
+      "is_brain_enriched": false,
+      "delta_ll": 0.568242073059082,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.07
+    },
+    {
+      "gene": "C18orf21",
+      "crispr_lfc": -11.963740727148094,
+      "is_brain_enriched": false,
+      "delta_ll": -0.35686683654785156,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.09
+    },
+    {
+      "gene": "ZNF548",
+      "crispr_lfc": -12.000306534766843,
+      "is_brain_enriched": false,
+      "delta_ll": -0.27518653869628906,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.08
+    },
+    {
+      "gene": "KIAA1586",
+      "crispr_lfc": -12.0138806573978,
+      "is_brain_enriched": false,
+      "delta_ll": -0.1807403564453125,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.07
+    },
+    {
+      "gene": "NEK2",
+      "crispr_lfc": -12.027093843676893,
+      "is_brain_enriched": false,
+      "delta_ll": 0.20901095867156982,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.05
+    },
+    {
+      "gene": "PRPF4",
+      "crispr_lfc": -12.02889124168169,
+      "is_brain_enriched": false,
+      "delta_ll": -0.14279627799987793,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.13
+    },
+    {
+      "gene": "GNG10",
+      "crispr_lfc": -12.049212485436584,
+      "is_brain_enriched": false,
+      "delta_ll": -0.22589123249053955,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.06
+    },
+    {
+      "gene": "DFFA",
+      "crispr_lfc": -12.049789783046943,
+      "is_brain_enriched": false,
+      "delta_ll": -0.3840909004211426,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.07
+    },
+    {
+      "gene": "WNT2",
+      "crispr_lfc": -12.082961597732957,
+      "is_brain_enriched": false,
+      "delta_ll": 0.36448776721954346,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.13
+    },
+    {
+      "gene": "SCLY",
+      "crispr_lfc": -12.100614226655225,
+      "is_brain_enriched": false,
+      "delta_ll": -0.3485596179962158,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.15
+    },
+    {
+      "gene": "ELOB",
+      "crispr_lfc": -12.127222976535254,
+      "is_brain_enriched": false,
+      "delta_ll": -0.5338200330734253,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.09
+    },
+    {
+      "gene": "ABCE1",
+      "crispr_lfc": -12.164081506373291,
+      "is_brain_enriched": false,
+      "delta_ll": -0.439397931098938,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.14
+    },
+    {
+      "gene": "RHOXF2B",
+      "crispr_lfc": -12.172891876221623,
+      "is_brain_enriched": false,
+      "delta_ll": -0.2829333543777466,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.1
+    },
+    {
+      "gene": "SEC14L6",
+      "crispr_lfc": -12.34663859327189,
+      "is_brain_enriched": false,
+      "delta_ll": 0.36734068393707275,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.09
+    },
+    {
+      "gene": "SSR2",
+      "crispr_lfc": -12.366816063629464,
+      "is_brain_enriched": false,
+      "delta_ll": -0.08591842651367188,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.06
+    },
+    {
+      "gene": "SHROOM4",
+      "crispr_lfc": -12.404254256223508,
+      "is_brain_enriched": false,
+      "delta_ll": -0.6690980195999146,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.14
+    },
+    {
+      "gene": "CCR3",
+      "crispr_lfc": -12.551521602432803,
+      "is_brain_enriched": false,
+      "delta_ll": -0.20971369743347168,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.11
+    },
+    {
+      "gene": "EIF2B1",
+      "crispr_lfc": -12.584742990859311,
+      "is_brain_enriched": false,
+      "delta_ll": -0.2091081142425537,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.06
+    },
+    {
+      "gene": "SFTPA2",
+      "crispr_lfc": -12.679130373053077,
+      "is_brain_enriched": false,
+      "delta_ll": -0.08559620380401611,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.07
+    },
+    {
+      "gene": "C19orf38",
+      "crispr_lfc": -13.448306366315297,
+      "is_brain_enriched": false,
+      "delta_ll": -0.4939531087875366,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.07
+    },
+    {
+      "gene": "SAA4",
+      "crispr_lfc": -13.527719817820268,
+      "is_brain_enriched": false,
+      "delta_ll": -0.013246536254882812,
+      "error": null,
+      "mode": "conditional_ll_tss",
+      "elapsed_s": 1.06
+    }
+  ]
+}

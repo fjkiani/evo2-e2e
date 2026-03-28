@@ -1,0 +1,2504 @@
+{
+  "run_info": {
+    "timestamp": "20260328T070235Z",
+    "seed": 42,
+    "disease": "brain_met",
+    "fast_mode": true,
+    "use_enformer": true,
+    "n_genes": 29,
+    "n_positives": 20,
+    "n_negatives": 9,
+    "n_steps": 7,
+    "elapsed_s": 157.9
+  },
+  "validation_metrics": {
+    "primary_tumor_escape": {
+      "auroc": 0.9833,
+      "auprc": 0.9722,
+      "precision_at_3": 1.0,
+      "n_pos": 9,
+      "n_total": 29
+    },
+    "intravasation": {
+      "auroc": 0.9667,
+      "auprc": 0.9111,
+      "precision_at_3": 1.0,
+      "n_pos": 5,
+      "n_total": 29
+    },
+    "circulation_survival": {
+      "auroc": 0.9615,
+      "auprc": 0.8333,
+      "precision_at_3": 0.667,
+      "n_pos": 3,
+      "n_total": 29
+    },
+    "bbb_transit": {
+      "auroc": 0.974,
+      "auprc": 0.9481,
+      "precision_at_3": 1.0,
+      "n_pos": 7,
+      "n_total": 29
+    },
+    "cns_colonization": {
+      "auroc": 0.9952,
+      "auprc": 0.9958,
+      "precision_at_3": 1.0,
+      "n_pos": 15,
+      "n_total": 29
+    },
+    "brain_niche_adaptation": {
+      "auroc": 1.0,
+      "auprc": 1.0,
+      "precision_at_3": 1.0,
+      "n_pos": 6,
+      "n_total": 29
+    },
+    "brm_angiogenesis": {
+      "auroc": 1.0,
+      "auprc": 1.0,
+      "precision_at_3": 0.333,
+      "n_pos": 1,
+      "n_total": 29
+    }
+  },
+  "gene_scores": {
+    "primary_tumor_escape": [
+      {
+        "gene": "KMT2C",
+        "step": "primary_tumor_escape",
+        "calibrated_score": 0.9625338996771026,
+        "target_lock_score": 0.552594133202869,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "TP53",
+        "step": "primary_tumor_escape",
+        "calibrated_score": 0.914244282867128,
+        "target_lock_score": 0.4420860714544643,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "PIK3CA",
+        "step": "primary_tumor_escape",
+        "calibrated_score": 0.8009286599547241,
+        "target_lock_score": 0.31964833516815416,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.55 (step=primary_tumor_escape not in primary_steps=['cns_colonization'])"
+        ]
+      },
+      {
+        "gene": "MMP9",
+        "step": "primary_tumor_escape",
+        "calibrated_score": 0.7583537603288765,
+        "target_lock_score": 0.28843432052444856,
+        "label": true,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "MMP2",
+        "step": "primary_tumor_escape",
+        "calibrated_score": 0.7530879964113565,
+        "target_lock_score": 0.28485033495521195,
+        "label": true,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "BRCA1",
+        "step": "primary_tumor_escape",
+        "calibrated_score": 0.7229278762118687,
+        "target_lock_score": 0.2652350895341568,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "EGFR",
+        "step": "primary_tumor_escape",
+        "calibrated_score": 0.6561058969664479,
+        "target_lock_score": 0.22590329646663077,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "CDKN2A",
+        "step": "primary_tumor_escape",
+        "calibrated_score": 0.5992216605866189,
+        "target_lock_score": 0.19527580077680076,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.55 (step=primary_tumor_escape not in primary_steps=['cns_colonization'])"
+        ]
+      },
+      {
+        "gene": "CCL2",
+        "step": "primary_tumor_escape",
+        "calibrated_score": 0.4731214578430086,
+        "target_lock_score": 0.13121767199362394,
+        "label": false,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=primary_tumor_escape not in primary_steps=['bbb_transit', 'brain_niche_adaptation'])"
+        ]
+      },
+      {
+        "gene": "VEGFA",
+        "step": "primary_tumor_escape",
+        "calibrated_score": 0.46010510184726305,
+        "target_lock_score": 0.1246463204053352,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=primary_tumor_escape not in primary_steps=['brm_angiogenesis'])"
+        ]
+      },
+      {
+        "gene": "DNMT3A",
+        "step": "primary_tumor_escape",
+        "calibrated_score": 0.4588713132457463,
+        "target_lock_score": 0.12402215321318337,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=primary_tumor_escape not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "TWIST1",
+        "step": "primary_tumor_escape",
+        "calibrated_score": 0.4474873425656323,
+        "target_lock_score": 0.11825000000000002,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.55 (step=primary_tumor_escape not in primary_steps=['intravasation'])"
+        ]
+      },
+      {
+        "gene": "IDH1",
+        "step": "primary_tumor_escape",
+        "calibrated_score": 0.3919552710529558,
+        "target_lock_score": 0.08956906285327854,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=primary_tumor_escape not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "ESR1",
+        "step": "primary_tumor_escape",
+        "calibrated_score": 0.386254109213604,
+        "target_lock_score": 0.08655553239422561,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=primary_tumor_escape not in primary_steps=['brain_niche_adaptation'])"
+        ]
+      },
+      {
+        "gene": "NPM1",
+        "step": "primary_tumor_escape",
+        "calibrated_score": 0.3711702281075404,
+        "target_lock_score": 0.0785,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Evo2 scoring_mode=curated_fallback_missing_alleles (not live inference)",
+          "Missing valid ref/alt: ref=C alt=CT",
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=primary_tumor_escape not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "SMARCA4",
+        "step": "primary_tumor_escape",
+        "calibrated_score": 0.363539386284498,
+        "target_lock_score": 0.07437448827935741,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=primary_tumor_escape not in primary_steps=['brain_niche_adaptation'])"
+        ]
+      },
+      {
+        "gene": "BACE1",
+        "step": "primary_tumor_escape",
+        "calibrated_score": 0.35715624850433897,
+        "target_lock_score": 0.07089499101740919,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=primary_tumor_escape not in primary_steps=['cns_colonization', 'brain_niche_adaptation'])"
+        ]
+      },
+      {
+        "gene": "BCR",
+        "step": "primary_tumor_escape",
+        "calibrated_score": 0.35298630196997394,
+        "target_lock_score": 0.0686070412667216,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=primary_tumor_escape not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "TERT",
+        "step": "primary_tumor_escape",
+        "calibrated_score": 0.35262840538751267,
+        "target_lock_score": 0.06841010492052853,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=primary_tumor_escape not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "CLDN5",
+        "step": "primary_tumor_escape",
+        "calibrated_score": 0.3472071640246956,
+        "target_lock_score": 0.0654157004009565,
+        "label": false,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=primary_tumor_escape not in primary_steps=['bbb_transit'])"
+        ]
+      },
+      {
+        "gene": "BCL2",
+        "step": "primary_tumor_escape",
+        "calibrated_score": 0.341930321985464,
+        "target_lock_score": 0.062479964811758576,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=primary_tumor_escape not in primary_steps=['circulation_survival'])"
+        ]
+      },
+      {
+        "gene": "ABL1",
+        "step": "primary_tumor_escape",
+        "calibrated_score": 0.3416014285025168,
+        "target_lock_score": 0.06229627473232105,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=primary_tumor_escape not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "IDH2",
+        "step": "primary_tumor_escape",
+        "calibrated_score": 0.3384338773396138,
+        "target_lock_score": 0.06052277262165448,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=primary_tumor_escape not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "FLT3",
+        "step": "primary_tumor_escape",
+        "calibrated_score": 0.33701163673370144,
+        "target_lock_score": 0.059723834955559024,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=primary_tumor_escape not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "CXCR4",
+        "step": "primary_tumor_escape",
+        "calibrated_score": 0.3366077567477918,
+        "target_lock_score": 0.05949665546729088,
+        "label": false,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=primary_tumor_escape not in primary_steps=['bbb_transit', 'cns_colonization'])"
+        ]
+      },
+      {
+        "gene": "JAK2",
+        "step": "primary_tumor_escape",
+        "calibrated_score": 0.3324946209983424,
+        "target_lock_score": 0.05717531194220152,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=primary_tumor_escape not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "ICAM1",
+        "step": "primary_tumor_escape",
+        "calibrated_score": 0.3264718752496065,
+        "target_lock_score": 0.053750000000000006,
+        "label": false,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=primary_tumor_escape not in primary_steps=['bbb_transit'])"
+        ]
+      },
+      {
+        "gene": "PTEN",
+        "step": "primary_tumor_escape",
+        "calibrated_score": 0.3264718752496065,
+        "target_lock_score": 0.053750000000000006,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=primary_tumor_escape not in primary_steps=['cns_colonization'])"
+        ]
+      },
+      {
+        "gene": "STAT3",
+        "step": "primary_tumor_escape",
+        "calibrated_score": 0.3264718752496065,
+        "target_lock_score": 0.053750000000000006,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=primary_tumor_escape not in primary_steps=['brain_niche_adaptation'])"
+        ]
+      }
+    ],
+    "intravasation": [
+      {
+        "gene": "KMT2C",
+        "step": "intravasation",
+        "calibrated_score": 0.9761233290860287,
+        "target_lock_score": 0.30392677326157796,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.55 (step=intravasation not in primary_steps=['primary_tumor_escape', 'cns_colonization'])"
+        ]
+      },
+      {
+        "gene": "TWIST1",
+        "step": "intravasation",
+        "calibrated_score": 0.8909408250458226,
+        "target_lock_score": 0.21500000000000002,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "MMP9",
+        "step": "intravasation",
+        "calibrated_score": 0.7464545232056662,
+        "target_lock_score": 0.15863887628844672,
+        "label": true,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.55 (step=intravasation not in primary_steps=['primary_tumor_escape', 'bbb_transit'])"
+        ]
+      },
+      {
+        "gene": "MMP2",
+        "step": "intravasation",
+        "calibrated_score": 0.7396397209469254,
+        "target_lock_score": 0.1566676842253666,
+        "label": true,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.55 (step=intravasation not in primary_steps=['primary_tumor_escape', 'bbb_transit'])"
+        ]
+      },
+      {
+        "gene": "PIK3CA",
+        "step": "intravasation",
+        "calibrated_score": 0.6980760858749795,
+        "target_lock_score": 0.14529469780370644,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=intravasation not in primary_steps=['cns_colonization'])"
+        ]
+      },
+      {
+        "gene": "CCL2",
+        "step": "intravasation",
+        "calibrated_score": 0.6418135336335301,
+        "target_lock_score": 0.13121767199362394,
+        "label": false,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=intravasation not in primary_steps=['bbb_transit', 'brain_niche_adaptation'])"
+        ]
+      },
+      {
+        "gene": "VEGFA",
+        "step": "intravasation",
+        "calibrated_score": 0.6140216868771674,
+        "target_lock_score": 0.1246463204053352,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=intravasation not in primary_steps=['brm_angiogenesis'])"
+        ]
+      },
+      {
+        "gene": "DNMT3A",
+        "step": "intravasation",
+        "calibrated_score": 0.6113395734158753,
+        "target_lock_score": 0.12402215321318337,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=intravasation not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "ICAM1",
+        "step": "intravasation",
+        "calibrated_score": 0.5862352321909562,
+        "target_lock_score": 0.11825000000000002,
+        "label": true,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.55 (step=intravasation not in primary_steps=['bbb_transit'])"
+        ]
+      },
+      {
+        "gene": "TP53",
+        "step": "intravasation",
+        "calibrated_score": 0.551930794144685,
+        "target_lock_score": 0.11052151786361608,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=intravasation not in primary_steps=['cns_colonization', 'primary_tumor_escape'])"
+        ]
+      },
+      {
+        "gene": "IDH1",
+        "step": "intravasation",
+        "calibrated_score": 0.4573699224158056,
+        "target_lock_score": 0.08956906285327854,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=intravasation not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "CDKN2A",
+        "step": "intravasation",
+        "calibrated_score": 0.4537439772521724,
+        "target_lock_score": 0.08876172762581852,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=intravasation not in primary_steps=['cns_colonization'])"
+        ]
+      },
+      {
+        "gene": "ESR1",
+        "step": "intravasation",
+        "calibrated_score": 0.44386150120512535,
+        "target_lock_score": 0.08655553239422561,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=intravasation not in primary_steps=['brain_niche_adaptation'])"
+        ]
+      },
+      {
+        "gene": "NPM1",
+        "step": "intravasation",
+        "calibrated_score": 0.4082086696265086,
+        "target_lock_score": 0.0785,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Evo2 scoring_mode=curated_fallback_missing_alleles (not live inference)",
+          "Missing valid ref/alt: ref=C alt=CT",
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=intravasation not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "SMARCA4",
+        "step": "intravasation",
+        "calibrated_score": 0.39029294592933456,
+        "target_lock_score": 0.07437448827935741,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=intravasation not in primary_steps=['brain_niche_adaptation'])"
+        ]
+      },
+      {
+        "gene": "BACE1",
+        "step": "intravasation",
+        "calibrated_score": 0.37540727982676136,
+        "target_lock_score": 0.07089499101740919,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=intravasation not in primary_steps=['cns_colonization', 'brain_niche_adaptation'])"
+        ]
+      },
+      {
+        "gene": "BCR",
+        "step": "intravasation",
+        "calibrated_score": 0.3657440473184891,
+        "target_lock_score": 0.0686070412667216,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=intravasation not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "TERT",
+        "step": "intravasation",
+        "calibrated_score": 0.36491718437838794,
+        "target_lock_score": 0.06841010492052853,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=intravasation not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "BRCA1",
+        "step": "intravasation",
+        "calibrated_score": 0.3561448552002758,
+        "target_lock_score": 0.0663087723835392,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=intravasation not in primary_steps=['primary_tumor_escape'])"
+        ]
+      },
+      {
+        "gene": "CLDN5",
+        "step": "intravasation",
+        "calibrated_score": 0.3524452373374333,
+        "target_lock_score": 0.0654157004009565,
+        "label": false,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=intravasation not in primary_steps=['bbb_transit'])"
+        ]
+      },
+      {
+        "gene": "BCL2",
+        "step": "intravasation",
+        "calibrated_score": 0.3404097293330587,
+        "target_lock_score": 0.062479964811758576,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=intravasation not in primary_steps=['circulation_survival'])"
+        ]
+      },
+      {
+        "gene": "ABL1",
+        "step": "intravasation",
+        "calibrated_score": 0.33966327163815635,
+        "target_lock_score": 0.06229627473232105,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=intravasation not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "IDH2",
+        "step": "intravasation",
+        "calibrated_score": 0.332497676517017,
+        "target_lock_score": 0.06052277262165448,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=intravasation not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "FLT3",
+        "step": "intravasation",
+        "calibrated_score": 0.32929458198775785,
+        "target_lock_score": 0.059723834955559024,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=intravasation not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "CXCR4",
+        "step": "intravasation",
+        "calibrated_score": 0.32838664814869284,
+        "target_lock_score": 0.05949665546729088,
+        "label": false,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=intravasation not in primary_steps=['bbb_transit', 'cns_colonization'])"
+        ]
+      },
+      {
+        "gene": "JAK2",
+        "step": "intravasation",
+        "calibrated_score": 0.3191835671409462,
+        "target_lock_score": 0.05717531194220152,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=intravasation not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "EGFR",
+        "step": "intravasation",
+        "calibrated_score": 0.316437408846946,
+        "target_lock_score": 0.05647582411665769,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=intravasation not in primary_steps=['primary_tumor_escape'])"
+        ]
+      },
+      {
+        "gene": "PTEN",
+        "step": "intravasation",
+        "calibrated_score": 0.30585867972141184,
+        "target_lock_score": 0.053750000000000006,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=intravasation not in primary_steps=['cns_colonization'])"
+        ]
+      },
+      {
+        "gene": "STAT3",
+        "step": "intravasation",
+        "calibrated_score": 0.30585867972141184,
+        "target_lock_score": 0.053750000000000006,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=intravasation not in primary_steps=['brain_niche_adaptation'])"
+        ]
+      }
+    ],
+    "circulation_survival": [
+      {
+        "gene": "BCL2",
+        "step": "circulation_survival",
+        "calibrated_score": 0.9747649906698095,
+        "target_lock_score": 0.2499198592470343,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "BACE1",
+        "step": "circulation_survival",
+        "calibrated_score": 0.8157558591854636,
+        "target_lock_score": 0.15596898023830022,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.55 (step=circulation_survival not in primary_steps=['cns_colonization', 'brain_niche_adaptation'])"
+        ]
+      },
+      {
+        "gene": "PIK3CA",
+        "step": "circulation_survival",
+        "calibrated_score": 0.7758683911385501,
+        "target_lock_score": 0.14529469780370644,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=circulation_survival not in primary_steps=['cns_colonization'])"
+        ]
+      },
+      {
+        "gene": "KMT2C",
+        "step": "circulation_survival",
+        "calibrated_score": 0.7459237750221795,
+        "target_lock_score": 0.13814853330071725,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=circulation_survival not in primary_steps=['primary_tumor_escape', 'cns_colonization'])"
+        ]
+      },
+      {
+        "gene": "CCL2",
+        "step": "circulation_survival",
+        "calibrated_score": 0.7144697513571544,
+        "target_lock_score": 0.13121767199362394,
+        "label": false,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=circulation_survival not in primary_steps=['bbb_transit', 'brain_niche_adaptation'])"
+        ]
+      },
+      {
+        "gene": "CXCR4",
+        "step": "circulation_survival",
+        "calibrated_score": 0.7129385380285673,
+        "target_lock_score": 0.13089264202803996,
+        "label": true,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.55 (step=circulation_survival not in primary_steps=['bbb_transit', 'cns_colonization'])"
+        ]
+      },
+      {
+        "gene": "VEGFA",
+        "step": "circulation_survival",
+        "calibrated_score": 0.6825867464322783,
+        "target_lock_score": 0.1246463204053352,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=circulation_survival not in primary_steps=['brm_angiogenesis'])"
+        ]
+      },
+      {
+        "gene": "DNMT3A",
+        "step": "circulation_survival",
+        "calibrated_score": 0.6794606759442063,
+        "target_lock_score": 0.12402215321318337,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=circulation_survival not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "TP53",
+        "step": "circulation_survival",
+        "calibrated_score": 0.6082653990747732,
+        "target_lock_score": 0.11052151786361608,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=circulation_survival not in primary_steps=['cns_colonization', 'primary_tumor_escape'])"
+        ]
+      },
+      {
+        "gene": "IDH1",
+        "step": "circulation_survival",
+        "calibrated_score": 0.4892395487515289,
+        "target_lock_score": 0.08956906285327854,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=circulation_survival not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "CDKN2A",
+        "step": "circulation_survival",
+        "calibrated_score": 0.48458933394968906,
+        "target_lock_score": 0.08876172762581852,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=circulation_survival not in primary_steps=['cns_colonization'])"
+        ]
+      },
+      {
+        "gene": "ESR1",
+        "step": "circulation_survival",
+        "calibrated_score": 0.47189771127640817,
+        "target_lock_score": 0.08655553239422561,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=circulation_survival not in primary_steps=['brain_niche_adaptation'])"
+        ]
+      },
+      {
+        "gene": "NPM1",
+        "step": "circulation_survival",
+        "calibrated_score": 0.4259842841026696,
+        "target_lock_score": 0.0785,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Evo2 scoring_mode=curated_fallback_missing_alleles (not live inference)",
+          "Missing valid ref/alt: ref=C alt=CT",
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=circulation_survival not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "SMARCA4",
+        "step": "circulation_survival",
+        "calibrated_score": 0.40290601477659144,
+        "target_lock_score": 0.07437448827935741,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=circulation_survival not in primary_steps=['brain_niche_adaptation'])"
+        ]
+      },
+      {
+        "gene": "MMP9",
+        "step": "circulation_survival",
+        "calibrated_score": 0.39040420342239346,
+        "target_lock_score": 0.07210858013111214,
+        "label": false,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=circulation_survival not in primary_steps=['primary_tumor_escape', 'bbb_transit'])"
+        ]
+      },
+      {
+        "gene": "MMP2",
+        "step": "circulation_survival",
+        "calibrated_score": 0.38549913616283604,
+        "target_lock_score": 0.07121258373880299,
+        "label": false,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=circulation_survival not in primary_steps=['primary_tumor_escape', 'bbb_transit'])"
+        ]
+      },
+      {
+        "gene": "BCR",
+        "step": "circulation_survival",
+        "calibrated_score": 0.37136994943214724,
+        "target_lock_score": 0.0686070412667216,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=circulation_survival not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "TERT",
+        "step": "circulation_survival",
+        "calibrated_score": 0.37031056580133015,
+        "target_lock_score": 0.06841010492052853,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=circulation_survival not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "BRCA1",
+        "step": "circulation_survival",
+        "calibrated_score": 0.3590861826454911,
+        "target_lock_score": 0.0663087723835392,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=circulation_survival not in primary_steps=['primary_tumor_escape'])"
+        ]
+      },
+      {
+        "gene": "CLDN5",
+        "step": "circulation_survival",
+        "calibrated_score": 0.354361299987124,
+        "target_lock_score": 0.0654157004009565,
+        "label": false,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=circulation_survival not in primary_steps=['bbb_transit'])"
+        ]
+      },
+      {
+        "gene": "ABL1",
+        "step": "circulation_survival",
+        "calibrated_score": 0.3380840983136734,
+        "target_lock_score": 0.06229627473232105,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=circulation_survival not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "IDH2",
+        "step": "circulation_survival",
+        "calibrated_score": 0.32899516053153494,
+        "target_lock_score": 0.06052277262165448,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=circulation_survival not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "FLT3",
+        "step": "circulation_survival",
+        "calibrated_score": 0.32494166428046956,
+        "target_lock_score": 0.059723834955559024,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=circulation_survival not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "JAK2",
+        "step": "circulation_survival",
+        "calibrated_score": 0.31218764602761045,
+        "target_lock_score": 0.05717531194220152,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=circulation_survival not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "EGFR",
+        "step": "circulation_survival",
+        "calibrated_score": 0.3087352323959322,
+        "target_lock_score": 0.05647582411665769,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=circulation_survival not in primary_steps=['primary_tumor_escape'])"
+        ]
+      },
+      {
+        "gene": "TWIST1",
+        "step": "circulation_survival",
+        "calibrated_score": 0.2954863926321365,
+        "target_lock_score": 0.053750000000000006,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=circulation_survival not in primary_steps=['intravasation'])"
+        ]
+      },
+      {
+        "gene": "ICAM1",
+        "step": "circulation_survival",
+        "calibrated_score": 0.2954863926321365,
+        "target_lock_score": 0.053750000000000006,
+        "label": false,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=circulation_survival not in primary_steps=['bbb_transit'])"
+        ]
+      },
+      {
+        "gene": "PTEN",
+        "step": "circulation_survival",
+        "calibrated_score": 0.2954863926321365,
+        "target_lock_score": 0.053750000000000006,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=circulation_survival not in primary_steps=['cns_colonization'])"
+        ]
+      },
+      {
+        "gene": "STAT3",
+        "step": "circulation_survival",
+        "calibrated_score": 0.2954863926321365,
+        "target_lock_score": 0.053750000000000006,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=circulation_survival not in primary_steps=['brain_niche_adaptation'])"
+        ]
+      }
+    ],
+    "bbb_transit": [
+      {
+        "gene": "CCL2",
+        "step": "bbb_transit",
+        "calibrated_score": 0.9788708706896254,
+        "target_lock_score": 0.5248706879744958,
+        "label": true,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "MMP9",
+        "step": "bbb_transit",
+        "calibrated_score": 0.8244290256328438,
+        "target_lock_score": 0.28843432052444856,
+        "label": true,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "MMP2",
+        "step": "bbb_transit",
+        "calibrated_score": 0.8193498259208633,
+        "target_lock_score": 0.28485033495521195,
+        "label": true,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "CLDN5",
+        "step": "bbb_transit",
+        "calibrated_score": 0.7837160439444192,
+        "target_lock_score": 0.261662801603826,
+        "label": true,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "CXCR4",
+        "step": "bbb_transit",
+        "calibrated_score": 0.7423520736344565,
+        "target_lock_score": 0.23798662186916353,
+        "label": true,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "ICAM1",
+        "step": "bbb_transit",
+        "calibrated_score": 0.6975547333422601,
+        "target_lock_score": 0.21500000000000002,
+        "label": true,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "PIK3CA",
+        "step": "bbb_transit",
+        "calibrated_score": 0.5401177677092897,
+        "target_lock_score": 0.14529469780370644,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=bbb_transit not in primary_steps=['cns_colonization'])"
+        ]
+      },
+      {
+        "gene": "KMT2C",
+        "step": "bbb_transit",
+        "calibrated_score": 0.5228914710876302,
+        "target_lock_score": 0.13814853330071725,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=bbb_transit not in primary_steps=['primary_tumor_escape', 'cns_colonization'])"
+        ]
+      },
+      {
+        "gene": "VEGFA",
+        "step": "bbb_transit",
+        "calibrated_score": 0.4902277298086637,
+        "target_lock_score": 0.1246463204053352,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=bbb_transit not in primary_steps=['brm_angiogenesis'])"
+        ]
+      },
+      {
+        "gene": "DNMT3A",
+        "step": "bbb_transit",
+        "calibrated_score": 0.4887176551155745,
+        "target_lock_score": 0.12402215321318337,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=bbb_transit not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "PTEN",
+        "step": "bbb_transit",
+        "calibrated_score": 0.4747661719035584,
+        "target_lock_score": 0.11825000000000002,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.55 (step=bbb_transit not in primary_steps=['cns_colonization'])"
+        ]
+      },
+      {
+        "gene": "TP53",
+        "step": "bbb_transit",
+        "calibrated_score": 0.4561514890269073,
+        "target_lock_score": 0.11052151786361608,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=bbb_transit not in primary_steps=['cns_colonization', 'primary_tumor_escape'])"
+        ]
+      },
+      {
+        "gene": "IDH1",
+        "step": "bbb_transit",
+        "calibrated_score": 0.40644034159582415,
+        "target_lock_score": 0.08956906285327854,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=bbb_transit not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "CDKN2A",
+        "step": "bbb_transit",
+        "calibrated_score": 0.404556060139089,
+        "target_lock_score": 0.08876172762581852,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=bbb_transit not in primary_steps=['cns_colonization'])"
+        ]
+      },
+      {
+        "gene": "ESR1",
+        "step": "bbb_transit",
+        "calibrated_score": 0.3994213851421938,
+        "target_lock_score": 0.08655553239422561,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=bbb_transit not in primary_steps=['brain_niche_adaptation'])"
+        ]
+      },
+      {
+        "gene": "NPM1",
+        "step": "bbb_transit",
+        "calibrated_score": 0.3808675350011957,
+        "target_lock_score": 0.0785,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Evo2 scoring_mode=curated_fallback_missing_alleles (not live inference)",
+          "Missing valid ref/alt: ref=C alt=CT",
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=bbb_transit not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "SMARCA4",
+        "step": "bbb_transit",
+        "calibrated_score": 0.37149479340213026,
+        "target_lock_score": 0.07437448827935741,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=bbb_transit not in primary_steps=['brain_niche_adaptation'])"
+        ]
+      },
+      {
+        "gene": "BACE1",
+        "step": "bbb_transit",
+        "calibrated_score": 0.3636638949189747,
+        "target_lock_score": 0.07089499101740919,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=bbb_transit not in primary_steps=['cns_colonization', 'brain_niche_adaptation'])"
+        ]
+      },
+      {
+        "gene": "BCR",
+        "step": "bbb_transit",
+        "calibrated_score": 0.3585534782370885,
+        "target_lock_score": 0.0686070412667216,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=bbb_transit not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "TERT",
+        "step": "bbb_transit",
+        "calibrated_score": 0.3581150753483268,
+        "target_lock_score": 0.06841010492052853,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=bbb_transit not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "BRCA1",
+        "step": "bbb_transit",
+        "calibrated_score": 0.3534521528887149,
+        "target_lock_score": 0.0663087723835392,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=bbb_transit not in primary_steps=['primary_tumor_escape'])"
+        ]
+      },
+      {
+        "gene": "BCL2",
+        "step": "bbb_transit",
+        "calibrated_score": 0.34502767730491557,
+        "target_lock_score": 0.062479964811758576,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=bbb_transit not in primary_steps=['circulation_survival'])"
+        ]
+      },
+      {
+        "gene": "ABL1",
+        "step": "bbb_transit",
+        "calibrated_score": 0.3446258928122633,
+        "target_lock_score": 0.06229627473232105,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=bbb_transit not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "IDH2",
+        "step": "bbb_transit",
+        "calibrated_score": 0.34075820384273314,
+        "target_lock_score": 0.06052277262165448,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=bbb_transit not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "FLT3",
+        "step": "bbb_transit",
+        "calibrated_score": 0.33902273206214495,
+        "target_lock_score": 0.059723834955559024,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=bbb_transit not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "JAK2",
+        "step": "bbb_transit",
+        "calibrated_score": 0.33351578682778776,
+        "target_lock_score": 0.05717531194220152,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=bbb_transit not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "EGFR",
+        "step": "bbb_transit",
+        "calibrated_score": 0.3320121402624259,
+        "target_lock_score": 0.05647582411665769,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=bbb_transit not in primary_steps=['primary_tumor_escape'])"
+        ]
+      },
+      {
+        "gene": "TWIST1",
+        "step": "bbb_transit",
+        "calibrated_score": 0.32618541487534314,
+        "target_lock_score": 0.053750000000000006,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=bbb_transit not in primary_steps=['intravasation'])"
+        ]
+      },
+      {
+        "gene": "STAT3",
+        "step": "bbb_transit",
+        "calibrated_score": 0.32618541487534314,
+        "target_lock_score": 0.053750000000000006,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=bbb_transit not in primary_steps=['brain_niche_adaptation'])"
+        ]
+      }
+    ],
+    "cns_colonization": [
+      {
+        "gene": "PIK3CA",
+        "step": "cns_colonization",
+        "calibrated_score": 0.9412831411248899,
+        "target_lock_score": 0.5811787912148257,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "KMT2C",
+        "step": "cns_colonization",
+        "calibrated_score": 0.9294813718299385,
+        "target_lock_score": 0.552594133202869,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "TP53",
+        "step": "cns_colonization",
+        "calibrated_score": 0.8607957858377869,
+        "target_lock_score": 0.4420860714544643,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "CDKN2A",
+        "step": "cns_colonization",
+        "calibrated_score": 0.773084687545569,
+        "target_lock_score": 0.3550469105032741,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "CCL2",
+        "step": "cns_colonization",
+        "calibrated_score": 0.6837973222573412,
+        "target_lock_score": 0.28867887838597267,
+        "label": true,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.55 (step=cns_colonization not in primary_steps=['bbb_transit', 'brain_niche_adaptation'])"
+        ]
+      },
+      {
+        "gene": "BACE1",
+        "step": "cns_colonization",
+        "calibrated_score": 0.676198790390801,
+        "target_lock_score": 0.28357996406963676,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "VEGFA",
+        "step": "cns_colonization",
+        "calibrated_score": 0.6620105816244293,
+        "target_lock_score": 0.2742219048917375,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.55 (step=cns_colonization not in primary_steps=['brm_angiogenesis'])"
+        ]
+      },
+      {
+        "gene": "CXCR4",
+        "step": "cns_colonization",
+        "calibrated_score": 0.6044646474474944,
+        "target_lock_score": 0.23798662186916353,
+        "label": true,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "PTEN",
+        "step": "cns_colonization",
+        "calibrated_score": 0.5662764284134687,
+        "target_lock_score": 0.21500000000000002,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "ESR1",
+        "step": "cns_colonization",
+        "calibrated_score": 0.5245675036808203,
+        "target_lock_score": 0.19042217126729638,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.55 (step=cns_colonization not in primary_steps=['brain_niche_adaptation'])"
+        ]
+      },
+      {
+        "gene": "SMARCA4",
+        "step": "cns_colonization",
+        "calibrated_score": 0.47871691653219434,
+        "target_lock_score": 0.16362387421458632,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.55 (step=cns_colonization not in primary_steps=['brain_niche_adaptation'])"
+        ]
+      },
+      {
+        "gene": "MMP2",
+        "step": "cns_colonization",
+        "calibrated_score": 0.46684259844326303,
+        "target_lock_score": 0.1566676842253666,
+        "label": true,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.55 (step=cns_colonization not in primary_steps=['primary_tumor_escape', 'bbb_transit'])"
+        ]
+      },
+      {
+        "gene": "BRCA1",
+        "step": "cns_colonization",
+        "calibrated_score": 0.448505539875105,
+        "target_lock_score": 0.14587929924378626,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.55 (step=cns_colonization not in primary_steps=['primary_tumor_escape'])"
+        ]
+      },
+      {
+        "gene": "EGFR",
+        "step": "cns_colonization",
+        "calibrated_score": 0.4122032233247843,
+        "target_lock_score": 0.12424681305664693,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.55 (step=cns_colonization not in primary_steps=['primary_tumor_escape'])"
+        ]
+      },
+      {
+        "gene": "DNMT3A",
+        "step": "cns_colonization",
+        "calibrated_score": 0.4118304779206675,
+        "target_lock_score": 0.12402215321318337,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=cns_colonization not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "STAT3",
+        "step": "cns_colonization",
+        "calibrated_score": 0.402289378761234,
+        "target_lock_score": 0.11825000000000002,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.55 (step=cns_colonization not in primary_steps=['brain_niche_adaptation'])"
+        ]
+      },
+      {
+        "gene": "IDH1",
+        "step": "cns_colonization",
+        "calibrated_score": 0.35609316104251415,
+        "target_lock_score": 0.08956906285327854,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=cns_colonization not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "NPM1",
+        "step": "cns_colonization",
+        "calibrated_score": 0.3389066927347886,
+        "target_lock_score": 0.0785,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Evo2 scoring_mode=curated_fallback_missing_alleles (not live inference)",
+          "Missing valid ref/alt: ref=C alt=CT",
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=cns_colonization not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "MMP9",
+        "step": "cns_colonization",
+        "calibrated_score": 0.32916965774648926,
+        "target_lock_score": 0.07210858013111214,
+        "label": false,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=cns_colonization not in primary_steps=['primary_tumor_escape', 'bbb_transit'])"
+        ]
+      },
+      {
+        "gene": "BCR",
+        "step": "cns_colonization",
+        "calibrated_score": 0.32389611827044473,
+        "target_lock_score": 0.0686070412667216,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=cns_colonization not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "TERT",
+        "step": "cns_colonization",
+        "calibrated_score": 0.32360082819434755,
+        "target_lock_score": 0.06841010492052853,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=cns_colonization not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "CLDN5",
+        "step": "cns_colonization",
+        "calibrated_score": 0.31912836514674703,
+        "target_lock_score": 0.0654157004009565,
+        "label": false,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=cns_colonization not in primary_steps=['bbb_transit'])"
+        ]
+      },
+      {
+        "gene": "BCL2",
+        "step": "cns_colonization",
+        "calibrated_score": 0.3147756170505552,
+        "target_lock_score": 0.062479964811758576,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=cns_colonization not in primary_steps=['circulation_survival'])"
+        ]
+      },
+      {
+        "gene": "ABL1",
+        "step": "cns_colonization",
+        "calibrated_score": 0.31450433231320707,
+        "target_lock_score": 0.06229627473232105,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=cns_colonization not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "IDH2",
+        "step": "cns_colonization",
+        "calibrated_score": 0.311891645523044,
+        "target_lock_score": 0.06052277262165448,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=cns_colonization not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "FLT3",
+        "step": "cns_colonization",
+        "calibrated_score": 0.3107185520399071,
+        "target_lock_score": 0.059723834955559024,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=cns_colonization not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "JAK2",
+        "step": "cns_colonization",
+        "calibrated_score": 0.30699278298207355,
+        "target_lock_score": 0.05717531194220152,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=cns_colonization not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "TWIST1",
+        "step": "cns_colonization",
+        "calibrated_score": 0.30202467180917164,
+        "target_lock_score": 0.053750000000000006,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=cns_colonization not in primary_steps=['intravasation'])"
+        ]
+      },
+      {
+        "gene": "ICAM1",
+        "step": "cns_colonization",
+        "calibrated_score": 0.30202467180917164,
+        "target_lock_score": 0.053750000000000006,
+        "label": false,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=cns_colonization not in primary_steps=['bbb_transit'])"
+        ]
+      }
+    ],
+    "brain_niche_adaptation": [
+      {
+        "gene": "CCL2",
+        "step": "brain_niche_adaptation",
+        "calibrated_score": 0.9732236949899097,
+        "target_lock_score": 0.5248706879744958,
+        "label": true,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "ESR1",
+        "step": "brain_niche_adaptation",
+        "calibrated_score": 0.87853941601592,
+        "target_lock_score": 0.34622212957690246,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "SMARCA4",
+        "step": "brain_niche_adaptation",
+        "calibrated_score": 0.8232256711835504,
+        "target_lock_score": 0.29749795311742966,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "BACE1",
+        "step": "brain_niche_adaptation",
+        "calibrated_score": 0.8041727518151461,
+        "target_lock_score": 0.28357996406963676,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "TP53",
+        "step": "brain_niche_adaptation",
+        "calibrated_score": 0.7402361753863199,
+        "target_lock_score": 0.2431473392999554,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.55 (step=brain_niche_adaptation not in primary_steps=['cns_colonization', 'primary_tumor_escape'])"
+        ]
+      },
+      {
+        "gene": "STAT3",
+        "step": "brain_niche_adaptation",
+        "calibrated_score": 0.6884391577288086,
+        "target_lock_score": 0.21500000000000002,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "PIK3CA",
+        "step": "brain_niche_adaptation",
+        "calibrated_score": 0.5406386168883995,
+        "target_lock_score": 0.14529469780370644,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=brain_niche_adaptation not in primary_steps=['cns_colonization'])"
+        ]
+      },
+      {
+        "gene": "KMT2C",
+        "step": "brain_niche_adaptation",
+        "calibrated_score": 0.524563910455211,
+        "target_lock_score": 0.13814853330071725,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=brain_niche_adaptation not in primary_steps=['primary_tumor_escape', 'cns_colonization'])"
+        ]
+      },
+      {
+        "gene": "VEGFA",
+        "step": "brain_niche_adaptation",
+        "calibrated_score": 0.4940795076311751,
+        "target_lock_score": 0.1246463204053352,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=brain_niche_adaptation not in primary_steps=['brm_angiogenesis'])"
+        ]
+      },
+      {
+        "gene": "DNMT3A",
+        "step": "brain_niche_adaptation",
+        "calibrated_score": 0.49266962512316426,
+        "target_lock_score": 0.12402215321318337,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=brain_niche_adaptation not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "IDH1",
+        "step": "brain_niche_adaptation",
+        "calibrated_score": 0.41564623682267127,
+        "target_lock_score": 0.08956906285327854,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=brain_niche_adaptation not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "CDKN2A",
+        "step": "brain_niche_adaptation",
+        "calibrated_score": 0.41387530024456154,
+        "target_lock_score": 0.08876172762581852,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=brain_niche_adaptation not in primary_steps=['cns_colonization'])"
+        ]
+      },
+      {
+        "gene": "NPM1",
+        "step": "brain_niche_adaptation",
+        "calibrated_score": 0.3915737457641034,
+        "target_lock_score": 0.0785,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Evo2 scoring_mode=curated_fallback_missing_alleles (not live inference)",
+          "Missing valid ref/alt: ref=C alt=CT",
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=brain_niche_adaptation not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "MMP9",
+        "step": "brain_niche_adaptation",
+        "calibrated_score": 0.3779025619773454,
+        "target_lock_score": 0.07210858013111214,
+        "label": false,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=brain_niche_adaptation not in primary_steps=['primary_tumor_escape', 'bbb_transit'])"
+        ]
+      },
+      {
+        "gene": "MMP2",
+        "step": "brain_niche_adaptation",
+        "calibrated_score": 0.37600090787548013,
+        "target_lock_score": 0.07121258373880299,
+        "label": false,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=brain_niche_adaptation not in primary_steps=['primary_tumor_escape', 'bbb_transit'])"
+        ]
+      },
+      {
+        "gene": "BCR",
+        "step": "brain_niche_adaptation",
+        "calibrated_score": 0.37049278809236863,
+        "target_lock_score": 0.0686070412667216,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=brain_niche_adaptation not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "TERT",
+        "step": "brain_niche_adaptation",
+        "calibrated_score": 0.3700778104766435,
+        "target_lock_score": 0.06841010492052853,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=brain_niche_adaptation not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "BRCA1",
+        "step": "brain_niche_adaptation",
+        "calibrated_score": 0.365662003368835,
+        "target_lock_score": 0.0663087723835392,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=brain_niche_adaptation not in primary_steps=['primary_tumor_escape'])"
+        ]
+      },
+      {
+        "gene": "CLDN5",
+        "step": "brain_niche_adaptation",
+        "calibrated_score": 0.36379204216314076,
+        "target_lock_score": 0.0654157004009565,
+        "label": false,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=brain_niche_adaptation not in primary_steps=['bbb_transit'])"
+        ]
+      },
+      {
+        "gene": "BCL2",
+        "step": "brain_niche_adaptation",
+        "calibrated_score": 0.35767423411485144,
+        "target_lock_score": 0.062479964811758576,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=brain_niche_adaptation not in primary_steps=['circulation_survival'])"
+        ]
+      },
+      {
+        "gene": "ABL1",
+        "step": "brain_niche_adaptation",
+        "calibrated_score": 0.35729295366729447,
+        "target_lock_score": 0.06229627473232105,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=brain_niche_adaptation not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "IDH2",
+        "step": "brain_niche_adaptation",
+        "calibrated_score": 0.35362109201313036,
+        "target_lock_score": 0.06052277262165448,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=brain_niche_adaptation not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "FLT3",
+        "step": "brain_niche_adaptation",
+        "calibrated_score": 0.3519725647330432,
+        "target_lock_score": 0.059723834955559024,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=brain_niche_adaptation not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "CXCR4",
+        "step": "brain_niche_adaptation",
+        "calibrated_score": 0.35150444415223087,
+        "target_lock_score": 0.05949665546729088,
+        "label": false,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=brain_niche_adaptation not in primary_steps=['bbb_transit', 'cns_colonization'])"
+        ]
+      },
+      {
+        "gene": "JAK2",
+        "step": "brain_niche_adaptation",
+        "calibrated_score": 0.3467376200865633,
+        "target_lock_score": 0.05717531194220152,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=brain_niche_adaptation not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "EGFR",
+        "step": "brain_niche_adaptation",
+        "calibrated_score": 0.3453071943543351,
+        "target_lock_score": 0.05647582411665769,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=brain_niche_adaptation not in primary_steps=['primary_tumor_escape'])"
+        ]
+      },
+      {
+        "gene": "TWIST1",
+        "step": "brain_niche_adaptation",
+        "calibrated_score": 0.3397598397959419,
+        "target_lock_score": 0.053750000000000006,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=brain_niche_adaptation not in primary_steps=['intravasation'])"
+        ]
+      },
+      {
+        "gene": "ICAM1",
+        "step": "brain_niche_adaptation",
+        "calibrated_score": 0.3397598397959419,
+        "target_lock_score": 0.053750000000000006,
+        "label": false,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=brain_niche_adaptation not in primary_steps=['bbb_transit'])"
+        ]
+      },
+      {
+        "gene": "PTEN",
+        "step": "brain_niche_adaptation",
+        "calibrated_score": 0.3397598397959419,
+        "target_lock_score": 0.053750000000000006,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=brain_niche_adaptation not in primary_steps=['cns_colonization'])"
+        ]
+      }
+    ],
+    "brm_angiogenesis": [
+      {
+        "gene": "VEGFA",
+        "step": "brm_angiogenesis",
+        "calibrated_score": 0.993366357886901,
+        "target_lock_score": 0.4985852816213408,
+        "label": true,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5"
+        ]
+      },
+      {
+        "gene": "PIK3CA",
+        "step": "brm_angiogenesis",
+        "calibrated_score": 0.657350930481019,
+        "target_lock_score": 0.14529469780370644,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=brm_angiogenesis not in primary_steps=['cns_colonization'])"
+        ]
+      },
+      {
+        "gene": "KMT2C",
+        "step": "brm_angiogenesis",
+        "calibrated_score": 0.6372322733664324,
+        "target_lock_score": 0.13814853330071725,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=brm_angiogenesis not in primary_steps=['primary_tumor_escape', 'cns_colonization'])"
+        ]
+      },
+      {
+        "gene": "CCL2",
+        "step": "brm_angiogenesis",
+        "calibrated_score": 0.6172488530750946,
+        "target_lock_score": 0.13121767199362394,
+        "label": false,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=brm_angiogenesis not in primary_steps=['bbb_transit', 'brain_niche_adaptation'])"
+        ]
+      },
+      {
+        "gene": "DNMT3A",
+        "step": "brm_angiogenesis",
+        "calibrated_score": 0.5960753570800754,
+        "target_lock_score": 0.12402215321318337,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=brm_angiogenesis not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "TP53",
+        "step": "brm_angiogenesis",
+        "calibrated_score": 0.5554272439750861,
+        "target_lock_score": 0.11052151786361608,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=brm_angiogenesis not in primary_steps=['cns_colonization', 'primary_tumor_escape'])"
+        ]
+      },
+      {
+        "gene": "IDH1",
+        "step": "brm_angiogenesis",
+        "calibrated_score": 0.4910508038776586,
+        "target_lock_score": 0.08956906285327854,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=brm_angiogenesis not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "CDKN2A",
+        "step": "brm_angiogenesis",
+        "calibrated_score": 0.4885624550413682,
+        "target_lock_score": 0.08876172762581852,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=brm_angiogenesis not in primary_steps=['cns_colonization'])"
+        ]
+      },
+      {
+        "gene": "ESR1",
+        "step": "brm_angiogenesis",
+        "calibrated_score": 0.4817658271142607,
+        "target_lock_score": 0.08655553239422561,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=brm_angiogenesis not in primary_steps=['brain_niche_adaptation'])"
+        ]
+      },
+      {
+        "gene": "NPM1",
+        "step": "brm_angiogenesis",
+        "calibrated_score": 0.45702509334401453,
+        "target_lock_score": 0.0785,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Evo2 scoring_mode=curated_fallback_missing_alleles (not live inference)",
+          "Missing valid ref/alt: ref=C alt=CT",
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=brm_angiogenesis not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "SMARCA4",
+        "step": "brm_angiogenesis",
+        "calibrated_score": 0.4444284656413917,
+        "target_lock_score": 0.07437448827935741,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=brm_angiogenesis not in primary_steps=['brain_niche_adaptation'])"
+        ]
+      },
+      {
+        "gene": "MMP9",
+        "step": "brm_angiogenesis",
+        "calibrated_score": 0.43753907595665525,
+        "target_lock_score": 0.07210858013111214,
+        "label": false,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=brm_angiogenesis not in primary_steps=['primary_tumor_escape', 'bbb_transit'])"
+        ]
+      },
+      {
+        "gene": "MMP2",
+        "step": "brm_angiogenesis",
+        "calibrated_score": 0.4348213218506678,
+        "target_lock_score": 0.07121258373880299,
+        "label": false,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=brm_angiogenesis not in primary_steps=['primary_tumor_escape', 'bbb_transit'])"
+        ]
+      },
+      {
+        "gene": "BACE1",
+        "step": "brm_angiogenesis",
+        "calibrated_score": 0.4338589243028621,
+        "target_lock_score": 0.07089499101740919,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=brm_angiogenesis not in primary_steps=['cns_colonization', 'brain_niche_adaptation'])"
+        ]
+      },
+      {
+        "gene": "BCR",
+        "step": "brm_angiogenesis",
+        "calibrated_score": 0.4269409352169461,
+        "target_lock_score": 0.0686070412667216,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=brm_angiogenesis not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "TERT",
+        "step": "brm_angiogenesis",
+        "calibrated_score": 0.4263467599473313,
+        "target_lock_score": 0.06841010492052853,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=brm_angiogenesis not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "BRCA1",
+        "step": "brm_angiogenesis",
+        "calibrated_score": 0.42002040595293,
+        "target_lock_score": 0.0663087723835392,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=brm_angiogenesis not in primary_steps=['primary_tumor_escape'])"
+        ]
+      },
+      {
+        "gene": "CLDN5",
+        "step": "brm_angiogenesis",
+        "calibrated_score": 0.4173395002713665,
+        "target_lock_score": 0.0654157004009565,
+        "label": false,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=brm_angiogenesis not in primary_steps=['bbb_transit'])"
+        ]
+      },
+      {
+        "gene": "BCL2",
+        "step": "brm_angiogenesis",
+        "calibrated_score": 0.408561904695284,
+        "target_lock_score": 0.062479964811758576,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=brm_angiogenesis not in primary_steps=['circulation_survival'])"
+        ]
+      },
+      {
+        "gene": "ABL1",
+        "step": "brm_angiogenesis",
+        "calibrated_score": 0.40801455925020996,
+        "target_lock_score": 0.06229627473232105,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=brm_angiogenesis not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "IDH2",
+        "step": "brm_angiogenesis",
+        "calibrated_score": 0.4027419336160053,
+        "target_lock_score": 0.06052277262165448,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=brm_angiogenesis not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "FLT3",
+        "step": "brm_angiogenesis",
+        "calibrated_score": 0.40037393726198695,
+        "target_lock_score": 0.059723834955559024,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=brm_angiogenesis not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "CXCR4",
+        "step": "brm_angiogenesis",
+        "calibrated_score": 0.39970143661889457,
+        "target_lock_score": 0.05949665546729088,
+        "label": false,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=brm_angiogenesis not in primary_steps=['bbb_transit', 'cns_colonization'])"
+        ]
+      },
+      {
+        "gene": "JAK2",
+        "step": "brm_angiogenesis",
+        "calibrated_score": 0.39285181980672906,
+        "target_lock_score": 0.05717531194220152,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=brm_angiogenesis not in primary_steps=[])"
+        ]
+      },
+      {
+        "gene": "EGFR",
+        "step": "brm_angiogenesis",
+        "calibrated_score": 0.3907959365760463,
+        "target_lock_score": 0.05647582411665769,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=brm_angiogenesis not in primary_steps=['primary_tumor_escape'])"
+        ]
+      },
+      {
+        "gene": "TWIST1",
+        "step": "brm_angiogenesis",
+        "calibrated_score": 0.38282192004539156,
+        "target_lock_score": 0.053750000000000006,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=brm_angiogenesis not in primary_steps=['intravasation'])"
+        ]
+      },
+      {
+        "gene": "ICAM1",
+        "step": "brm_angiogenesis",
+        "calibrated_score": 0.38282192004539156,
+        "target_lock_score": 0.053750000000000006,
+        "label": false,
+        "bbb_relevant": true,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=brm_angiogenesis not in primary_steps=['bbb_transit'])"
+        ]
+      },
+      {
+        "gene": "PTEN",
+        "step": "brm_angiogenesis",
+        "calibrated_score": 0.38282192004539156,
+        "target_lock_score": 0.053750000000000006,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=brm_angiogenesis not in primary_steps=['cns_colonization'])"
+        ]
+      },
+      {
+        "gene": "STAT3",
+        "step": "brm_angiogenesis",
+        "calibrated_score": 0.38282192004539156,
+        "target_lock_score": 0.053750000000000006,
+        "label": false,
+        "bbb_relevant": false,
+        "flags": [
+          "Enformer disabled \u2014 chromatin score defaulted to 0.5",
+          "mission_fit_discount=0.25 (step=brm_angiogenesis not in primary_steps=['brain_niche_adaptation'])"
+        ]
+      }
+    ]
+  }
+}

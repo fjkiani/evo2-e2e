@@ -1,0 +1,29 @@
+{
+  "name": "BrM_guide_ATP10D",
+  "sequences": [
+    {
+      "proteinChain": null,
+      "rnaSequence": {
+        "sequence": "CGTAGATCACGGTGCTGCATGTTTTAGAGCTAGAAATAGCAAGTTAAAATAAGGCTAGTCCGTTATCAACTTGAAAAAGTGGCACCGAGTCGGTGC",
+        "count": 1
+      }
+    },
+    {
+      "dnaSequence": {
+        "sequence": "GCGTAGATCACGGTGCTGCATAGGATGCAGCACCGTGATCTACGCAAGCTNNNNNNNNNN",
+        "count": 1
+      }
+    },
+    {
+      "dnaSequence": {
+        "sequence": "NNNNNNNNNNAGCTTGCGTAGATCACGGTGCTGCATCCTATGCAGCACCGTGATCTACGC",
+        "count": 1
+      }
+    }
+  ],
+  "modelSeeds": [
+    42
+  ],
+  "dialect": "alphafold3",
+  "version": 2
+}

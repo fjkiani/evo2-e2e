@@ -1,0 +1,29 @@
+{
+  "name": "BrM_guide_SLC25A32",
+  "sequences": [
+    {
+      "proteinChain": null,
+      "rnaSequence": {
+        "sequence": "ACTGGAAGATCGTCATCAACGTTTTAGAGCTAGAAATAGCAAGTTAAAATAAGGCTAGTCCGTTATCAACTTGAAAAAGTGGCACCGAGTCGGTGC",
+        "count": 1
+      }
+    },
+    {
+      "dnaSequence": {
+        "sequence": "GACTGGAAGATCGTCATCAACAGGTTGATGACGATCTTCCAGTCCCTGCTNNNNNNNNNN",
+        "count": 1
+      }
+    },
+    {
+      "dnaSequence": {
+        "sequence": "NNNNNNNNNNAGCAGGGACTGGAAGATCGTCATCAACCTGTTGATGACGATCTTCCAGTC",
+        "count": 1
+      }
+    }
+  ],
+  "modelSeeds": [
+    42
+  ],
+  "dialect": "alphafold3",
+  "version": 2
+}

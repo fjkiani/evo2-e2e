@@ -1,0 +1,29 @@
+{
+  "name": "BrM_guide_FAM72A",
+  "sequences": [
+    {
+      "proteinChain": null,
+      "rnaSequence": {
+        "sequence": "GCAGCAGTCAGACTCGTGACGTTTTAGAGCTAGAAATAGCAAGTTAAAATAAGGCTAGTCCGTTATCAACTTGAAAAAGTGGCACCGAGTCGGTGC",
+        "count": 1
+      }
+    },
+    {
+      "dnaSequence": {
+        "sequence": "TGCAGCAGCAGTCAGACTCGTGACGGGTCCAGCTAGCAGTCGTCGAGCAGCAGTNNNNNN",
+        "count": 1
+      }
+    },
+    {
+      "dnaSequence": {
+        "sequence": "NNNNNNACTGCTGCTCGACGACTGCTAGCTGGACCCGTCACGAGTCTGACTGCTGCTGCA",
+        "count": 1
+      }
+    }
+  ],
+  "modelSeeds": [
+    42
+  ],
+  "dialect": "alphafold3",
+  "version": 2
+}

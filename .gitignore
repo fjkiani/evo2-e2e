@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+venv/
+
+# Large data files (raw GEO downloads)
+data/raw_geo/
+data/brain_met/gene_coords_cache.json
+data/brain_met/atac_gene_scores.json
+data/brain_met/ensembl_symbol_map.json
+data/brain_met/multimodal_feature_matrix.json
+data/brain_met/*.png
+
+# Sensitive
+~/.modal.toml
+*.toml

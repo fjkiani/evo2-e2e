@@ -1,0 +1,1524 @@
+{
+  "gtex_scores": {
+    "FAM72A": {
+      "mean_tpm": 0.0,
+      "max_tpm": 0.0,
+      "n_tissues": 0
+    },
+    "SLC25A32": {
+      "mean_tpm": 0.0,
+      "max_tpm": 0.0,
+      "n_tissues": 0
+    },
+    "ATP10D": {
+      "mean_tpm": 0.0,
+      "max_tpm": 0.0,
+      "n_tissues": 0
+    },
+    "BACE1": {
+      "mean_tpm": 0.0,
+      "max_tpm": 0.0,
+      "n_tissues": 0
+    },
+    "BIN1": {
+      "mean_tpm": 0.0,
+      "max_tpm": 0.0,
+      "n_tissues": 0
+    },
+    "RPP40": {
+      "mean_tpm": 0.0,
+      "max_tpm": 0.0,
+      "n_tissues": 0
+    },
+    "SLC45A4": {
+      "mean_tpm": 0.0,
+      "max_tpm": 0.0,
+      "n_tissues": 0
+    },
+    "CHD2": {
+      "mean_tpm": 0.0,
+      "max_tpm": 0.0,
+      "n_tissues": 0
+    },
+    "CCDC59": {
+      "mean_tpm": 0.0,
+      "max_tpm": 0.0,
+      "n_tissues": 0
+    },
+    "PC": {
+      "mean_tpm": 0.0,
+      "max_tpm": 0.0,
+      "n_tissues": 0
+    },
+    "TIAM1": {
+      "mean_tpm": 0.0,
+      "max_tpm": 0.0,
+      "n_tissues": 0
+    },
+    "ANKRD36": {
+      "mean_tpm": 0.0,
+      "max_tpm": 0.0,
+      "n_tissues": 0
+    },
+    "LRP12": {
+      "mean_tpm": 0.0,
+      "max_tpm": 0.0,
+      "n_tissues": 0
+    },
+    "NOM1": {
+      "mean_tpm": 0.0,
+      "max_tpm": 0.0,
+      "n_tissues": 0
+    },
+    "NT5C3A": {
+      "mean_tpm": 0.0,
+      "max_tpm": 0.0,
+      "n_tissues": 0
+    },
+    "GOLGA5": {
+      "mean_tpm": 0.0,
+      "max_tpm": 0.0,
+      "n_tissues": 0
+    },
+    "SENP8": {
+      "mean_tpm": 0.0,
+      "max_tpm": 0.0,
+      "n_tissues": 0
+    },
+    "SIRT3": {
+      "mean_tpm": 0.0,
+      "max_tpm": 0.0,
+      "n_tissues": 0
+    },
+    "ZNF143": {
+      "mean_tpm": 0.0,
+      "max_tpm": 0.0,
+      "n_tissues": 0
+    },
+    "KLHL12": {
+      "mean_tpm": 0.0,
+      "max_tpm": 0.0,
+      "n_tissues": 0
+    },
+    "ARF5": {
+      "mean_tpm": 0.0,
+      "max_tpm": 0.0,
+      "n_tissues": 0
+    },
+    "RPS27A": {
+      "mean_tpm": 0.0,
+      "max_tpm": 0.0,
+      "n_tissues": 0
+    },
+    "AASS": {
+      "mean_tpm": 0.0,
+      "max_tpm": 0.0,
+      "n_tissues": 0
+    },
+    "PTPRC": {
+      "mean_tpm": 0.0,
+      "max_tpm": 0.0,
+      "n_tissues": 0
+    },
+    "CHMP3": {
+      "mean_tpm": 0.0,
+      "max_tpm": 0.0,
+      "n_tissues": 0
+    },
+    "TAMM41": {
+      "mean_tpm": 0.0,
+      "max_tpm": 0.0,
+      "n_tissues": 0
+    },
+    "BRPF1": {
+      "mean_tpm": 0.0,
+      "max_tpm": 0.0,
+      "n_tissues": 0
+    },
+    "ZNF189": {
+      "mean_tpm": 0.0,
+      "max_tpm": 0.0,
+      "n_tissues": 0
+    },
+    "ZNF48": {
+      "mean_tpm": 0.0,
+      "max_tpm": 0.0,
+      "n_tissues": 0
+    },
+    "EBP": {
+      "mean_tpm": 0.0,
+      "max_tpm": 0.0,
+      "n_tissues": 0
+    },
+    "ZNF764": {
+      "mean_tpm": 0.0,
+      "max_tpm": 0.0,
+      "n_tissues": 0
+    },
+    "BLOC1S5": {
+      "mean_tpm": 0.0,
+      "max_tpm": 0.0,
+      "n_tissues": 0
+    },
+    "PPP3CA": {
+      "mean_tpm": 0.0,
+      "max_tpm": 0.0,
+      "n_tissues": 0
+    },
+    "SYS1": {
+      "mean_tpm": 0.0,
+      "max_tpm": 0.0,
+      "n_tissues": 0
+    },
+    "NPEPPS": {
+      "mean_tpm": 0.0,
+      "max_tpm": 0.0,
+      "n_tissues": 0
+    },
+    "EEF1A2": {
+      "mean_tpm": 0.0,
+      "max_tpm": 0.0,
+      "n_tissues": 0
+    },
+    "ALMS1": {
+      "mean_tpm": 0.0,
+      "max_tpm": 0.0,
+      "n_tissues": 0
+    },
+    "RAB10": {
+      "mean_tpm": 0.0,
+      "max_tpm": 0.0,
+      "n_tissues": 0
+    },
+    "PYGL": {
+      "mean_tpm": 0.0,
+      "max_tpm": 0.0,
+      "n_tissues": 0
+    },
+    "HSPB1": {
+      "mean_tpm": 0.0,
+      "max_tpm": 0.0,
+      "n_tissues": 0
+    },
+    "ASCC3": {
+      "mean_tpm": 0.0,
+      "max_tpm": 0.0,
+      "n_tissues": 0
+    },
+    "TGFA": {
+      "mean_tpm": 0.0,
+      "max_tpm": 0.0,
+      "n_tissues": 0
+    },
+    "CETN2": {
+      "mean_tpm": 0.0,
+      "max_tpm": 0.0,
+      "n_tissues": 0
+    },
+    "DENND5B": {
+      "mean_tpm": 0.0,
+      "max_tpm": 0.0,
+      "n_tissues": 0
+    },
+    "DNAH7": {
+      "mean_tpm": 0.0,
+      "max_tpm": 0.0,
+      "n_tissues": 0
+    },
+    "ROPN1L": {
+      "mean_tpm": 0.0,
+      "max_tpm": 0.0,
+      "n_tissues": 0
+    },
+    "DNAAF5": {
+      "mean_tpm": 0.0,
+      "max_tpm": 0.0,
+      "n_tissues": 0
+    },
+    "ERICH2": {
+      "mean_tpm": 3.1347346153846156,
+      "max_tpm": 5.27348,
+      "max_tissue": "Brain_Hypothalamus",
+      "n_tissues": 13,
+      "tissue_values": {
+        "Brain_Amygdala": 3.71906,
+        "Brain_Cortex": 2.80302,
+        "Brain_Frontal_Cortex_BA9": 3.3633,
+        "Brain_Spinal_cord_cervical_c-1": 2.56487,
+        "Brain_Putamen_basal_ganglia": 2.21369,
+        "Brain_Cerebellum": 2.42854,
+        "Brain_Nucleus_accumbens_basal_ganglia": 3.71798,
+        "Brain_Substantia_nigra": 3.32993,
+        "Brain_Hypothalamus": 5.27348,
+        "Brain_Caudate_basal_ganglia": 2.80461,
+        "Brain_Cerebellar_Hemisphere": 2.30106,
+        "Brain_Anterior_cingulate_cortex_BA24": 3.47402,
+        "Brain_Hippocampus": 2.75799
+      }
+    },
+    "KCNH1": {
+      "mean_tpm": 0.0,
+      "max_tpm": 0.0,
+      "n_tissues": 0
+    },
+    "LRRC45": {
+      "mean_tpm": 0.0,
+      "max_tpm": 0.0,
+      "n_tissues": 0
+    }
+  },
+  "ensg_ids": {
+    "FAM72A": {
+      "gencodeId": "ENSG00000196550.10",
+      "symbol": "FAM72A"
+    },
+    "SLC25A32": {
+      "gencodeId": "ENSG00000164933.11",
+      "symbol": "SLC25A32"
+    },
+    "ATP10D": {
+      "gencodeId": "ENSG00000145246.13",
+      "symbol": "ATP10D"
+    },
+    "BACE1": {
+      "gencodeId": "ENSG00000186318.16",
+      "symbol": "BACE1"
+    },
+    "BIN1": {
+      "gencodeId": "ENSG00000136717.14",
+      "symbol": "BIN1"
+    },
+    "RPP40": {
+      "gencodeId": "ENSG00000124787.13",
+      "symbol": "RPP40"
+    },
+    "SLC45A4": {
+      "gencodeId": "ENSG00000022567.9",
+      "symbol": "SLC45A4"
+    },
+    "CHD2": {
+      "gencodeId": "ENSG00000173575.20",
+      "symbol": "CHD2"
+    },
+    "CCDC59": {
+      "gencodeId": "ENSG00000133773.11",
+      "symbol": "CCDC59"
+    },
+    "PC": {
+      "gencodeId": "ENSG00000173599.13",
+      "symbol": "PC"
+    },
+    "TIAM1": {
+      "gencodeId": "ENSG00000156299.13",
+      "symbol": "TIAM1"
+    },
+    "ANKRD36": {
+      "gencodeId": "ENSG00000135976.17",
+      "symbol": "ANKRD36"
+    },
+    "LRP12": {
+      "gencodeId": "ENSG00000147650.11",
+      "symbol": "LRP12"
+    },
+    "NOM1": {
+      "gencodeId": "ENSG00000146909.7",
+      "symbol": "NOM1"
+    },
+    "NT5C3A": {
+      "gencodeId": "ENSG00000122643.18",
+      "symbol": "NT5C3A"
+    },
+    "GOLGA5": {
+      "gencodeId": "ENSG00000066455.12",
+      "symbol": "GOLGA5"
+    },
+    "SENP8": {
+      "gencodeId": "ENSG00000166192.14",
+      "symbol": "SENP8"
+    },
+    "SIRT3": {
+      "gencodeId": "ENSG00000142082.14",
+      "symbol": "SIRT3"
+    },
+    "ZNF143": {
+      "gencodeId": "ENSG00000166478.9",
+      "symbol": "ZNF143"
+    },
+    "KLHL12": {
+      "gencodeId": "ENSG00000117153.15",
+      "symbol": "KLHL12"
+    },
+    "ARF5": {
+      "gencodeId": "ENSG00000004059.10",
+      "symbol": "ARF5"
+    },
+    "RPS27A": {
+      "gencodeId": "ENSG00000143947.13",
+      "symbol": "RPS27A"
+    },
+    "AASS": {
+      "gencodeId": "ENSG00000008311.14",
+      "symbol": "AASS"
+    },
+    "PTPRC": {
+      "gencodeId": "ENSG00000081237.18",
+      "symbol": "PTPRC"
+    },
+    "CHMP3": {
+      "gencodeId": "ENSG00000115561.15",
+      "symbol": "CHMP3"
+    },
+    "TAMM41": {
+      "gencodeId": "ENSG00000144559.10",
+      "symbol": "TAMM41"
+    },
+    "BRPF1": {
+      "gencodeId": "ENSG00000156983.15",
+      "symbol": "BRPF1"
+    },
+    "ZNF189": {
+      "gencodeId": "ENSG00000136870.10",
+      "symbol": "ZNF189"
+    },
+    "ZNF48": {
+      "gencodeId": "ENSG00000180035.12",
+      "symbol": "ZNF48"
+    },
+    "EBP": {
+      "gencodeId": "ENSG00000147155.10",
+      "symbol": "EBP"
+    },
+    "ZNF764": {
+      "gencodeId": "ENSG00000169951.9",
+      "symbol": "ZNF764"
+    },
+    "BLOC1S5": {
+      "gencodeId": "ENSG00000188428.19",
+      "symbol": "BLOC1S5"
+    },
+    "PPP3CA": {
+      "gencodeId": "ENSG00000138814.16",
+      "symbol": "PPP3CA"
+    },
+    "SYS1": {
+      "gencodeId": "ENSG00000204070.9",
+      "symbol": "SYS1"
+    },
+    "NPEPPS": {
+      "gencodeId": "ENSG00000141279.15",
+      "symbol": "NPEPPS"
+    },
+    "EEF1A2": {
+      "gencodeId": "ENSG00000101210.10",
+      "symbol": "EEF1A2"
+    },
+    "ALMS1": {
+      "gencodeId": "ENSG00000116127.17",
+      "symbol": "ALMS1"
+    },
+    "RAB10": {
+      "gencodeId": "ENSG00000084733.10",
+      "symbol": "RAB10"
+    },
+    "PYGL": {
+      "gencodeId": "ENSG00000100504.16",
+      "symbol": "PYGL"
+    },
+    "HSPB1": {
+      "gencodeId": "ENSG00000106211.8",
+      "symbol": "HSPB1"
+    },
+    "ASCC3": {
+      "gencodeId": "ENSG00000112249.13",
+      "symbol": "ASCC3"
+    },
+    "TGFA": {
+      "gencodeId": "ENSG00000163235.15",
+      "symbol": "TGFA"
+    },
+    "CETN2": {
+      "gencodeId": "ENSG00000147400.8",
+      "symbol": "CETN2"
+    },
+    "DENND5B": {
+      "gencodeId": "ENSG00000170456.15",
+      "symbol": "DENND5B"
+    },
+    "DNAH7": {
+      "gencodeId": "ENSG00000118997.13",
+      "symbol": "DNAH7"
+    },
+    "ROPN1L": {
+      "gencodeId": "ENSG00000145491.11",
+      "symbol": "ROPN1L"
+    },
+    "DNAAF5": {
+      "gencodeId": "ENSG00000164818.15",
+      "symbol": "DNAAF5"
+    },
+    "ERICH2": {
+      "gencodeId": "ENSG00000204334.7",
+      "symbol": "ERICH2"
+    },
+    "KCNH1": {
+      "gencodeId": "ENSG00000143473.12",
+      "symbol": "KCNH1"
+    },
+    "LRRC45": {
+      "gencodeId": "ENSG00000169683.7",
+      "symbol": "LRRC45"
+    }
+  },
+  "gtex_scores_v8": {
+    "FAM72A": {
+      "mean_brain_tpm": 0.28,
+      "max_brain_tpm": 1.03,
+      "max_tissue": "Brain_Cerebellar_Hemisphere",
+      "n_tissues": 13,
+      "tissue_values": {
+        "Brain_Amygdala": 0.13,
+        "Brain_Anterior_cingulate_cortex_BA24": 0.14,
+        "Brain_Caudate_basal_ganglia": 0.12,
+        "Brain_Cerebellar_Hemisphere": 1.03,
+        "Brain_Cerebellum": 0.91,
+        "Brain_Cortex": 0.14,
+        "Brain_Frontal_Cortex_BA9": 0.18,
+        "Brain_Hippocampus": 0.16,
+        "Brain_Hypothalamus": 0.17,
+        "Brain_Nucleus_accumbens_basal_ganglia": 0.11,
+        "Brain_Putamen_basal_ganglia": 0.09,
+        "Brain_Spinal_cord_cervical_c-1": 0.26,
+        "Brain_Substantia_nigra": 0.19
+      }
+    },
+    "SLC25A32": {
+      "mean_brain_tpm": 9.12,
+      "max_brain_tpm": 16.29,
+      "max_tissue": "Brain_Cerebellar_Hemisphere",
+      "n_tissues": 13,
+      "tissue_values": {
+        "Brain_Amygdala": 5.23,
+        "Brain_Anterior_cingulate_cortex_BA24": 7.85,
+        "Brain_Caudate_basal_ganglia": 6.21,
+        "Brain_Cerebellar_Hemisphere": 16.29,
+        "Brain_Cerebellum": 14.11,
+        "Brain_Cortex": 9.85,
+        "Brain_Frontal_Cortex_BA9": 12.89,
+        "Brain_Hippocampus": 6.67,
+        "Brain_Hypothalamus": 9.85,
+        "Brain_Nucleus_accumbens_basal_ganglia": 7.04,
+        "Brain_Putamen_basal_ganglia": 5.3,
+        "Brain_Spinal_cord_cervical_c-1": 10.44,
+        "Brain_Substantia_nigra": 6.78
+      }
+    },
+    "ATP10D": {
+      "mean_brain_tpm": 2.37,
+      "max_brain_tpm": 3.05,
+      "max_tissue": "Brain_Spinal_cord_cervical_c-1",
+      "n_tissues": 13,
+      "tissue_values": {
+        "Brain_Amygdala": 1.99,
+        "Brain_Anterior_cingulate_cortex_BA24": 2.0,
+        "Brain_Caudate_basal_ganglia": 2.77,
+        "Brain_Cerebellar_Hemisphere": 1.68,
+        "Brain_Cerebellum": 2.24,
+        "Brain_Cortex": 2.38,
+        "Brain_Frontal_Cortex_BA9": 2.1,
+        "Brain_Hippocampus": 1.9,
+        "Brain_Hypothalamus": 2.98,
+        "Brain_Nucleus_accumbens_basal_ganglia": 2.97,
+        "Brain_Putamen_basal_ganglia": 2.18,
+        "Brain_Spinal_cord_cervical_c-1": 3.05,
+        "Brain_Substantia_nigra": 2.63
+      }
+    },
+    "BACE1": {
+      "mean_brain_tpm": 37.09,
+      "max_brain_tpm": 139.29,
+      "max_tissue": "Brain_Spinal_cord_cervical_c-1",
+      "n_tissues": 13,
+      "tissue_values": {
+        "Brain_Amygdala": 20.4,
+        "Brain_Anterior_cingulate_cortex_BA24": 21.4,
+        "Brain_Caudate_basal_ganglia": 21.78,
+        "Brain_Cerebellar_Hemisphere": 40.69,
+        "Brain_Cerebellum": 38.74,
+        "Brain_Cortex": 28.06,
+        "Brain_Frontal_Cortex_BA9": 32.14,
+        "Brain_Hippocampus": 29.09,
+        "Brain_Hypothalamus": 26.43,
+        "Brain_Nucleus_accumbens_basal_ganglia": 22.46,
+        "Brain_Putamen_basal_ganglia": 20.68,
+        "Brain_Spinal_cord_cervical_c-1": 139.29,
+        "Brain_Substantia_nigra": 40.97
+      }
+    },
+    "BIN1": {
+      "mean_brain_tpm": 140.29,
+      "max_brain_tpm": 203.13,
+      "max_tissue": "Brain_Spinal_cord_cervical_c-1",
+      "n_tissues": 13,
+      "tissue_values": {
+        "Brain_Amygdala": 121.65,
+        "Brain_Anterior_cingulate_cortex_BA24": 101.57,
+        "Brain_Caudate_basal_ganglia": 112.54,
+        "Brain_Cerebellar_Hemisphere": 179.33,
+        "Brain_Cerebellum": 168.94,
+        "Brain_Cortex": 133.65,
+        "Brain_Frontal_Cortex_BA9": 134.4,
+        "Brain_Hippocampus": 150.78,
+        "Brain_Hypothalamus": 125.12,
+        "Brain_Nucleus_accumbens_basal_ganglia": 120.51,
+        "Brain_Putamen_basal_ganglia": 129.65,
+        "Brain_Spinal_cord_cervical_c-1": 203.13,
+        "Brain_Substantia_nigra": 142.49
+      }
+    },
+    "RPP40": {
+      "mean_brain_tpm": 3.26,
+      "max_brain_tpm": 5.04,
+      "max_tissue": "Brain_Frontal_Cortex_BA9",
+      "n_tissues": 13,
+      "tissue_values": {
+        "Brain_Amygdala": 2.74,
+        "Brain_Anterior_cingulate_cortex_BA24": 3.26,
+        "Brain_Caudate_basal_ganglia": 3.19,
+        "Brain_Cerebellar_Hemisphere": 2.83,
+        "Brain_Cerebellum": 2.51,
+        "Brain_Cortex": 4.06,
+        "Brain_Frontal_Cortex_BA9": 5.04,
+        "Brain_Hippocampus": 2.65,
+        "Brain_Hypothalamus": 4.05,
+        "Brain_Nucleus_accumbens_basal_ganglia": 3.65,
+        "Brain_Putamen_basal_ganglia": 2.57,
+        "Brain_Spinal_cord_cervical_c-1": 3.43,
+        "Brain_Substantia_nigra": 2.45
+      }
+    },
+    "SLC45A4": {
+      "mean_brain_tpm": 6.24,
+      "max_brain_tpm": 14.76,
+      "max_tissue": "Brain_Frontal_Cortex_BA9",
+      "n_tissues": 13,
+      "tissue_values": {
+        "Brain_Amygdala": 3.39,
+        "Brain_Anterior_cingulate_cortex_BA24": 8.98,
+        "Brain_Caudate_basal_ganglia": 2.77,
+        "Brain_Cerebellar_Hemisphere": 9.7,
+        "Brain_Cerebellum": 11.27,
+        "Brain_Cortex": 14.26,
+        "Brain_Frontal_Cortex_BA9": 14.76,
+        "Brain_Hippocampus": 3.91,
+        "Brain_Hypothalamus": 3.61,
+        "Brain_Nucleus_accumbens_basal_ganglia": 3.01,
+        "Brain_Putamen_basal_ganglia": 2.24,
+        "Brain_Spinal_cord_cervical_c-1": 1.4,
+        "Brain_Substantia_nigra": 1.83
+      }
+    },
+    "CHD2": {
+      "mean_brain_tpm": 14.39,
+      "max_brain_tpm": 35.58,
+      "max_tissue": "Brain_Cerebellar_Hemisphere",
+      "n_tissues": 13,
+      "tissue_values": {
+        "Brain_Amygdala": 9.04,
+        "Brain_Anterior_cingulate_cortex_BA24": 9.35,
+        "Brain_Caudate_basal_ganglia": 10.5,
+        "Brain_Cerebellar_Hemisphere": 35.58,
+        "Brain_Cerebellum": 32.06,
+        "Brain_Cortex": 12.03,
+        "Brain_Frontal_Cortex_BA9": 12.2,
+        "Brain_Hippocampus": 9.26,
+        "Brain_Hypothalamus": 11.47,
+        "Brain_Nucleus_accumbens_basal_ganglia": 11.21,
+        "Brain_Putamen_basal_ganglia": 8.94,
+        "Brain_Spinal_cord_cervical_c-1": 14.54,
+        "Brain_Substantia_nigra": 10.87
+      }
+    },
+    "CCDC59": {
+      "mean_brain_tpm": 11.51,
+      "max_brain_tpm": 20.14,
+      "max_tissue": "Brain_Cerebellar_Hemisphere",
+      "n_tissues": 13,
+      "tissue_values": {
+        "Brain_Amygdala": 8.67,
+        "Brain_Anterior_cingulate_cortex_BA24": 9.15,
+        "Brain_Caudate_basal_ganglia": 10.16,
+        "Brain_Cerebellar_Hemisphere": 20.14,
+        "Brain_Cerebellum": 15.99,
+        "Brain_Cortex": 8.95,
+        "Brain_Frontal_Cortex_BA9": 10.93,
+        "Brain_Hippocampus": 8.63,
+        "Brain_Hypothalamus": 12.16,
+        "Brain_Nucleus_accumbens_basal_ganglia": 10.77,
+        "Brain_Putamen_basal_ganglia": 9.13,
+        "Brain_Spinal_cord_cervical_c-1": 14.93,
+        "Brain_Substantia_nigra": 9.99
+      }
+    },
+    "PC": {
+      "mean_brain_tpm": 32.93,
+      "max_brain_tpm": 48.22,
+      "max_tissue": "Brain_Cerebellum",
+      "n_tissues": 13,
+      "tissue_values": {
+        "Brain_Amygdala": 22.68,
+        "Brain_Anterior_cingulate_cortex_BA24": 34.48,
+        "Brain_Caudate_basal_ganglia": 33.08,
+        "Brain_Cerebellar_Hemisphere": 45.64,
+        "Brain_Cerebellum": 48.22,
+        "Brain_Cortex": 40.08,
+        "Brain_Frontal_Cortex_BA9": 38.21,
+        "Brain_Hippocampus": 21.75,
+        "Brain_Hypothalamus": 23.54,
+        "Brain_Nucleus_accumbens_basal_ganglia": 34.87,
+        "Brain_Putamen_basal_ganglia": 28.84,
+        "Brain_Spinal_cord_cervical_c-1": 26.91,
+        "Brain_Substantia_nigra": 29.79
+      }
+    },
+    "TIAM1": {
+      "mean_brain_tpm": 44.8,
+      "max_brain_tpm": 271.42,
+      "max_tissue": "Brain_Cerebellar_Hemisphere",
+      "n_tissues": 13,
+      "tissue_values": {
+        "Brain_Amygdala": 11.13,
+        "Brain_Anterior_cingulate_cortex_BA24": 10.34,
+        "Brain_Caudate_basal_ganglia": 11.63,
+        "Brain_Cerebellar_Hemisphere": 271.42,
+        "Brain_Cerebellum": 193.62,
+        "Brain_Cortex": 11.59,
+        "Brain_Frontal_Cortex_BA9": 14.61,
+        "Brain_Hippocampus": 10.04,
+        "Brain_Hypothalamus": 8.72,
+        "Brain_Nucleus_accumbens_basal_ganglia": 14.57,
+        "Brain_Putamen_basal_ganglia": 8.84,
+        "Brain_Spinal_cord_cervical_c-1": 9.24,
+        "Brain_Substantia_nigra": 6.6
+      }
+    },
+    "ANKRD36": {
+      "mean_brain_tpm": 2.48,
+      "max_brain_tpm": 9.61,
+      "max_tissue": "Brain_Cerebellum",
+      "n_tissues": 13,
+      "tissue_values": {
+        "Brain_Amygdala": 0.95,
+        "Brain_Anterior_cingulate_cortex_BA24": 1.2,
+        "Brain_Caudate_basal_ganglia": 1.44,
+        "Brain_Cerebellar_Hemisphere": 6.96,
+        "Brain_Cerebellum": 9.61,
+        "Brain_Cortex": 2.3,
+        "Brain_Frontal_Cortex_BA9": 1.56,
+        "Brain_Hippocampus": 1.18,
+        "Brain_Hypothalamus": 1.41,
+        "Brain_Nucleus_accumbens_basal_ganglia": 1.78,
+        "Brain_Putamen_basal_ganglia": 1.12,
+        "Brain_Spinal_cord_cervical_c-1": 1.78,
+        "Brain_Substantia_nigra": 0.89
+      }
+    },
+    "LRP12": {
+      "mean_brain_tpm": 5.18,
+      "max_brain_tpm": 8.81,
+      "max_tissue": "Brain_Cerebellar_Hemisphere",
+      "n_tissues": 13,
+      "tissue_values": {
+        "Brain_Amygdala": 4.14,
+        "Brain_Anterior_cingulate_cortex_BA24": 5.23,
+        "Brain_Caudate_basal_ganglia": 5.59,
+        "Brain_Cerebellar_Hemisphere": 8.81,
+        "Brain_Cerebellum": 5.98,
+        "Brain_Cortex": 4.1,
+        "Brain_Frontal_Cortex_BA9": 7.27,
+        "Brain_Hippocampus": 4.44,
+        "Brain_Hypothalamus": 4.29,
+        "Brain_Nucleus_accumbens_basal_ganglia": 7.35,
+        "Brain_Putamen_basal_ganglia": 4.46,
+        "Brain_Spinal_cord_cervical_c-1": 3.16,
+        "Brain_Substantia_nigra": 2.5
+      }
+    },
+    "NOM1": {
+      "mean_brain_tpm": 3.75,
+      "max_brain_tpm": 8.53,
+      "max_tissue": "Brain_Cerebellar_Hemisphere",
+      "n_tissues": 13,
+      "tissue_values": {
+        "Brain_Amygdala": 2.21,
+        "Brain_Anterior_cingulate_cortex_BA24": 2.54,
+        "Brain_Caudate_basal_ganglia": 2.91,
+        "Brain_Cerebellar_Hemisphere": 8.53,
+        "Brain_Cerebellum": 8.18,
+        "Brain_Cortex": 3.38,
+        "Brain_Frontal_Cortex_BA9": 3.52,
+        "Brain_Hippocampus": 2.46,
+        "Brain_Hypothalamus": 2.93,
+        "Brain_Nucleus_accumbens_basal_ganglia": 3.13,
+        "Brain_Putamen_basal_ganglia": 2.41,
+        "Brain_Spinal_cord_cervical_c-1": 3.83,
+        "Brain_Substantia_nigra": 2.76
+      }
+    },
+    "NT5C3A": {
+      "mean_brain_tpm": 11.15,
+      "max_brain_tpm": 20.33,
+      "max_tissue": "Brain_Cerebellar_Hemisphere",
+      "n_tissues": 13,
+      "tissue_values": {
+        "Brain_Amygdala": 8.48,
+        "Brain_Anterior_cingulate_cortex_BA24": 9.61,
+        "Brain_Caudate_basal_ganglia": 9.44,
+        "Brain_Cerebellar_Hemisphere": 20.33,
+        "Brain_Cerebellum": 16.71,
+        "Brain_Cortex": 10.1,
+        "Brain_Frontal_Cortex_BA9": 12.58,
+        "Brain_Hippocampus": 8.43,
+        "Brain_Hypothalamus": 11.23,
+        "Brain_Nucleus_accumbens_basal_ganglia": 9.19,
+        "Brain_Putamen_basal_ganglia": 7.97,
+        "Brain_Spinal_cord_cervical_c-1": 12.7,
+        "Brain_Substantia_nigra": 8.11
+      }
+    },
+    "GOLGA5": {
+      "mean_brain_tpm": 16.85,
+      "max_brain_tpm": 27.08,
+      "max_tissue": "Brain_Spinal_cord_cervical_c-1",
+      "n_tissues": 13,
+      "tissue_values": {
+        "Brain_Amygdala": 13.4,
+        "Brain_Anterior_cingulate_cortex_BA24": 13.57,
+        "Brain_Caudate_basal_ganglia": 14.34,
+        "Brain_Cerebellar_Hemisphere": 21.82,
+        "Brain_Cerebellum": 19.69,
+        "Brain_Cortex": 16.14,
+        "Brain_Frontal_Cortex_BA9": 17.84,
+        "Brain_Hippocampus": 13.91,
+        "Brain_Hypothalamus": 17.02,
+        "Brain_Nucleus_accumbens_basal_ganglia": 14.44,
+        "Brain_Putamen_basal_ganglia": 13.04,
+        "Brain_Spinal_cord_cervical_c-1": 27.08,
+        "Brain_Substantia_nigra": 16.81
+      }
+    },
+    "SENP8": {
+      "mean_brain_tpm": 1.43,
+      "max_brain_tpm": 2.2,
+      "max_tissue": "Brain_Cerebellar_Hemisphere",
+      "n_tissues": 13,
+      "tissue_values": {
+        "Brain_Amygdala": 1.03,
+        "Brain_Anterior_cingulate_cortex_BA24": 1.36,
+        "Brain_Caudate_basal_ganglia": 1.31,
+        "Brain_Cerebellar_Hemisphere": 2.2,
+        "Brain_Cerebellum": 1.88,
+        "Brain_Cortex": 1.52,
+        "Brain_Frontal_Cortex_BA9": 1.82,
+        "Brain_Hippocampus": 0.94,
+        "Brain_Hypothalamus": 1.49,
+        "Brain_Nucleus_accumbens_basal_ganglia": 1.46,
+        "Brain_Putamen_basal_ganglia": 1.01,
+        "Brain_Spinal_cord_cervical_c-1": 1.33,
+        "Brain_Substantia_nigra": 1.24
+      }
+    },
+    "SIRT3": {
+      "mean_brain_tpm": 15.86,
+      "max_brain_tpm": 23.3,
+      "max_tissue": "Brain_Cerebellar_Hemisphere",
+      "n_tissues": 13,
+      "tissue_values": {
+        "Brain_Amygdala": 10.77,
+        "Brain_Anterior_cingulate_cortex_BA24": 14.98,
+        "Brain_Caudate_basal_ganglia": 17.47,
+        "Brain_Cerebellar_Hemisphere": 23.3,
+        "Brain_Cerebellum": 23.16,
+        "Brain_Cortex": 20.56,
+        "Brain_Frontal_Cortex_BA9": 19.95,
+        "Brain_Hippocampus": 10.48,
+        "Brain_Hypothalamus": 12.58,
+        "Brain_Nucleus_accumbens_basal_ganglia": 19.76,
+        "Brain_Putamen_basal_ganglia": 14.03,
+        "Brain_Spinal_cord_cervical_c-1": 9.27,
+        "Brain_Substantia_nigra": 9.86
+      }
+    },
+    "ZNF143": {
+      "mean_brain_tpm": 6.22,
+      "max_brain_tpm": 14.77,
+      "max_tissue": "Brain_Cerebellar_Hemisphere",
+      "n_tissues": 13,
+      "tissue_values": {
+        "Brain_Amygdala": 4.32,
+        "Brain_Anterior_cingulate_cortex_BA24": 4.23,
+        "Brain_Caudate_basal_ganglia": 4.32,
+        "Brain_Cerebellar_Hemisphere": 14.77,
+        "Brain_Cerebellum": 12.61,
+        "Brain_Cortex": 5.04,
+        "Brain_Frontal_Cortex_BA9": 5.57,
+        "Brain_Hippocampus": 4.29,
+        "Brain_Hypothalamus": 5.18,
+        "Brain_Nucleus_accumbens_basal_ganglia": 3.9,
+        "Brain_Putamen_basal_ganglia": 3.7,
+        "Brain_Spinal_cord_cervical_c-1": 8.08,
+        "Brain_Substantia_nigra": 4.8
+      }
+    },
+    "KLHL12": {
+      "mean_brain_tpm": 18.8,
+      "max_brain_tpm": 30.52,
+      "max_tissue": "Brain_Cerebellar_Hemisphere",
+      "n_tissues": 13,
+      "tissue_values": {
+        "Brain_Amygdala": 12.77,
+        "Brain_Anterior_cingulate_cortex_BA24": 18.22,
+        "Brain_Caudate_basal_ganglia": 15.07,
+        "Brain_Cerebellar_Hemisphere": 30.52,
+        "Brain_Cerebellum": 26.28,
+        "Brain_Cortex": 20.68,
+        "Brain_Frontal_Cortex_BA9": 26.79,
+        "Brain_Hippocampus": 12.76,
+        "Brain_Hypothalamus": 20.46,
+        "Brain_Nucleus_accumbens_basal_ganglia": 16.19,
+        "Brain_Putamen_basal_ganglia": 12.13,
+        "Brain_Spinal_cord_cervical_c-1": 18.21,
+        "Brain_Substantia_nigra": 14.29
+      }
+    },
+    "ARF5": {
+      "mean_brain_tpm": 142.35,
+      "max_brain_tpm": 248.38,
+      "max_tissue": "Brain_Cerebellar_Hemisphere",
+      "n_tissues": 13,
+      "tissue_values": {
+        "Brain_Amygdala": 93.19,
+        "Brain_Anterior_cingulate_cortex_BA24": 132.82,
+        "Brain_Caudate_basal_ganglia": 125.18,
+        "Brain_Cerebellar_Hemisphere": 248.38,
+        "Brain_Cerebellum": 233.64,
+        "Brain_Cortex": 185.44,
+        "Brain_Frontal_Cortex_BA9": 213.05,
+        "Brain_Hippocampus": 100.56,
+        "Brain_Hypothalamus": 102.53,
+        "Brain_Nucleus_accumbens_basal_ganglia": 147.51,
+        "Brain_Putamen_basal_ganglia": 101.67,
+        "Brain_Spinal_cord_cervical_c-1": 90.63,
+        "Brain_Substantia_nigra": 75.99
+      }
+    },
+    "RPS27A": {
+      "mean_brain_tpm": 475.07,
+      "max_brain_tpm": 683.74,
+      "max_tissue": "Brain_Cerebellar_Hemisphere",
+      "n_tissues": 13,
+      "tissue_values": {
+        "Brain_Amygdala": 468.62,
+        "Brain_Anterior_cingulate_cortex_BA24": 393.12,
+        "Brain_Caudate_basal_ganglia": 372.47,
+        "Brain_Cerebellar_Hemisphere": 683.74,
+        "Brain_Cerebellum": 602.24,
+        "Brain_Cortex": 372.14,
+        "Brain_Frontal_Cortex_BA9": 421.92,
+        "Brain_Hippocampus": 400.98,
+        "Brain_Hypothalamus": 455.09,
+        "Brain_Nucleus_accumbens_basal_ganglia": 491.53,
+        "Brain_Putamen_basal_ganglia": 352.63,
+        "Brain_Spinal_cord_cervical_c-1": 633.39,
+        "Brain_Substantia_nigra": 527.99
+      }
+    },
+    "AASS": {
+      "mean_brain_tpm": 4.61,
+      "max_brain_tpm": 11.87,
+      "max_tissue": "Brain_Spinal_cord_cervical_c-1",
+      "n_tissues": 13,
+      "tissue_values": {
+        "Brain_Amygdala": 4.29,
+        "Brain_Anterior_cingulate_cortex_BA24": 3.49,
+        "Brain_Caudate_basal_ganglia": 5.46,
+        "Brain_Cerebellar_Hemisphere": 1.51,
+        "Brain_Cerebellum": 2.99,
+        "Brain_Cortex": 4.83,
+        "Brain_Frontal_Cortex_BA9": 3.48,
+        "Brain_Hippocampus": 4.46,
+        "Brain_Hypothalamus": 4.02,
+        "Brain_Nucleus_accumbens_basal_ganglia": 4.17,
+        "Brain_Putamen_basal_ganglia": 4.29,
+        "Brain_Spinal_cord_cervical_c-1": 11.87,
+        "Brain_Substantia_nigra": 5.11
+      }
+    },
+    "PTPRC": {
+      "mean_brain_tpm": 2.2,
+      "max_brain_tpm": 9.85,
+      "max_tissue": "Brain_Spinal_cord_cervical_c-1",
+      "n_tissues": 13,
+      "tissue_values": {
+        "Brain_Amygdala": 1.97,
+        "Brain_Anterior_cingulate_cortex_BA24": 1.06,
+        "Brain_Caudate_basal_ganglia": 1.75,
+        "Brain_Cerebellar_Hemisphere": 0.63,
+        "Brain_Cerebellum": 0.48,
+        "Brain_Cortex": 0.85,
+        "Brain_Frontal_Cortex_BA9": 0.94,
+        "Brain_Hippocampus": 2.18,
+        "Brain_Hypothalamus": 3.16,
+        "Brain_Nucleus_accumbens_basal_ganglia": 1.12,
+        "Brain_Putamen_basal_ganglia": 1.03,
+        "Brain_Spinal_cord_cervical_c-1": 9.85,
+        "Brain_Substantia_nigra": 3.6
+      }
+    },
+    "CHMP3": {
+      "mean_brain_tpm": 24.16,
+      "max_brain_tpm": 48.91,
+      "max_tissue": "Brain_Cerebellar_Hemisphere",
+      "n_tissues": 13,
+      "tissue_values": {
+        "Brain_Amygdala": 17.89,
+        "Brain_Anterior_cingulate_cortex_BA24": 24.32,
+        "Brain_Caudate_basal_ganglia": 24.3,
+        "Brain_Cerebellar_Hemisphere": 48.91,
+        "Brain_Cerebellum": 29.47,
+        "Brain_Cortex": 21.24,
+        "Brain_Frontal_Cortex_BA9": 30.89,
+        "Brain_Hippocampus": 14.39,
+        "Brain_Hypothalamus": 18.0,
+        "Brain_Nucleus_accumbens_basal_ganglia": 31.8,
+        "Brain_Putamen_basal_ganglia": 18.78,
+        "Brain_Spinal_cord_cervical_c-1": 19.12,
+        "Brain_Substantia_nigra": 14.99
+      }
+    },
+    "TAMM41": {
+      "mean_brain_tpm": 3.6,
+      "max_brain_tpm": 6.73,
+      "max_tissue": "Brain_Cerebellar_Hemisphere",
+      "n_tissues": 13,
+      "tissue_values": {
+        "Brain_Amygdala": 2.28,
+        "Brain_Anterior_cingulate_cortex_BA24": 2.85,
+        "Brain_Caudate_basal_ganglia": 3.23,
+        "Brain_Cerebellar_Hemisphere": 6.73,
+        "Brain_Cerebellum": 6.37,
+        "Brain_Cortex": 3.48,
+        "Brain_Frontal_Cortex_BA9": 3.95,
+        "Brain_Hippocampus": 2.5,
+        "Brain_Hypothalamus": 3.15,
+        "Brain_Nucleus_accumbens_basal_ganglia": 4.22,
+        "Brain_Putamen_basal_ganglia": 2.6,
+        "Brain_Spinal_cord_cervical_c-1": 3.31,
+        "Brain_Substantia_nigra": 2.13
+      }
+    },
+    "BRPF1": {
+      "mean_brain_tpm": 6.92,
+      "max_brain_tpm": 21.39,
+      "max_tissue": "Brain_Cerebellum",
+      "n_tissues": 13,
+      "tissue_values": {
+        "Brain_Amygdala": 3.04,
+        "Brain_Anterior_cingulate_cortex_BA24": 3.61,
+        "Brain_Caudate_basal_ganglia": 5.14,
+        "Brain_Cerebellar_Hemisphere": 20.25,
+        "Brain_Cerebellum": 21.39,
+        "Brain_Cortex": 6.39,
+        "Brain_Frontal_Cortex_BA9": 5.1,
+        "Brain_Hippocampus": 3.57,
+        "Brain_Hypothalamus": 3.77,
+        "Brain_Nucleus_accumbens_basal_ganglia": 5.04,
+        "Brain_Putamen_basal_ganglia": 4.53,
+        "Brain_Spinal_cord_cervical_c-1": 4.82,
+        "Brain_Substantia_nigra": 3.36
+      }
+    },
+    "ZNF189": {
+      "mean_brain_tpm": 16.66,
+      "max_brain_tpm": 38.51,
+      "max_tissue": "Brain_Spinal_cord_cervical_c-1",
+      "n_tissues": 13,
+      "tissue_values": {
+        "Brain_Amygdala": 10.56,
+        "Brain_Anterior_cingulate_cortex_BA24": 10.99,
+        "Brain_Caudate_basal_ganglia": 13.65,
+        "Brain_Cerebellar_Hemisphere": 23.03,
+        "Brain_Cerebellum": 19.02,
+        "Brain_Cortex": 14.23,
+        "Brain_Frontal_Cortex_BA9": 15.87,
+        "Brain_Hippocampus": 18.19,
+        "Brain_Hypothalamus": 12.12,
+        "Brain_Nucleus_accumbens_basal_ganglia": 11.87,
+        "Brain_Putamen_basal_ganglia": 12.52,
+        "Brain_Spinal_cord_cervical_c-1": 38.51,
+        "Brain_Substantia_nigra": 16.05
+      }
+    },
+    "ZNF48": {
+      "mean_brain_tpm": 7.55,
+      "max_brain_tpm": 16.62,
+      "max_tissue": "Brain_Cerebellar_Hemisphere",
+      "n_tissues": 13,
+      "tissue_values": {
+        "Brain_Amygdala": 4.25,
+        "Brain_Anterior_cingulate_cortex_BA24": 6.45,
+        "Brain_Caudate_basal_ganglia": 4.97,
+        "Brain_Cerebellar_Hemisphere": 16.62,
+        "Brain_Cerebellum": 16.35,
+        "Brain_Cortex": 11.19,
+        "Brain_Frontal_Cortex_BA9": 10.69,
+        "Brain_Hippocampus": 4.44,
+        "Brain_Hypothalamus": 5.35,
+        "Brain_Nucleus_accumbens_basal_ganglia": 5.76,
+        "Brain_Putamen_basal_ganglia": 4.51,
+        "Brain_Spinal_cord_cervical_c-1": 4.16,
+        "Brain_Substantia_nigra": 3.42
+      }
+    },
+    "EBP": {
+      "mean_brain_tpm": 14.85,
+      "max_brain_tpm": 38.1,
+      "max_tissue": "Brain_Cerebellum",
+      "n_tissues": 13,
+      "tissue_values": {
+        "Brain_Amygdala": 8.71,
+        "Brain_Anterior_cingulate_cortex_BA24": 11.43,
+        "Brain_Caudate_basal_ganglia": 9.06,
+        "Brain_Cerebellar_Hemisphere": 37.29,
+        "Brain_Cerebellum": 38.1,
+        "Brain_Cortex": 12.63,
+        "Brain_Frontal_Cortex_BA9": 14.33,
+        "Brain_Hippocampus": 9.17,
+        "Brain_Hypothalamus": 12.83,
+        "Brain_Nucleus_accumbens_basal_ganglia": 11.66,
+        "Brain_Putamen_basal_ganglia": 8.04,
+        "Brain_Spinal_cord_cervical_c-1": 11.97,
+        "Brain_Substantia_nigra": 7.79
+      }
+    },
+    "ZNF764": {
+      "mean_brain_tpm": 4.05,
+      "max_brain_tpm": 9.06,
+      "max_tissue": "Brain_Cerebellum",
+      "n_tissues": 13,
+      "tissue_values": {
+        "Brain_Amygdala": 2.57,
+        "Brain_Anterior_cingulate_cortex_BA24": 2.99,
+        "Brain_Caudate_basal_ganglia": 3.06,
+        "Brain_Cerebellar_Hemisphere": 8.58,
+        "Brain_Cerebellum": 9.06,
+        "Brain_Cortex": 4.05,
+        "Brain_Frontal_Cortex_BA9": 3.87,
+        "Brain_Hippocampus": 2.95,
+        "Brain_Hypothalamus": 3.28,
+        "Brain_Nucleus_accumbens_basal_ganglia": 3.47,
+        "Brain_Putamen_basal_ganglia": 2.61,
+        "Brain_Spinal_cord_cervical_c-1": 3.55,
+        "Brain_Substantia_nigra": 2.64
+      }
+    },
+    "BLOC1S5": {
+      "mean_brain_tpm": 3.12,
+      "max_brain_tpm": 4.59,
+      "max_tissue": "Brain_Spinal_cord_cervical_c-1",
+      "n_tissues": 13,
+      "tissue_values": {
+        "Brain_Amygdala": 2.77,
+        "Brain_Anterior_cingulate_cortex_BA24": 2.62,
+        "Brain_Caudate_basal_ganglia": 3.14,
+        "Brain_Cerebellar_Hemisphere": 3.94,
+        "Brain_Cerebellum": 3.12,
+        "Brain_Cortex": 2.6,
+        "Brain_Frontal_Cortex_BA9": 3.03,
+        "Brain_Hippocampus": 2.45,
+        "Brain_Hypothalamus": 3.31,
+        "Brain_Nucleus_accumbens_basal_ganglia": 3.06,
+        "Brain_Putamen_basal_ganglia": 2.58,
+        "Brain_Spinal_cord_cervical_c-1": 4.59,
+        "Brain_Substantia_nigra": 3.29
+      }
+    },
+    "PPP3CA": {
+      "mean_brain_tpm": 91.05,
+      "max_brain_tpm": 183.15,
+      "max_tissue": "Brain_Cerebellar_Hemisphere",
+      "n_tissues": 13,
+      "tissue_values": {
+        "Brain_Amygdala": 39.94,
+        "Brain_Anterior_cingulate_cortex_BA24": 73.21,
+        "Brain_Caudate_basal_ganglia": 155.41,
+        "Brain_Cerebellar_Hemisphere": 183.15,
+        "Brain_Cerebellum": 106.02,
+        "Brain_Cortex": 88.19,
+        "Brain_Frontal_Cortex_BA9": 158.05,
+        "Brain_Hippocampus": 68.33,
+        "Brain_Hypothalamus": 29.29,
+        "Brain_Nucleus_accumbens_basal_ganglia": 140.03,
+        "Brain_Putamen_basal_ganglia": 114.32,
+        "Brain_Spinal_cord_cervical_c-1": 13.47,
+        "Brain_Substantia_nigra": 14.26
+      }
+    },
+    "SYS1": {
+      "mean_brain_tpm": 7.79,
+      "max_brain_tpm": 10.2,
+      "max_tissue": "Brain_Spinal_cord_cervical_c-1",
+      "n_tissues": 13,
+      "tissue_values": {
+        "Brain_Amygdala": 6.08,
+        "Brain_Anterior_cingulate_cortex_BA24": 6.0,
+        "Brain_Caudate_basal_ganglia": 8.35,
+        "Brain_Cerebellar_Hemisphere": 9.21,
+        "Brain_Cerebellum": 9.11,
+        "Brain_Cortex": 7.27,
+        "Brain_Frontal_Cortex_BA9": 7.54,
+        "Brain_Hippocampus": 6.16,
+        "Brain_Hypothalamus": 8.54,
+        "Brain_Nucleus_accumbens_basal_ganglia": 7.7,
+        "Brain_Putamen_basal_ganglia": 7.51,
+        "Brain_Spinal_cord_cervical_c-1": 10.2,
+        "Brain_Substantia_nigra": 7.61
+      }
+    },
+    "NPEPPS": {
+      "mean_brain_tpm": 32.93,
+      "max_brain_tpm": 77.48,
+      "max_tissue": "Brain_Cerebellar_Hemisphere",
+      "n_tissues": 13,
+      "tissue_values": {
+        "Brain_Amygdala": 19.85,
+        "Brain_Anterior_cingulate_cortex_BA24": 25.77,
+        "Brain_Caudate_basal_ganglia": 23.86,
+        "Brain_Cerebellar_Hemisphere": 77.48,
+        "Brain_Cerebellum": 73.28,
+        "Brain_Cortex": 34.69,
+        "Brain_Frontal_Cortex_BA9": 37.41,
+        "Brain_Hippocampus": 17.9,
+        "Brain_Hypothalamus": 25.29,
+        "Brain_Nucleus_accumbens_basal_ganglia": 27.8,
+        "Brain_Putamen_basal_ganglia": 18.06,
+        "Brain_Spinal_cord_cervical_c-1": 24.29,
+        "Brain_Substantia_nigra": 22.35
+      }
+    },
+    "EEF1A2": {
+      "mean_brain_tpm": 430.83,
+      "max_brain_tpm": 972.25,
+      "max_tissue": "Brain_Cerebellar_Hemisphere",
+      "n_tissues": 13,
+      "tissue_values": {
+        "Brain_Amygdala": 239.49,
+        "Brain_Anterior_cingulate_cortex_BA24": 487.15,
+        "Brain_Caudate_basal_ganglia": 260.91,
+        "Brain_Cerebellar_Hemisphere": 972.25,
+        "Brain_Cerebellum": 934.18,
+        "Brain_Cortex": 713.6,
+        "Brain_Frontal_Cortex_BA9": 785.57,
+        "Brain_Hippocampus": 236.59,
+        "Brain_Hypothalamus": 301.51,
+        "Brain_Nucleus_accumbens_basal_ganglia": 293.62,
+        "Brain_Putamen_basal_ganglia": 198.87,
+        "Brain_Spinal_cord_cervical_c-1": 66.83,
+        "Brain_Substantia_nigra": 110.18
+      }
+    },
+    "ALMS1": {
+      "mean_brain_tpm": 2.62,
+      "max_brain_tpm": 6.95,
+      "max_tissue": "Brain_Cerebellum",
+      "n_tissues": 13,
+      "tissue_values": {
+        "Brain_Amygdala": 1.6,
+        "Brain_Anterior_cingulate_cortex_BA24": 1.43,
+        "Brain_Caudate_basal_ganglia": 2.0,
+        "Brain_Cerebellar_Hemisphere": 6.35,
+        "Brain_Cerebellum": 6.95,
+        "Brain_Cortex": 2.07,
+        "Brain_Frontal_Cortex_BA9": 1.68,
+        "Brain_Hippocampus": 1.82,
+        "Brain_Hypothalamus": 1.85,
+        "Brain_Nucleus_accumbens_basal_ganglia": 1.93,
+        "Brain_Putamen_basal_ganglia": 1.6,
+        "Brain_Spinal_cord_cervical_c-1": 2.95,
+        "Brain_Substantia_nigra": 1.79
+      }
+    },
+    "RAB10": {
+      "mean_brain_tpm": 52.35,
+      "max_brain_tpm": 97.65,
+      "max_tissue": "Brain_Spinal_cord_cervical_c-1",
+      "n_tissues": 13,
+      "tissue_values": {
+        "Brain_Amygdala": 46.81,
+        "Brain_Anterior_cingulate_cortex_BA24": 48.43,
+        "Brain_Caudate_basal_ganglia": 44.91,
+        "Brain_Cerebellar_Hemisphere": 63.52,
+        "Brain_Cerebellum": 46.46,
+        "Brain_Cortex": 39.82,
+        "Brain_Frontal_Cortex_BA9": 58.52,
+        "Brain_Hippocampus": 44.92,
+        "Brain_Hypothalamus": 52.71,
+        "Brain_Nucleus_accumbens_basal_ganglia": 45.97,
+        "Brain_Putamen_basal_ganglia": 37.27,
+        "Brain_Spinal_cord_cervical_c-1": 97.65,
+        "Brain_Substantia_nigra": 53.53
+      }
+    },
+    "PYGL": {
+      "mean_brain_tpm": 5.35,
+      "max_brain_tpm": 10.23,
+      "max_tissue": "Brain_Substantia_nigra",
+      "n_tissues": 13,
+      "tissue_values": {
+        "Brain_Amygdala": 4.74,
+        "Brain_Anterior_cingulate_cortex_BA24": 4.55,
+        "Brain_Caudate_basal_ganglia": 5.61,
+        "Brain_Cerebellar_Hemisphere": 3.08,
+        "Brain_Cerebellum": 3.57,
+        "Brain_Cortex": 3.7,
+        "Brain_Frontal_Cortex_BA9": 3.8,
+        "Brain_Hippocampus": 3.74,
+        "Brain_Hypothalamus": 6.17,
+        "Brain_Nucleus_accumbens_basal_ganglia": 7.67,
+        "Brain_Putamen_basal_ganglia": 3.96,
+        "Brain_Spinal_cord_cervical_c-1": 8.68,
+        "Brain_Substantia_nigra": 10.23
+      }
+    },
+    "HSPB1": {
+      "mean_brain_tpm": 123.59,
+      "max_brain_tpm": 164.3,
+      "max_tissue": "Brain_Substantia_nigra",
+      "n_tissues": 13,
+      "tissue_values": {
+        "Brain_Amygdala": 135.48,
+        "Brain_Anterior_cingulate_cortex_BA24": 137.02,
+        "Brain_Caudate_basal_ganglia": 137.0,
+        "Brain_Cerebellar_Hemisphere": 51.61,
+        "Brain_Cerebellum": 74.78,
+        "Brain_Cortex": 128.08,
+        "Brain_Frontal_Cortex_BA9": 130.46,
+        "Brain_Hippocampus": 103.6,
+        "Brain_Hypothalamus": 160.48,
+        "Brain_Nucleus_accumbens_basal_ganglia": 115.22,
+        "Brain_Putamen_basal_ganglia": 119.69,
+        "Brain_Spinal_cord_cervical_c-1": 148.96,
+        "Brain_Substantia_nigra": 164.3
+      }
+    },
+    "ASCC3": {
+      "mean_brain_tpm": 2.83,
+      "max_brain_tpm": 5.38,
+      "max_tissue": "Brain_Cerebellum",
+      "n_tissues": 13,
+      "tissue_values": {
+        "Brain_Amygdala": 1.93,
+        "Brain_Anterior_cingulate_cortex_BA24": 1.87,
+        "Brain_Caudate_basal_ganglia": 2.4,
+        "Brain_Cerebellar_Hemisphere": 4.98,
+        "Brain_Cerebellum": 5.38,
+        "Brain_Cortex": 2.53,
+        "Brain_Frontal_Cortex_BA9": 2.21,
+        "Brain_Hippocampus": 1.88,
+        "Brain_Hypothalamus": 2.76,
+        "Brain_Nucleus_accumbens_basal_ganglia": 2.85,
+        "Brain_Putamen_basal_ganglia": 1.97,
+        "Brain_Spinal_cord_cervical_c-1": 3.73,
+        "Brain_Substantia_nigra": 2.26
+      }
+    },
+    "TGFA": {
+      "mean_brain_tpm": 6.57,
+      "max_brain_tpm": 25.16,
+      "max_tissue": "Brain_Spinal_cord_cervical_c-1",
+      "n_tissues": 13,
+      "tissue_values": {
+        "Brain_Amygdala": 5.84,
+        "Brain_Anterior_cingulate_cortex_BA24": 3.21,
+        "Brain_Caudate_basal_ganglia": 5.26,
+        "Brain_Cerebellar_Hemisphere": 4.5,
+        "Brain_Cerebellum": 3.56,
+        "Brain_Cortex": 2.78,
+        "Brain_Frontal_Cortex_BA9": 3.23,
+        "Brain_Hippocampus": 7.46,
+        "Brain_Hypothalamus": 5.97,
+        "Brain_Nucleus_accumbens_basal_ganglia": 4.18,
+        "Brain_Putamen_basal_ganglia": 6.02,
+        "Brain_Spinal_cord_cervical_c-1": 25.16,
+        "Brain_Substantia_nigra": 8.21
+      }
+    },
+    "CETN2": {
+      "mean_brain_tpm": 44.9,
+      "max_brain_tpm": 65.83,
+      "max_tissue": "Brain_Hypothalamus",
+      "n_tissues": 13,
+      "tissue_values": {
+        "Brain_Amygdala": 48.09,
+        "Brain_Anterior_cingulate_cortex_BA24": 45.99,
+        "Brain_Caudate_basal_ganglia": 47.85,
+        "Brain_Cerebellar_Hemisphere": 29.12,
+        "Brain_Cerebellum": 27.16,
+        "Brain_Cortex": 41.52,
+        "Brain_Frontal_Cortex_BA9": 51.06,
+        "Brain_Hippocampus": 41.95,
+        "Brain_Hypothalamus": 65.83,
+        "Brain_Nucleus_accumbens_basal_ganglia": 56.88,
+        "Brain_Putamen_basal_ganglia": 34.09,
+        "Brain_Spinal_cord_cervical_c-1": 47.42,
+        "Brain_Substantia_nigra": 46.75
+      }
+    },
+    "DENND5B": {
+      "mean_brain_tpm": 7.65,
+      "max_brain_tpm": 22.5,
+      "max_tissue": "Brain_Cerebellar_Hemisphere",
+      "n_tissues": 13,
+      "tissue_values": {
+        "Brain_Amygdala": 3.92,
+        "Brain_Anterior_cingulate_cortex_BA24": 5.68,
+        "Brain_Caudate_basal_ganglia": 6.07,
+        "Brain_Cerebellar_Hemisphere": 22.5,
+        "Brain_Cerebellum": 17.67,
+        "Brain_Cortex": 6.36,
+        "Brain_Frontal_Cortex_BA9": 8.84,
+        "Brain_Hippocampus": 3.83,
+        "Brain_Hypothalamus": 6.54,
+        "Brain_Nucleus_accumbens_basal_ganglia": 6.6,
+        "Brain_Putamen_basal_ganglia": 4.25,
+        "Brain_Spinal_cord_cervical_c-1": 3.61,
+        "Brain_Substantia_nigra": 3.64
+      }
+    },
+    "DNAH7": {
+      "mean_brain_tpm": 1.05,
+      "max_brain_tpm": 1.97,
+      "max_tissue": "Brain_Cortex",
+      "n_tissues": 13,
+      "tissue_values": {
+        "Brain_Amygdala": 1.07,
+        "Brain_Anterior_cingulate_cortex_BA24": 1.43,
+        "Brain_Caudate_basal_ganglia": 1.96,
+        "Brain_Cerebellar_Hemisphere": 0.09,
+        "Brain_Cerebellum": 0.18,
+        "Brain_Cortex": 1.97,
+        "Brain_Frontal_Cortex_BA9": 1.58,
+        "Brain_Hippocampus": 0.82,
+        "Brain_Hypothalamus": 0.97,
+        "Brain_Nucleus_accumbens_basal_ganglia": 1.94,
+        "Brain_Putamen_basal_ganglia": 0.95,
+        "Brain_Spinal_cord_cervical_c-1": 0.17,
+        "Brain_Substantia_nigra": 0.5
+      }
+    },
+    "ROPN1L": {
+      "mean_brain_tpm": 0.85,
+      "max_brain_tpm": 1.79,
+      "max_tissue": "Brain_Hippocampus",
+      "n_tissues": 13,
+      "tissue_values": {
+        "Brain_Amygdala": 0.74,
+        "Brain_Anterior_cingulate_cortex_BA24": 0.91,
+        "Brain_Caudate_basal_ganglia": 0.87,
+        "Brain_Cerebellar_Hemisphere": 0.29,
+        "Brain_Cerebellum": 0.5,
+        "Brain_Cortex": 1.18,
+        "Brain_Frontal_Cortex_BA9": 1.59,
+        "Brain_Hippocampus": 1.79,
+        "Brain_Hypothalamus": 1.54,
+        "Brain_Nucleus_accumbens_basal_ganglia": 0.79,
+        "Brain_Putamen_basal_ganglia": 0.3,
+        "Brain_Spinal_cord_cervical_c-1": 0.27,
+        "Brain_Substantia_nigra": 0.31
+      }
+    },
+    "DNAAF5": {
+      "mean_brain_tpm": 6.32,
+      "max_brain_tpm": 13.46,
+      "max_tissue": "Brain_Cerebellum",
+      "n_tissues": 13,
+      "tissue_values": {
+        "Brain_Amygdala": 4.39,
+        "Brain_Anterior_cingulate_cortex_BA24": 4.25,
+        "Brain_Caudate_basal_ganglia": 5.63,
+        "Brain_Cerebellar_Hemisphere": 12.23,
+        "Brain_Cerebellum": 13.46,
+        "Brain_Cortex": 6.22,
+        "Brain_Frontal_Cortex_BA9": 5.32,
+        "Brain_Hippocampus": 4.13,
+        "Brain_Hypothalamus": 5.32,
+        "Brain_Nucleus_accumbens_basal_ganglia": 5.89,
+        "Brain_Putamen_basal_ganglia": 4.24,
+        "Brain_Spinal_cord_cervical_c-1": 6.79,
+        "Brain_Substantia_nigra": 4.25
+      }
+    },
+    "ERICH2": {
+      "mean_brain_tpm": 3.71,
+      "max_brain_tpm": 6.0,
+      "max_tissue": "Brain_Hypothalamus",
+      "n_tissues": 13,
+      "tissue_values": {
+        "Brain_Amygdala": 4.13,
+        "Brain_Anterior_cingulate_cortex_BA24": 4.01,
+        "Brain_Caudate_basal_ganglia": 3.45,
+        "Brain_Cerebellar_Hemisphere": 2.84,
+        "Brain_Cerebellum": 2.9,
+        "Brain_Cortex": 3.31,
+        "Brain_Frontal_Cortex_BA9": 4.05,
+        "Brain_Hippocampus": 3.27,
+        "Brain_Hypothalamus": 6.0,
+        "Brain_Nucleus_accumbens_basal_ganglia": 4.51,
+        "Brain_Putamen_basal_ganglia": 2.62,
+        "Brain_Spinal_cord_cervical_c-1": 3.22,
+        "Brain_Substantia_nigra": 3.87
+      }
+    },
+    "KCNH1": {
+      "mean_brain_tpm": 1.73,
+      "max_brain_tpm": 6.42,
+      "max_tissue": "Brain_Cerebellar_Hemisphere",
+      "n_tissues": 13,
+      "tissue_values": {
+        "Brain_Amygdala": 0.34,
+        "Brain_Anterior_cingulate_cortex_BA24": 0.89,
+        "Brain_Caudate_basal_ganglia": 0.58,
+        "Brain_Cerebellar_Hemisphere": 6.42,
+        "Brain_Cerebellum": 6.0,
+        "Brain_Cortex": 2.41,
+        "Brain_Frontal_Cortex_BA9": 3.03,
+        "Brain_Hippocampus": 0.38,
+        "Brain_Hypothalamus": 0.39,
+        "Brain_Nucleus_accumbens_basal_ganglia": 0.77,
+        "Brain_Putamen_basal_ganglia": 0.36,
+        "Brain_Spinal_cord_cervical_c-1": 0.67,
+        "Brain_Substantia_nigra": 0.19
+      }
+    },
+    "LRRC45": {
+      "mean_brain_tpm": 12.65,
+      "max_brain_tpm": 49.22,
+      "max_tissue": "Brain_Cerebellum",
+      "n_tissues": 13,
+      "tissue_values": {
+        "Brain_Amygdala": 5.13,
+        "Brain_Anterior_cingulate_cortex_BA24": 6.86,
+        "Brain_Caudate_basal_ganglia": 6.54,
+        "Brain_Cerebellar_Hemisphere": 45.39,
+        "Brain_Cerebellum": 49.22,
+        "Brain_Cortex": 9.66,
+        "Brain_Frontal_Cortex_BA9": 9.0,
+        "Brain_Hippocampus": 5.37,
+        "Brain_Hypothalamus": 5.75,
+        "Brain_Nucleus_accumbens_basal_ganglia": 5.95,
+        "Brain_Putamen_basal_ganglia": 5.17,
+        "Brain_Spinal_cord_cervical_c-1": 5.78,
+        "Brain_Substantia_nigra": 4.67
+      }
+    }
+  }
+}
