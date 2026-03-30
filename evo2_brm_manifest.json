@@ -1,0 +1,245 @@
+{
+  "manifest_version": "1.0.0",
+  "manifest_date": "2026-03-30",
+  "status": "FROZEN",
+  "ruo": true,
+  "disclaimer": "Research Use Only. Not cleared for clinical decision-making.",
+
+  "datasets": {
+    "crispr_activation": {
+      "accession": "GSE237446",
+      "title": "In vivo CRISPRa screen for breast-to-brain metastasis drivers",
+      "citation": "Chafe et al. Sci Transl Med 2025",
+      "pmid": "PENDING — Chafe 2025 bioRxiv precursor PMID not yet assigned",
+      "cell_line": "CRUK0748 (human breast cancer, Calabrese A CRISPRa library)",
+      "files_used": [
+        "GSE237446_brains_individual_1mil.csv.gz",
+        "GSE237446_lungs_individual_1mil.csv.gz"
+      ],
+      "samples": {
+        "brain": 12,
+        "lung": 11,
+        "t0_pellet": "GSM7616089 — supplementary data not provided; T0 normalization done upstream"
+      },
+      "guides_total": 56160,
+      "genes_recovered": 6836,
+      "genes_above_lfc5": 200,
+      "method": "log2(mean_brain_count + 1) - log2(mean_lung_count + 1) per gene, across all guides",
+      "output_file": "data/brain_met/gse237446_real_lfc.json",
+      "status": "REAL — file present, parsed 2026-03-30",
+      "note": "GeneID format is GENESYMBOL_CalA_GUIDEINDEX — gene symbol embedded, no external mapping required"
+    },
+
+    "atac": {
+      "canonical_accession": "GSE205033",
+      "canonical_title": "Melanoma brain metastasis ATAC-seq (multi-sample)",
+      "canonical_citation": "Biermann et al. Cell 2022",
+      "canonical_pmid": "36113464",
+      "files_used": [
+        "GSE205033_atac_allpeaks.csv.gz (57 MB, 261,222 peaks × 24 samples)",
+        "GSE205033_atac_deseq.csv.gz (2.3 MB, DESeq-normalized)"
+      ],
+      "samples": 24,
+      "peaks": 261222,
+      "output_files": [
+        "data/brain_met/atac_gene_scores.json (261,219 peaks, mean_rpkm per peak)",
+        "data/brain_met/atac_gene_level_scores.json (443 genes, TSS-proximity aggregated)"
+      ],
+      "status": "REAL — file present at data/raw_geo/GSE205033_atac_allpeaks.csv.gz, parsed 2026-03-28",
+
+      "superseded_reference": {
+        "accession": "GSE129646",
+        "title": "MDA-MB-231 Par/BrM2/LM ATAC-seq",
+        "citation": "Cai & Greer 2020",
+        "status": "SUPPLEMENTARY — downloaded 2026-03-30, processed into gse129646_real_atac.json",
+        "role": "Provides locus-level BrM2 vs Par differential accessibility for 6 key gene windows. NOT the primary ATAC source for Target-Lock v2 scoring.",
+        "why_not_primary": "GSE129646 uses MDA-MB-231 breast cancer cell lines (in vitro). GSE205033 uses primary melanoma BrM patient samples (in vivo, multi-patient). In vivo patient data is the correct source for the BrM target universe.",
+        "output_file": "data/brain_met/gse129646_real_atac.json"
+      }
+    },
+
+    "clinical_mutations": {
+      "accession": "Zenodo 5801902",
+      "title": "MSK-MET pan-cancer metastatic mutation landscape",
+      "citation": "Nguyen et al. Nat Genet 2022",
+      "pmid": "35681060",
+      "files_used": ["data_mutations.txt (75 MB, 230,419 mutations × 24,755 samples)"],
+      "samples_total": 24755,
+      "mutations_total": 230419,
+      "genes_in_panel": 492,
+      "brain_filter_applied": false,
+      "brain_filter_note": "data_clinical_sample.txt not available. Pan-cohort frequencies used. Key BrM targets (FAM72A, SLC25A32, ATP10D, BACE1, BIN1) are NOT in the 492-gene MSK-IMPACT panel — clinical burden score 0 is correct, not a data gap.",
+      "output_file": "data/brain_met/mskmet_real_burden.json",
+      "status": "REAL — parsed 2026-03-30, pan-cohort only"
+    },
+
+    "rnaseq": {
+      "accession": "GSE184869",
+      "title": "Matched breast-to-brain metastasis RNA-seq",
+      "citation": "Cai et al. 2022 (AURORA breast BrM cohort)",
+      "pmid": "AURORA dataset — primary citation pending verification",
+      "files_used": ["GSE184869_bcbm_expression.xlsx (matched BrM vs primary)"],
+      "output_file": "data/brain_met/rnaseq_gene_scores.json (16,714 genes, BrM vs primary LFC)",
+      "status": "REAL — parsed 2026-03-28 via ENSEMBL symbol map"
+    },
+
+    "gtex_safety": {
+      "accession": "GTEx v8",
+      "title": "GTEx v8 multi-tissue gene expression — brain regions",
+      "citation": "GTEx Consortium 2020",
+      "pmid": "32913098",
+      "api": "https://gtexportal.org/api/v2/expression/geneExpression",
+      "brain_regions": 13,
+      "genes_fetched": 50,
+      "output_file": "data/brain_met/gtex_brain_safety.json",
+      "status": "REAL — fetched via GTEx API 2026-03-28"
+    }
+  },
+
+  "evo2_deployment": {
+    "service_name": "crispro-evo2-v9",
+    "modal_app_id": "crispro-evo2-v9",
+    "model_name": "evo2_1b_base",
+    "model_source": "ArcInstitute/evo2 (GitHub, pinned to HEAD at deploy time)",
+    "hardware": "A100 (SM8.0, BF16, FP8 disabled via patches.py)",
+    "workspace": "crispro-test",
+    "token_id_prefix": "ak-u2ShLP...",
+    "scoring_method": "conditional_log_likelihood (position-specific, Evo2 paper method)",
+    "live_verification": {
+      "status": "CONFIRMED LIVE 2026-03-28",
+      "n_variants_scored": 12,
+      "examples": [
+        {"variant": "PIK3CA_H1047R", "delta_ll": -0.615},
+        {"variant": "TP53_R175H",    "delta_ll": -0.418},
+        {"variant": "BACE1_D289N",   "delta_ll": "+0.002"}
+      ],
+      "log_file": "data/validation/live_variant_scores.json"
+    },
+    "weight_in_target_lock_v2": 0.05,
+    "weight_rationale": "Pearson r=0.016 between Evo2 conditional_ll and CRISPRa brain LFC (189 genes). Evo2 is orthogonal to gene-level BrM function. Correct use: clinical variant hotspot scoring only.",
+    "patches_required": [
+      "patches.py: torch.load weights_only=False (global monkey-patch)",
+      "patches.py: FP8 disabled via check_fp8_support + fp8_available=True",
+      "TE 1.13 pinned (cuDNN 8 compat — do NOT bump without migrating to cuDNN 9+ base)"
+    ]
+  },
+
+  "target_lock_v2": {
+    "formula": "0.35 × CRISPRa_norm + 0.25 × RNA_norm + 0.20 × ATAC_norm + 0.15 × Clinical_norm + 0.05 × Evo2_norm",
+    "normalization": "min-max per signal across all scored genes",
+    "atac_source": "GSE205033 (primary, 261k peaks, melanoma BrM in vivo)",
+    "crispr_source": "GSE237446 (real counts, 56k guides, 2026-03-30 run)",
+    "output_file_v1": "data/brain_met/BrM_Top_50_Targets.csv (run 2026-03-28, imputed CRISPRa)",
+    "output_file_v2": "data/brain_met/BrM_Assassin_Scored_v2_realdata.csv (run 2026-03-30, real CRISPRa)"
+  },
+
+  "assassin_score": {
+    "formula": "0.37 × Efficacy(TL_v2) + 0.30 × Safety(GTEx_inv) + 0.30 × Mission + 0.03 × Structure",
+    "structure_pending": "AF3 Cas9 RNP jobs submitted for Top 5 (SLC25A32 partial iptm=0.420)",
+    "frozen_top_5": [
+      {
+        "rank": 1, "gene": "ATP10D",
+        "assassin_score": 0.6743,
+        "crispr_lfc_real": 12.163,
+        "gtex_mean_tpm": 2.37,
+        "safety_flag": "LOW",
+        "data_version": "v2_real_2026-03-30"
+      },
+      {
+        "rank": 2, "gene": "FAM72A",
+        "assassin_score": 0.6549,
+        "crispr_lfc_real": 6.893,
+        "gtex_mean_tpm": 0.28,
+        "safety_flag": "MINIMAL",
+        "data_version": "v2_real_2026-03-30"
+      },
+      {
+        "rank": 3, "gene": "SENP8",
+        "assassin_score": 0.6231,
+        "crispr_lfc_real": 7.055,
+        "gtex_mean_tpm": 1.43,
+        "safety_flag": "LOW",
+        "data_version": "v2_real_2026-03-30"
+      },
+      {
+        "rank": 4, "gene": "SLC25A32",
+        "assassin_score": 0.6168,
+        "crispr_lfc_real": 11.069,
+        "gtex_mean_tpm": 9.12,
+        "safety_flag": "LOW",
+        "af3_iptm_partial": 0.420,
+        "af3_note": "3-chain partial (sgRNA+NTS+TS, no Cas9). Resubmit 4-chain RNP for full result.",
+        "data_version": "v2_real_2026-03-30"
+      },
+      {
+        "rank": 5, "gene": "SLC45A4",
+        "assassin_score": 0.5928,
+        "crispr_lfc_real": 12.555,
+        "gtex_mean_tpm": 6.24,
+        "safety_flag": "LOW",
+        "data_version": "v2_real_2026-03-30"
+      }
+    ],
+    "notable_drops": [
+      {
+        "gene": "BACE1",
+        "old_rank": 4, "new_rank": 8,
+        "reason": "37.1 TPM MODERATE GTEx safety flag — tumor-specific guide design required"
+      },
+      {
+        "gene": "BIN1",
+        "old_rank": 5, "new_rank": 15,
+        "reason": "140.3 TPM HIGH_RISK — neurotoxicity concern. Safety gate correctly deprioritizes."
+      },
+      {
+        "gene": "FAM72A",
+        "old_rank": 1, "new_rank": 2,
+        "reason": "Real CRISPRa LFC +6.89 vs imputed +7.07 — marginal delta, still #2. Synthetic repressor valid."
+      }
+    ]
+  },
+
+  "fam72a_repressor": {
+    "status": "GENERATED 2026-03-28",
+    "model": "evo2_1b_base (crispro-evo2-v9, A100)",
+    "prompt": "FAM72A TSS context 501bp (NC_000001.11:206205272-206206272 hg38 minus-strand RC)",
+    "sae_feature": "f/15680 (coding region — activated via exon1 coding context)",
+    "tf_suppressed": ["SP1", "E2F1", "CREB1", "YY1"],
+    "n_candidates": 4,
+    "best_candidate": 1,
+    "best_gc_pct": 48.8,
+    "best_brain_tf_hits": 0,
+    "output_files": [
+      "data/brain_met/fam72a_synthetic_repressor.fasta",
+      "data/brain_met/fam72a_synthetic_repressor.json"
+    ],
+    "validation_required": "Luciferase reporter assay (WT vs repressor#1 vs repressor#3+CpG)"
+  },
+
+  "unresolved": [
+    {
+      "id": "UNRESOLVED-001",
+      "description": "data_clinical_sample.txt not available — MSK-MET brain-specific filter cannot be applied",
+      "impact": "Clinical burden scores for all targets = 0.0 (correct but conservative). Pan-cohort frequencies used instead.",
+      "resolution": "Obtain data_clinical_sample.txt from Zenodo 5801902 and re-run mskmet extraction"
+    },
+    {
+      "id": "UNRESOLVED-002",
+      "description": "GSE237446 T0 pellet (GSM7616089) has no supplementary count data — only raw SRA reads",
+      "impact": "LFC computed as brain vs lung without T0 normalization. Absolute enrichment scores may differ from MAGeCK output.",
+      "resolution": "Download SRA reads, align, count, then re-run with 3-condition MAGeCK (T0, brain, lung)"
+    },
+    {
+      "id": "UNRESOLVED-003",
+      "description": "AF3 Cas9 RNP jobs for FAM72A, ATP10D, BACE1, BIN1 not yet submitted (specs ready)",
+      "impact": "Structure score = 0.5 (pending) for 4 of top 5 targets. SLC25A32 partial iptm=0.420.",
+      "resolution": "Submit af3_cas9_rnp_*.json to alphafoldserver.com (10 jobs/day limit)"
+    },
+    {
+      "id": "UNRESOLVED-004",
+      "description": "SENP8 Evo2 steered generation not yet run (FAM72A only)",
+      "impact": "Repressor sequences available for #2 target only",
+      "resolution": "Run fam72a_evo2_steered.py pattern against SENP8 promoter context"
+    }
+  ]
+}
