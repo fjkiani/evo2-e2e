@@ -1,0 +1,1810 @@
+{
+  "source": "GSE237446",
+  "description": "CRISPRa screen brain vs lung LFC (Chafe et al. 2025)",
+  "n_genes": 6836,
+  "n_brain_samples": 12,
+  "n_lung_samples": 11,
+  "method": "log2(mean_brain+1) - log2(mean_lung+1) per gene across all guides",
+  "top_genes": [
+    {
+      "gene": "SLC45A4",
+      "brain_mean": 47251.1893,
+      "lung_mean": 6.8549,
+      "lfc_brain_vs_lung": 12.5545,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "PTPRC",
+      "brain_mean": 55725.5109,
+      "lung_mean": 10.0862,
+      "lfc_brain_vs_lung": 12.2954,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "ATP10D",
+      "brain_mean": 31676.9579,
+      "lung_mean": 5.9077,
+      "lfc_brain_vs_lung": 12.163,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "SLC25A32",
+      "brain_mean": 15608.605,
+      "lung_mean": 6.264,
+      "lfc_brain_vs_lung": 11.0694,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "BIN1",
+      "brain_mean": 2319.7053,
+      "lung_mean": 0.2125,
+      "lfc_brain_vs_lung": 10.9024,
+      "n_guides": 2,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "MGAT4D",
+      "brain_mean": 5809.6197,
+      "lung_mean": 2.9289,
+      "lfc_brain_vs_lung": 10.5304,
+      "n_guides": 2,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "RPS27A",
+      "brain_mean": 8558.591,
+      "lung_mean": 8.3146,
+      "lfc_brain_vs_lung": 9.8438,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "KCNK5",
+      "brain_mean": 11182.3299,
+      "lung_mean": 19.6626,
+      "lfc_brain_vs_lung": 9.0801,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "NOM1",
+      "brain_mean": 2735.3896,
+      "lung_mean": 5.2912,
+      "lfc_brain_vs_lung": 8.7647,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "TFEB",
+      "brain_mean": 2237.3002,
+      "lung_mean": 5.5925,
+      "lfc_brain_vs_lung": 8.4074,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "HSPB1",
+      "brain_mean": 522.8757,
+      "lung_mean": 0.7355,
+      "lfc_brain_vs_lung": 8.2378,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "MAMSTR",
+      "brain_mean": 3734.72,
+      "lung_mean": 12.5299,
+      "lfc_brain_vs_lung": 8.1091,
+      "n_guides": 2,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "DENND5B",
+      "brain_mean": 10054.2808,
+      "lung_mean": 36.6221,
+      "lfc_brain_vs_lung": 8.0622,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "SIRT3",
+      "brain_mean": 272.5419,
+      "lung_mean": 0.0929,
+      "lfc_brain_vs_lung": 7.9674,
+      "n_guides": 2,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "LIN28A",
+      "brain_mean": 2104.9299,
+      "lung_mean": 8.5908,
+      "lfc_brain_vs_lung": 7.7786,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "KLHL12",
+      "brain_mean": 6133.2671,
+      "lung_mean": 27.6682,
+      "lfc_brain_vs_lung": 7.7413,
+      "n_guides": 2,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "SSPO",
+      "brain_mean": 831.9203,
+      "lung_mean": 2.9179,
+      "lfc_brain_vs_lung": 7.732,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "IGSF5",
+      "brain_mean": 2406.4149,
+      "lung_mean": 10.456,
+      "lfc_brain_vs_lung": 7.7152,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "SYS1",
+      "brain_mean": 288.2567,
+      "lung_mean": 0.389,
+      "lfc_brain_vs_lung": 7.7022,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "ZNF764",
+      "brain_mean": 923.0204,
+      "lung_mean": 3.4657,
+      "lfc_brain_vs_lung": 7.6929,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "ZMYND8",
+      "brain_mean": 13752.6089,
+      "lung_mean": 67.7069,
+      "lfc_brain_vs_lung": 7.6451,
+      "n_guides": 2,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "PC",
+      "brain_mean": 664.9089,
+      "lung_mean": 2.4521,
+      "lfc_brain_vs_lung": 7.5917,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "PYGL",
+      "brain_mean": 398.3495,
+      "lung_mean": 1.2138,
+      "lfc_brain_vs_lung": 7.495,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "ZNF3",
+      "brain_mean": 1915.7327,
+      "lung_mean": 10.1112,
+      "lfc_brain_vs_lung": 7.4305,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "ANKRD36",
+      "brain_mean": 245.2763,
+      "lung_mean": 0.4423,
+      "lfc_brain_vs_lung": 7.4157,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "MUC5AC",
+      "brain_mean": 597.8312,
+      "lung_mean": 2.7766,
+      "lfc_brain_vs_lung": 7.3089,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "ADAMTS2",
+      "brain_mean": 1769.6691,
+      "lung_mean": 10.2842,
+      "lfc_brain_vs_lung": 7.2939,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "SH2D5",
+      "brain_mean": 328.5596,
+      "lung_mean": 1.1152,
+      "lfc_brain_vs_lung": 7.2836,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "GALT",
+      "brain_mean": 756.4846,
+      "lung_mean": 3.9059,
+      "lfc_brain_vs_lung": 7.2706,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "IFFO1",
+      "brain_mean": 9758.9073,
+      "lung_mean": 62.3132,
+      "lfc_brain_vs_lung": 7.2682,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "TAMM41",
+      "brain_mean": 246.2471,
+      "lung_mean": 0.6129,
+      "lfc_brain_vs_lung": 7.2601,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "CHD2",
+      "brain_mean": 390.4745,
+      "lung_mean": 1.6369,
+      "lfc_brain_vs_lung": 7.2139,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "PLAC8L1",
+      "brain_mean": 3558.5134,
+      "lung_mean": 24.0867,
+      "lfc_brain_vs_lung": 7.1486,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "FOXJ3",
+      "brain_mean": 407.4063,
+      "lung_mean": 1.8793,
+      "lfc_brain_vs_lung": 7.1481,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "NRSN1",
+      "brain_mean": 470.3235,
+      "lung_mean": 2.3709,
+      "lfc_brain_vs_lung": 7.1274,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "TGFA",
+      "brain_mean": 822.9103,
+      "lung_mean": 4.8962,
+      "lfc_brain_vs_lung": 7.1265,
+      "n_guides": 2,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "ERGIC1",
+      "brain_mean": 347.9515,
+      "lung_mean": 1.5014,
+      "lfc_brain_vs_lung": 7.1241,
+      "n_guides": 2,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "FNDC8",
+      "brain_mean": 589.3059,
+      "lung_mean": 3.3245,
+      "lfc_brain_vs_lung": 7.0928,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "BACE1",
+      "brain_mean": 725.7638,
+      "lung_mean": 4.3993,
+      "lfc_brain_vs_lung": 7.0726,
+      "n_guides": 3,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "SAFB",
+      "brain_mean": 186.7426,
+      "lung_mean": 0.4068,
+      "lfc_brain_vs_lung": 7.0602,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "SENP8",
+      "brain_mean": 376.5572,
+      "lung_mean": 1.8385,
+      "lfc_brain_vs_lung": 7.0554,
+      "n_guides": 2,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "EEF1A2",
+      "brain_mean": 268.5393,
+      "lung_mean": 1.0473,
+      "lfc_brain_vs_lung": 7.0406,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "DOPEY1",
+      "brain_mean": 340.3435,
+      "lung_mean": 1.7245,
+      "lfc_brain_vs_lung": 6.9691,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "DNAAF5",
+      "brain_mean": 130.3008,
+      "lung_mean": 0.0604,
+      "lfc_brain_vs_lung": 6.9521,
+      "n_guides": 2,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "ADCY4",
+      "brain_mean": 271.7622,
+      "lung_mean": 1.2736,
+      "lfc_brain_vs_lung": 6.9065,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "FAM72A",
+      "brain_mean": 207.021,
+      "lung_mean": 0.7501,
+      "lfc_brain_vs_lung": 6.8932,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "EBP",
+      "brain_mean": 208.1186,
+      "lung_mean": 0.7909,
+      "lfc_brain_vs_lung": 6.8675,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "PRKD3",
+      "brain_mean": 251.9497,
+      "lung_mean": 1.1713,
+      "lfc_brain_vs_lung": 6.8641,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "CCDC59",
+      "brain_mean": 1991.6461,
+      "lung_mean": 16.1097,
+      "lfc_brain_vs_lung": 6.8637,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "SDC2",
+      "brain_mean": 208.2462,
+      "lung_mean": 0.9098,
+      "lfc_brain_vs_lung": 6.7757,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "PCDHGB2",
+      "brain_mean": 342.1193,
+      "lung_mean": 2.1363,
+      "lfc_brain_vs_lung": 6.7735,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "CPA6",
+      "brain_mean": 894.5773,
+      "lung_mean": 7.4568,
+      "lfc_brain_vs_lung": 6.7266,
+      "n_guides": 2,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "BTNL2",
+      "brain_mean": 167.1298,
+      "lung_mean": 0.5911,
+      "lfc_brain_vs_lung": 6.7234,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "TTYH3",
+      "brain_mean": 215.6132,
+      "lung_mean": 1.0573,
+      "lfc_brain_vs_lung": 6.7182,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "NPEPPS",
+      "brain_mean": 115.2361,
+      "lung_mean": 0.1208,
+      "lfc_brain_vs_lung": 6.6964,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "ADAMDEC1",
+      "brain_mean": 117.1487,
+      "lung_mean": 0.1516,
+      "lfc_brain_vs_lung": 6.6808,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "LRRC45",
+      "brain_mean": 263.9041,
+      "lung_mean": 1.6185,
+      "lfc_brain_vs_lung": 6.6606,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "PPP3CA",
+      "brain_mean": 1183.9413,
+      "lung_mean": 10.9454,
+      "lfc_brain_vs_lung": 6.6322,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "BRPF1",
+      "brain_mean": 431.3593,
+      "lung_mean": 3.4038,
+      "lfc_brain_vs_lung": 6.6174,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "ZFYVE21",
+      "brain_mean": 5255.8538,
+      "lung_mean": 53.3881,
+      "lfc_brain_vs_lung": 6.5948,
+      "n_guides": 2,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "PPM1M",
+      "brain_mean": 135.4485,
+      "lung_mean": 0.4706,
+      "lfc_brain_vs_lung": 6.5358,
+      "n_guides": 2,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "BLOC1S5",
+      "brain_mean": 321.0309,
+      "lung_mean": 2.4724,
+      "lfc_brain_vs_lung": 6.5351,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "ASCC3",
+      "brain_mean": 582.7414,
+      "lung_mean": 5.3156,
+      "lfc_brain_vs_lung": 6.5303,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "AQP6",
+      "brain_mean": 139.0046,
+      "lung_mean": 0.5196,
+      "lfc_brain_vs_lung": 6.5256,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "GALNT9",
+      "brain_mean": 389.0668,
+      "lung_mean": 3.2397,
+      "lfc_brain_vs_lung": 6.5236,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "MYLIP",
+      "brain_mean": 511.4313,
+      "lung_mean": 4.594,
+      "lfc_brain_vs_lung": 6.5173,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "RPS13",
+      "brain_mean": 833.7964,
+      "lung_mean": 8.2564,
+      "lfc_brain_vs_lung": 6.4948,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "NFE4",
+      "brain_mean": 270.9603,
+      "lung_mean": 2.0482,
+      "lfc_brain_vs_lung": 6.4793,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "OR8I2",
+      "brain_mean": 1660.7824,
+      "lung_mean": 18.0251,
+      "lfc_brain_vs_lung": 6.4487,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "LKAAEAR1",
+      "brain_mean": 2942.4803,
+      "lung_mean": 32.8469,
+      "lfc_brain_vs_lung": 6.4424,
+      "n_guides": 2,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "PROM1",
+      "brain_mean": 4938.2726,
+      "lung_mean": 56.8425,
+      "lfc_brain_vs_lung": 6.416,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "UGT1A8",
+      "brain_mean": 379.5301,
+      "lung_mean": 3.4692,
+      "lfc_brain_vs_lung": 6.4118,
+      "n_guides": 2,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "TYK2",
+      "brain_mean": 338.5358,
+      "lung_mean": 3.083,
+      "lfc_brain_vs_lung": 6.3778,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "GPM6B",
+      "brain_mean": 161.9161,
+      "lung_mean": 0.9737,
+      "lfc_brain_vs_lung": 6.3671,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "NT5C3B",
+      "brain_mean": 287.0831,
+      "lung_mean": 2.5483,
+      "lfc_brain_vs_lung": 6.3432,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "CCDC54",
+      "brain_mean": 154.327,
+      "lung_mean": 0.9203,
+      "lfc_brain_vs_lung": 6.3378,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "GCNT4",
+      "brain_mean": 728.7193,
+      "lung_mean": 8.1584,
+      "lfc_brain_vs_lung": 6.3161,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "C16orf89",
+      "brain_mean": 1236.3578,
+      "lung_mean": 14.6704,
+      "lfc_brain_vs_lung": 6.3031,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "SLC5A9",
+      "brain_mean": 361.6987,
+      "lung_mean": 3.6457,
+      "lfc_brain_vs_lung": 6.2867,
+      "n_guides": 2,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "RAB10",
+      "brain_mean": 3607.5507,
+      "lung_mean": 45.3593,
+      "lfc_brain_vs_lung": 6.2824,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "C7orf34",
+      "brain_mean": 1150.0571,
+      "lung_mean": 13.8924,
+      "lfc_brain_vs_lung": 6.2722,
+      "n_guides": 2,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "ADGRG1",
+      "brain_mean": 145.4079,
+      "lung_mean": 0.9397,
+      "lfc_brain_vs_lung": 6.238,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "C14orf93",
+      "brain_mean": 865.871,
+      "lung_mean": 10.6052,
+      "lfc_brain_vs_lung": 6.223,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "COLCA2",
+      "brain_mean": 193.094,
+      "lung_mean": 1.6062,
+      "lfc_brain_vs_lung": 6.2187,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "CHRNA1",
+      "brain_mean": 242.5331,
+      "lung_mean": 2.3399,
+      "lfc_brain_vs_lung": 6.1882,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "UBXN1",
+      "brain_mean": 1696.6763,
+      "lung_mean": 22.5673,
+      "lfc_brain_vs_lung": 6.1706,
+      "n_guides": 2,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "HPS1",
+      "brain_mean": 223.9875,
+      "lung_mean": 2.1436,
+      "lfc_brain_vs_lung": 6.1613,
+      "n_guides": 2,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "ZHX1-C8orf76",
+      "brain_mean": 538.3765,
+      "lung_mean": 6.6082,
+      "lfc_brain_vs_lung": 6.1476,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "CPLX1",
+      "brain_mean": 126.1171,
+      "lung_mean": 0.7954,
+      "lfc_brain_vs_lung": 6.1457,
+      "n_guides": 2,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "HEYL",
+      "brain_mean": 976.9656,
+      "lung_mean": 12.8153,
+      "lfc_brain_vs_lung": 6.1454,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "CCDC144A",
+      "brain_mean": 448.1182,
+      "lung_mean": 5.348,
+      "lfc_brain_vs_lung": 6.1447,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "OOSP2",
+      "brain_mean": 159.7803,
+      "lung_mean": 1.2784,
+      "lfc_brain_vs_lung": 6.1409,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "SSX4B",
+      "brain_mean": 130.4984,
+      "lung_mean": 0.8753,
+      "lfc_brain_vs_lung": 6.1318,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "ILDR2",
+      "brain_mean": 683.5221,
+      "lung_mean": 8.9834,
+      "lfc_brain_vs_lung": 6.0994,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "NCMAP",
+      "brain_mean": 209.9298,
+      "lung_mean": 2.1626,
+      "lfc_brain_vs_lung": 6.0595,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "LSS",
+      "brain_mean": 227.101,
+      "lung_mean": 2.4433,
+      "lfc_brain_vs_lung": 6.0497,
+      "n_guides": 2,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "COL4A5",
+      "brain_mean": 829.1122,
+      "lung_mean": 11.5858,
+      "lfc_brain_vs_lung": 6.0434,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "HOXC5",
+      "brain_mean": 307.6263,
+      "lung_mean": 3.7201,
+      "lfc_brain_vs_lung": 6.0309,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "ADAM7",
+      "brain_mean": 5114.4991,
+      "lung_mean": 78.5846,
+      "lfc_brain_vs_lung": 6.0062,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "XRCC5",
+      "brain_mean": 157.8665,
+      "lung_mean": 1.4907,
+      "lfc_brain_vs_lung": 5.9951,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "TRIM7",
+      "brain_mean": 2053.1117,
+      "lung_mean": 31.2607,
+      "lfc_brain_vs_lung": 5.9926,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "GOLGA5",
+      "brain_mean": 91.067,
+      "lung_mean": 0.4588,
+      "lfc_brain_vs_lung": 5.9798,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "RHOBTB1",
+      "brain_mean": 139.2452,
+      "lung_mean": 1.296,
+      "lfc_brain_vs_lung": 5.9327,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "CGB3",
+      "brain_mean": 265.4809,
+      "lung_mean": 3.4084,
+      "lfc_brain_vs_lung": 5.9176,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "GCC2",
+      "brain_mean": 2026.5066,
+      "lung_mean": 32.8668,
+      "lfc_brain_vs_lung": 5.9037,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "FGL2",
+      "brain_mean": 607.4176,
+      "lung_mean": 9.1634,
+      "lfc_brain_vs_lung": 5.9036,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "RGS5",
+      "brain_mean": 1372.9936,
+      "lung_mean": 21.9776,
+      "lfc_brain_vs_lung": 5.902,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "NLRP1",
+      "brain_mean": 1702.2627,
+      "lung_mean": 27.5043,
+      "lfc_brain_vs_lung": 5.901,
+      "n_guides": 2,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "MAFB",
+      "brain_mean": 421.7791,
+      "lung_mean": 6.0826,
+      "lfc_brain_vs_lung": 5.8995,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "NME3",
+      "brain_mean": 129.0899,
+      "lung_mean": 1.1972,
+      "lfc_brain_vs_lung": 5.8877,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "NBN",
+      "brain_mean": 447.9219,
+      "lung_mean": 6.7125,
+      "lfc_brain_vs_lung": 5.8631,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "KRT36",
+      "brain_mean": 133.733,
+      "lung_mean": 1.3565,
+      "lfc_brain_vs_lung": 5.8373,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "C11orf40",
+      "brain_mean": 292.9649,
+      "lung_mean": 4.2193,
+      "lfc_brain_vs_lung": 5.8156,
+      "n_guides": 2,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "TGFB1",
+      "brain_mean": 124.1963,
+      "lung_mean": 1.2458,
+      "lfc_brain_vs_lung": 5.8008,
+      "n_guides": 2,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "PIK3C3",
+      "brain_mean": 222.6788,
+      "lung_mean": 3.0263,
+      "lfc_brain_vs_lung": 5.7958,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "GBP5",
+      "brain_mean": 227.8794,
+      "lung_mean": 3.1268,
+      "lfc_brain_vs_lung": 5.7934,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "LRMDA",
+      "brain_mean": 462.5118,
+      "lung_mean": 7.3874,
+      "lfc_brain_vs_lung": 5.7882,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "TAL1",
+      "brain_mean": 98.4751,
+      "lung_mean": 0.8347,
+      "lfc_brain_vs_lung": 5.7607,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "PRKAA2",
+      "brain_mean": 2306.7468,
+      "lung_mean": 41.891,
+      "lfc_brain_vs_lung": 5.7497,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "MAPK11",
+      "brain_mean": 361.5759,
+      "lung_mean": 5.9213,
+      "lfc_brain_vs_lung": 5.7111,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "S100A14",
+      "brain_mean": 96.1059,
+      "lung_mean": 0.8927,
+      "lfc_brain_vs_lung": 5.6811,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "ROPN1L",
+      "brain_mean": 89.1884,
+      "lung_mean": 0.7612,
+      "lfc_brain_vs_lung": 5.6784,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "C4orf19",
+      "brain_mean": 388.965,
+      "lung_mean": 6.7357,
+      "lfc_brain_vs_lung": 5.6557,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "ZDHHC3",
+      "brain_mean": 398.3894,
+      "lung_mean": 7.0032,
+      "lfc_brain_vs_lung": 5.6411,
+      "n_guides": 2,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "DEUP1",
+      "brain_mean": 1720.8821,
+      "lung_mean": 33.9288,
+      "lfc_brain_vs_lung": 5.6234,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "IRF7",
+      "brain_mean": 587.3731,
+      "lung_mean": 10.9754,
+      "lfc_brain_vs_lung": 5.6186,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "ABCA6",
+      "brain_mean": 77.0417,
+      "lung_mean": 0.6024,
+      "lfc_brain_vs_lung": 5.6059,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "ATP6V1B2",
+      "brain_mean": 142.3066,
+      "lung_mean": 1.9593,
+      "lfc_brain_vs_lung": 5.5977,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "HOXD8",
+      "brain_mean": 447.2313,
+      "lung_mean": 8.6182,
+      "lfc_brain_vs_lung": 5.5423,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "ATOH1",
+      "brain_mean": 1528.7936,
+      "lung_mean": 33.1604,
+      "lfc_brain_vs_lung": 5.4849,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "PDXDC1",
+      "brain_mean": 373.3933,
+      "lung_mean": 7.4618,
+      "lfc_brain_vs_lung": 5.4674,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "FAM84A",
+      "brain_mean": 94.1033,
+      "lung_mean": 1.1568,
+      "lfc_brain_vs_lung": 5.4625,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "TIAM1",
+      "brain_mean": 63.7675,
+      "lung_mean": 0.477,
+      "lfc_brain_vs_lung": 5.4546,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "ZNF462",
+      "brain_mean": 65.8756,
+      "lung_mean": 0.5324,
+      "lfc_brain_vs_lung": 5.4476,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "HSPG2",
+      "brain_mean": 68.8339,
+      "lung_mean": 0.606,
+      "lfc_brain_vs_lung": 5.4424,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "ZFP3",
+      "brain_mean": 100.2742,
+      "lung_mean": 1.3531,
+      "lfc_brain_vs_lung": 5.4275,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "RHAG",
+      "brain_mean": 181.6701,
+      "lung_mean": 3.2574,
+      "lfc_brain_vs_lung": 5.4231,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "TARBP2",
+      "brain_mean": 127.6514,
+      "lung_mean": 2.038,
+      "lfc_brain_vs_lung": 5.4042,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "FAM92A",
+      "brain_mean": 100.1237,
+      "lung_mean": 1.3941,
+      "lfc_brain_vs_lung": 5.4005,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "AGR3",
+      "brain_mean": 87.4878,
+      "lung_mean": 1.1072,
+      "lfc_brain_vs_lung": 5.3921,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "RNASE6",
+      "brain_mean": 133.4151,
+      "lung_mean": 2.2191,
+      "lfc_brain_vs_lung": 5.3839,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "SLC25A52",
+      "brain_mean": 43.7921,
+      "lung_mean": 0.0734,
+      "lfc_brain_vs_lung": 5.383,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "EIF5B",
+      "brain_mean": 58.3856,
+      "lung_mean": 0.4326,
+      "lfc_brain_vs_lung": 5.3734,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "ZBTB7A",
+      "brain_mean": 56.337,
+      "lung_mean": 0.3874,
+      "lfc_brain_vs_lung": 5.369,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "HTR3D",
+      "brain_mean": 3365.8797,
+      "lung_mean": 80.9898,
+      "lfc_brain_vs_lung": 5.3598,
+      "n_guides": 2,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "AUNIP",
+      "brain_mean": 383.8614,
+      "lung_mean": 8.4785,
+      "lfc_brain_vs_lung": 5.3435,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "TUBGCP3",
+      "brain_mean": 460.8769,
+      "lung_mean": 10.3879,
+      "lfc_brain_vs_lung": 5.3419,
+      "n_guides": 2,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "ACBD5",
+      "brain_mean": 14585.6305,
+      "lung_mean": 362.7537,
+      "lfc_brain_vs_lung": 5.3255,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "ALMS1",
+      "brain_mean": 48.7111,
+      "lung_mean": 0.2446,
+      "lfc_brain_vs_lung": 5.3198,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "L3MBTL1",
+      "brain_mean": 234.7561,
+      "lung_mean": 4.9278,
+      "lfc_brain_vs_lung": 5.3137,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "URAD",
+      "brain_mean": 4324.589,
+      "lung_mean": 108.7257,
+      "lfc_brain_vs_lung": 5.3009,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "MCMBP",
+      "brain_mean": 165.0009,
+      "lung_mean": 3.2394,
+      "lfc_brain_vs_lung": 5.2912,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "PTH",
+      "brain_mean": 261.2913,
+      "lung_mean": 5.7511,
+      "lfc_brain_vs_lung": 5.2799,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "KCNH1",
+      "brain_mean": 624.6409,
+      "lung_mean": 15.3944,
+      "lfc_brain_vs_lung": 5.2541,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "HLF",
+      "brain_mean": 182.212,
+      "lung_mean": 3.8069,
+      "lfc_brain_vs_lung": 5.2523,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "ZRANB1",
+      "brain_mean": 66.9633,
+      "lung_mean": 0.8179,
+      "lfc_brain_vs_lung": 5.2244,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "HSDL1",
+      "brain_mean": 161.2703,
+      "lung_mean": 3.3428,
+      "lfc_brain_vs_lung": 5.2236,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "SYCE2",
+      "brain_mean": 86.2424,
+      "lung_mean": 1.3459,
+      "lfc_brain_vs_lung": 5.2168,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "PPP1R13L",
+      "brain_mean": 502.3162,
+      "lung_mean": 12.5572,
+      "lfc_brain_vs_lung": 5.2143,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "NT5C3A",
+      "brain_mean": 183.9592,
+      "lung_mean": 3.9878,
+      "lfc_brain_vs_lung": 5.2127,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "DYRK4",
+      "brain_mean": 109.6479,
+      "lung_mean": 1.995,
+      "lfc_brain_vs_lung": 5.2073,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "GTF2A1L",
+      "brain_mean": 214.9249,
+      "lung_mean": 4.8452,
+      "lfc_brain_vs_lung": 5.2071,
+      "n_guides": 2,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "MICALCL",
+      "brain_mean": 80.3078,
+      "lung_mean": 1.2074,
+      "lfc_brain_vs_lung": 5.203,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "TAAR2",
+      "brain_mean": 75.084,
+      "lung_mean": 1.0814,
+      "lfc_brain_vs_lung": 5.192,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "CHMP3",
+      "brain_mean": 37.4096,
+      "lung_mean": 0.0548,
+      "lfc_brain_vs_lung": 5.1864,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "PLEKHG4",
+      "brain_mean": 295.7721,
+      "lung_mean": 7.1498,
+      "lfc_brain_vs_lung": 5.1864,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "FKBP1A",
+      "brain_mean": 61.0539,
+      "lung_mean": 0.705,
+      "lfc_brain_vs_lung": 5.1857,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "GTF2H2",
+      "brain_mean": 84.1838,
+      "lung_mean": 1.3478,
+      "lfc_brain_vs_lung": 5.1812,
+      "n_guides": 2,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "KCNJ18",
+      "brain_mean": 87.1913,
+      "lung_mean": 1.458,
+      "lfc_brain_vs_lung": 5.1651,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "PTPRS",
+      "brain_mean": 54.4774,
+      "lung_mean": 0.5587,
+      "lfc_brain_vs_lung": 5.1535,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "FOXF2",
+      "brain_mean": 108.6222,
+      "lung_mean": 2.0897,
+      "lfc_brain_vs_lung": 5.1489,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "UBTF",
+      "brain_mean": 1218.1724,
+      "lung_mean": 33.492,
+      "lfc_brain_vs_lung": 5.1435,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "RFC3",
+      "brain_mean": 61.9663,
+      "lung_mean": 0.8094,
+      "lfc_brain_vs_lung": 5.121,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "C3orf20",
+      "brain_mean": 109.6579,
+      "lung_mean": 2.1863,
+      "lfc_brain_vs_lung": 5.1181,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "SLC25A30",
+      "brain_mean": 42.5821,
+      "lung_mean": 0.2625,
+      "lfc_brain_vs_lung": 5.1094,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "S100A7",
+      "brain_mean": 45.4667,
+      "lung_mean": 0.3488,
+      "lfc_brain_vs_lung": 5.1064,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "ZNF326",
+      "brain_mean": 612.0963,
+      "lung_mean": 16.8592,
+      "lfc_brain_vs_lung": 5.1014,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "DTL",
+      "brain_mean": 81.7667,
+      "lung_mean": 1.4165,
+      "lfc_brain_vs_lung": 5.0981,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "CCDC157",
+      "brain_mean": 552.1881,
+      "lung_mean": 15.2697,
+      "lfc_brain_vs_lung": 5.0875,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "EWSR1",
+      "brain_mean": 79.0569,
+      "lung_mean": 1.3645,
+      "lfc_brain_vs_lung": 5.0814,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "KREMEN1",
+      "brain_mean": 426.1117,
+      "lung_mean": 11.6813,
+      "lfc_brain_vs_lung": 5.0738,
+      "n_guides": 2,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "SMYD5",
+      "brain_mean": 1739.7926,
+      "lung_mean": 50.8778,
+      "lfc_brain_vs_lung": 5.0685,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "AAK1",
+      "brain_mean": 546.2893,
+      "lung_mean": 15.3237,
+      "lfc_brain_vs_lung": 5.0673,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "B4GAT1",
+      "brain_mean": 764.1049,
+      "lung_mean": 21.8264,
+      "lfc_brain_vs_lung": 5.0669,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "TMPRSS5",
+      "brain_mean": 206.7808,
+      "lung_mean": 5.2056,
+      "lfc_brain_vs_lung": 5.0653,
+      "n_guides": 2,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "PAK1",
+      "brain_mean": 1644.9821,
+      "lung_mean": 48.335,
+      "lfc_brain_vs_lung": 5.0602,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "ZNF318",
+      "brain_mean": 159.4034,
+      "lung_mean": 3.8227,
+      "lfc_brain_vs_lung": 5.0557,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "ERICH2",
+      "brain_mean": 50.9053,
+      "lung_mean": 0.5641,
+      "lfc_brain_vs_lung": 5.0525,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "SIGLEC11",
+      "brain_mean": 46.2358,
+      "lung_mean": 0.4283,
+      "lfc_brain_vs_lung": 5.0475,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "SMCP",
+      "brain_mean": 39.8556,
+      "lung_mean": 0.2362,
+      "lfc_brain_vs_lung": 5.0465,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "PHF21B",
+      "brain_mean": 1840.9419,
+      "lung_mean": 55.0166,
+      "lfc_brain_vs_lung": 5.0392,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "PUF60",
+      "brain_mean": 74.1129,
+      "lung_mean": 1.2864,
+      "lfc_brain_vs_lung": 5.0379,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "SLC6A16",
+      "brain_mean": 1204.9088,
+      "lung_mean": 35.7328,
+      "lfc_brain_vs_lung": 5.0369,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "IGF1R",
+      "brain_mean": 74.7507,
+      "lung_mean": 1.3096,
+      "lfc_brain_vs_lung": 5.0355,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "LMTK3",
+      "brain_mean": 110.3192,
+      "lung_mean": 2.4118,
+      "lfc_brain_vs_lung": 5.028,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "KCTD21",
+      "brain_mean": 233.7501,
+      "lung_mean": 6.2211,
+      "lfc_brain_vs_lung": 5.0228,
+      "n_guides": 2,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "ZNF189",
+      "brain_mean": 673.2469,
+      "lung_mean": 19.758,
+      "lfc_brain_vs_lung": 5.0215,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "TJP1",
+      "brain_mean": 39.058,
+      "lung_mean": 0.235,
+      "lfc_brain_vs_lung": 5.0195,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "GGTLC2",
+      "brain_mean": 124.3438,
+      "lung_mean": 2.8808,
+      "lfc_brain_vs_lung": 5.0134,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    },
+    {
+      "gene": "ADAM15",
+      "brain_mean": 261.1238,
+      "lung_mean": 7.172,
+      "lfc_brain_vs_lung": 5.0034,
+      "n_guides": 1,
+      "n_brain_samples": 12,
+      "n_lung_samples": 11
+    }
+  ]
+}

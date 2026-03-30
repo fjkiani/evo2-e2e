@@ -1,0 +1,362 @@
+{
+  "source": "MSK-MET Zenodo 5801902",
+  "description": "MSK-IMPACT pan-cancer mutation landscape \u2014 all samples (no brain filter applied, data_clinical_sample.txt not available)",
+  "note": "Brain-specific filter requires data_clinical_sample.txt. This is pan-cohort mutation frequency for all ~25k MSK-MET samples.",
+  "n_total_samples": 24755,
+  "n_total_mutations": 230419,
+  "top_30_genes": [
+    {
+      "gene": "TP53",
+      "n_samples": 12450
+    },
+    {
+      "gene": "KRAS",
+      "n_samples": 5446
+    },
+    {
+      "gene": "APC",
+      "n_samples": 3644
+    },
+    {
+      "gene": "PIK3CA",
+      "n_samples": 3581
+    },
+    {
+      "gene": "TERT",
+      "n_samples": 2847
+    },
+    {
+      "gene": "ARID1A",
+      "n_samples": 2531
+    },
+    {
+      "gene": "PTEN",
+      "n_samples": 1787
+    },
+    {
+      "gene": "KMT2D",
+      "n_samples": 1756
+    },
+    {
+      "gene": "EGFR",
+      "n_samples": 1631
+    },
+    {
+      "gene": "BRAF",
+      "n_samples": 1545
+    },
+    {
+      "gene": "FAT1",
+      "n_samples": 1480
+    },
+    {
+      "gene": "ATM",
+      "n_samples": 1457
+    },
+    {
+      "gene": "PTPRT",
+      "n_samples": 1427
+    },
+    {
+      "gene": "CDKN2A",
+      "n_samples": 1413
+    },
+    {
+      "gene": "NF1",
+      "n_samples": 1403
+    },
+    {
+      "gene": "SMAD4",
+      "n_samples": 1370
+    },
+    {
+      "gene": "ZFHX3",
+      "n_samples": 1318
+    },
+    {
+      "gene": "RB1",
+      "n_samples": 1276
+    },
+    {
+      "gene": "PTPRD",
+      "n_samples": 1268
+    },
+    {
+      "gene": "KMT2C",
+      "n_samples": 1215
+    },
+    {
+      "gene": "FBXW7",
+      "n_samples": 1186
+    },
+    {
+      "gene": "GRIN2A",
+      "n_samples": 1113
+    },
+    {
+      "gene": "SMARCA4",
+      "n_samples": 1081
+    },
+    {
+      "gene": "CREBBP",
+      "n_samples": 1058
+    },
+    {
+      "gene": "SETD2",
+      "n_samples": 1043
+    },
+    {
+      "gene": "MGA",
+      "n_samples": 1029
+    },
+    {
+      "gene": "BRCA2",
+      "n_samples": 1028
+    },
+    {
+      "gene": "NOTCH1",
+      "n_samples": 1024
+    },
+    {
+      "gene": "CTNNB1",
+      "n_samples": 1022
+    },
+    {
+      "gene": "ATRX",
+      "n_samples": 1009
+    }
+  ],
+  "target_gene_scores": {
+    "ATRX": {
+      "gene": "ATRX",
+      "n_samples": 1009,
+      "n_mutations": 1345,
+      "freq_pct": 4.0759,
+      "normalized_burden": 0.081044
+    },
+    "PIK3CA": {
+      "gene": "PIK3CA",
+      "n_samples": 3581,
+      "n_mutations": 4163,
+      "freq_pct": 14.4658,
+      "normalized_burden": 0.287631
+    },
+    "NF1": {
+      "gene": "NF1",
+      "n_samples": 1403,
+      "n_mutations": 1830,
+      "freq_pct": 5.6675,
+      "normalized_burden": 0.112691
+    },
+    "SIRT3": {
+      "gene": "SIRT3",
+      "n_samples": 0,
+      "n_mutations": 0,
+      "freq_pct": 0.0,
+      "normalized_burden": 0.0
+    },
+    "EGFR": {
+      "gene": "EGFR",
+      "n_samples": 1631,
+      "n_mutations": 1972,
+      "freq_pct": 6.5886,
+      "normalized_burden": 0.131004
+    },
+    "KLHL12": {
+      "gene": "KLHL12",
+      "n_samples": 0,
+      "n_mutations": 0,
+      "freq_pct": 0.0,
+      "normalized_burden": 0.0
+    },
+    "LIN28A": {
+      "gene": "LIN28A",
+      "n_samples": 0,
+      "n_mutations": 0,
+      "freq_pct": 0.0,
+      "normalized_burden": 0.0
+    },
+    "TFEB": {
+      "gene": "TFEB",
+      "n_samples": 0,
+      "n_mutations": 0,
+      "freq_pct": 0.0,
+      "normalized_burden": 0.0
+    },
+    "SLC25A32": {
+      "gene": "SLC25A32",
+      "n_samples": 0,
+      "n_mutations": 0,
+      "freq_pct": 0.0,
+      "normalized_burden": 0.0
+    },
+    "KRAS": {
+      "gene": "KRAS",
+      "n_samples": 5446,
+      "n_mutations": 5523,
+      "freq_pct": 21.9996,
+      "normalized_burden": 0.43743
+    },
+    "IDH2": {
+      "gene": "IDH2",
+      "n_samples": 152,
+      "n_mutations": 156,
+      "freq_pct": 0.614,
+      "normalized_burden": 0.012209
+    },
+    "ERBB2": {
+      "gene": "ERBB2",
+      "n_samples": 846,
+      "n_mutations": 950,
+      "freq_pct": 3.4175,
+      "normalized_burden": 0.067952
+    },
+    "NOM1": {
+      "gene": "NOM1",
+      "n_samples": 0,
+      "n_mutations": 0,
+      "freq_pct": 0.0,
+      "normalized_burden": 0.0
+    },
+    "ROPN1L": {
+      "gene": "ROPN1L",
+      "n_samples": 0,
+      "n_mutations": 0,
+      "freq_pct": 0.0,
+      "normalized_burden": 0.0
+    },
+    "BIN1": {
+      "gene": "BIN1",
+      "n_samples": 0,
+      "n_mutations": 0,
+      "freq_pct": 0.0,
+      "normalized_burden": 0.0
+    },
+    "RB1": {
+      "gene": "RB1",
+      "n_samples": 1276,
+      "n_mutations": 1410,
+      "freq_pct": 5.1545,
+      "normalized_burden": 0.10249
+    },
+    "ATP10D": {
+      "gene": "ATP10D",
+      "n_samples": 0,
+      "n_mutations": 0,
+      "freq_pct": 0.0,
+      "normalized_burden": 0.0
+    },
+    "TERT": {
+      "gene": "TERT",
+      "n_samples": 2847,
+      "n_mutations": 3131,
+      "freq_pct": 11.5007,
+      "normalized_burden": 0.228675
+    },
+    "APC": {
+      "gene": "APC",
+      "n_samples": 3644,
+      "n_mutations": 5442,
+      "freq_pct": 14.7203,
+      "normalized_burden": 0.292691
+    },
+    "RPP40": {
+      "gene": "RPP40",
+      "n_samples": 0,
+      "n_mutations": 0,
+      "freq_pct": 0.0,
+      "normalized_burden": 0.0
+    },
+    "SENP8": {
+      "gene": "SENP8",
+      "n_samples": 0,
+      "n_mutations": 0,
+      "freq_pct": 0.0,
+      "normalized_burden": 0.0
+    },
+    "ZMYND8": {
+      "gene": "ZMYND8",
+      "n_samples": 0,
+      "n_mutations": 0,
+      "freq_pct": 0.0,
+      "normalized_burden": 0.0
+    },
+    "BRAF": {
+      "gene": "BRAF",
+      "n_samples": 1545,
+      "n_mutations": 1611,
+      "freq_pct": 6.2412,
+      "normalized_burden": 0.124096
+    },
+    "FAM72A": {
+      "gene": "FAM72A",
+      "n_samples": 0,
+      "n_mutations": 0,
+      "freq_pct": 0.0,
+      "normalized_burden": 0.0
+    },
+    "SLC45A4": {
+      "gene": "SLC45A4",
+      "n_samples": 0,
+      "n_mutations": 0,
+      "freq_pct": 0.0,
+      "normalized_burden": 0.0
+    },
+    "IDH1": {
+      "gene": "IDH1",
+      "n_samples": 317,
+      "n_mutations": 323,
+      "freq_pct": 1.2805,
+      "normalized_burden": 0.025462
+    },
+    "CDH1": {
+      "gene": "CDH1",
+      "n_samples": 753,
+      "n_mutations": 797,
+      "freq_pct": 3.0418,
+      "normalized_burden": 0.060482
+    },
+    "TP53": {
+      "gene": "TP53",
+      "n_samples": 12450,
+      "n_mutations": 13367,
+      "freq_pct": 50.2929,
+      "normalized_burden": 1.0
+    },
+    "DNAH7": {
+      "gene": "DNAH7",
+      "n_samples": 0,
+      "n_mutations": 0,
+      "freq_pct": 0.0,
+      "normalized_burden": 0.0
+    },
+    "BACE1": {
+      "gene": "BACE1",
+      "n_samples": 0,
+      "n_mutations": 0,
+      "freq_pct": 0.0,
+      "normalized_burden": 0.0
+    },
+    "PTEN": {
+      "gene": "PTEN",
+      "n_samples": 1787,
+      "n_mutations": 2339,
+      "freq_pct": 7.2187,
+      "normalized_burden": 0.143534
+    },
+    "CDKN2A": {
+      "gene": "CDKN2A",
+      "n_samples": 1413,
+      "n_mutations": 2847,
+      "freq_pct": 5.7079,
+      "normalized_burden": 0.113494
+    },
+    "MET": {
+      "gene": "MET",
+      "n_samples": 636,
+      "n_mutations": 755,
+      "freq_pct": 2.5692,
+      "normalized_burden": 0.051084
+    }
+  }
+}
