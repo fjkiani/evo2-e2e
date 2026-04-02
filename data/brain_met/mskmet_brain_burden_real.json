@@ -1,0 +1,1699 @@
+{
+  "source": "MSK-MET Zenodo 5801902",
+  "clinical_file": "data_clinical_sample.txt",
+  "filter": "METASTATIC_SITE contains 'Brain' OR 'CNS', OR DMETS_DX_CNS_BRAIN == 'Yes'",
+  "n_total_samples": 25775,
+  "n_brain_samples": 2921,
+  "n_brain_mutations": 26734,
+  "cancer_type_breakdown": {
+    "Non-Small Cell Lung Cancer": 196,
+    "Melanoma": 63,
+    "Breast Cancer": 41,
+    "Colorectal Cancer": 22,
+    "Esophagogastric Cancer": 13,
+    "Prostate Cancer": 13,
+    "Small Cell Lung Cancer": 11,
+    "Ovarian Cancer": 11,
+    "Renal Cell Carcinoma": 9,
+    "Germ Cell Tumor": 8,
+    "Head and Neck Cancer": 7,
+    "Endometrial Cancer": 6,
+    "Thyroid Cancer": 5,
+    "Bladder Cancer": 4,
+    "Salivary Gland Cancer": 3,
+    "Soft Tissue Sarcoma": 2,
+    "Hepatobiliary Cancer": 2,
+    "Anal Cancer": 2,
+    "Uterine Sarcoma": 1,
+    "Pancreatic Cancer": 1
+  },
+  "tp53_n_samples": 1532,
+  "gene_scores": {
+    "BIN1": {
+      "n_samples": 0,
+      "n_mutations": 0,
+      "freq_pct": 0.0,
+      "normalized_burden": 0.0,
+      "top_variants": []
+    },
+    "PIK3CG": {
+      "n_samples": 121,
+      "n_mutations": 132,
+      "freq_pct": 4.1424,
+      "normalized_burden": 0.078982,
+      "top_variants": [
+        [
+          "p.R849Q",
+          2
+        ],
+        [
+          "p.E918K",
+          2
+        ],
+        [
+          "p.W410*",
+          2
+        ],
+        [
+          "p.G436C",
+          2
+        ],
+        [
+          "p.K360N",
+          1
+        ]
+      ]
+    },
+    "PBRM1": {
+      "n_samples": 127,
+      "n_mutations": 139,
+      "freq_pct": 4.3478,
+      "normalized_burden": 0.082898,
+      "top_variants": [
+        [
+          "p.Q869*",
+          2
+        ],
+        [
+          "p.R710*",
+          2
+        ],
+        [
+          "p.X856_splice",
+          2
+        ],
+        [
+          "p.I279Yfs*4",
+          2
+        ],
+        [
+          "p.W1051*",
+          1
+        ]
+      ]
+    },
+    "ALK": {
+      "n_samples": 126,
+      "n_mutations": 148,
+      "freq_pct": 4.3136,
+      "normalized_burden": 0.082245,
+      "top_variants": [
+        [
+          "p.L1196M",
+          3
+        ],
+        [
+          "p.G740R",
+          2
+        ],
+        [
+          "p.V712M",
+          2
+        ],
+        [
+          "p.G391E",
+          2
+        ],
+        [
+          "p.D1606N",
+          1
+        ]
+      ]
+    },
+    "ATRX": {
+      "n_samples": 136,
+      "n_mutations": 154,
+      "freq_pct": 4.6559,
+      "normalized_burden": 0.088773,
+      "top_variants": [
+        [
+          "p.S1188F",
+          3
+        ],
+        [
+          "p.S784F",
+          2
+        ],
+        [
+          "p.E2281*",
+          2
+        ],
+        [
+          "p.K459*",
+          2
+        ],
+        [
+          "p.Q1416*",
+          1
+        ]
+      ]
+    },
+    "BACE1": {
+      "n_samples": 0,
+      "n_mutations": 0,
+      "freq_pct": 0.0,
+      "normalized_burden": 0.0,
+      "top_variants": []
+    },
+    "GRIN2A": {
+      "n_samples": 183,
+      "n_mutations": 220,
+      "freq_pct": 6.265,
+      "normalized_burden": 0.119452,
+      "top_variants": [
+        [
+          "p.S209F",
+          3
+        ],
+        [
+          "p.E1073K",
+          3
+        ],
+        [
+          "p.E373K",
+          3
+        ],
+        [
+          "p.E962K",
+          2
+        ],
+        [
+          "p.R681*",
+          2
+        ]
+      ]
+    },
+    "ERBB2": {
+      "n_samples": 110,
+      "n_mutations": 116,
+      "freq_pct": 3.7658,
+      "normalized_burden": 0.071802,
+      "top_variants": [
+        [
+          "p.Y772_A775dup",
+          29
+        ],
+        [
+          "p.S310F",
+          9
+        ],
+        [
+          "p.G778_P780dup",
+          6
+        ],
+        [
+          "p.D769Y",
+          4
+        ],
+        [
+          "p.L755P",
+          4
+        ]
+      ]
+    },
+    "NOTCH4": {
+      "n_samples": 125,
+      "n_mutations": 143,
+      "freq_pct": 4.2794,
+      "normalized_burden": 0.081593,
+      "top_variants": [
+        [
+          "p.P240S",
+          3
+        ],
+        [
+          "p.G942E",
+          2
+        ],
+        [
+          "p.E1836Q",
+          2
+        ],
+        [
+          "p.W874*",
+          2
+        ],
+        [
+          "p.K2003Nfs*13",
+          2
+        ]
+      ]
+    },
+    "TERT": {
+      "n_samples": 377,
+      "n_mutations": 422,
+      "freq_pct": 12.9065,
+      "normalized_burden": 0.246084,
+      "top_variants": [
+        [
+          "p.E440K",
+          2
+        ],
+        [
+          "p.R671Q",
+          1
+        ],
+        [
+          "p.G106L",
+          1
+        ],
+        [
+          "p.Q384R",
+          1
+        ],
+        [
+          "p.E782K",
+          1
+        ]
+      ]
+    },
+    "FAT1": {
+      "n_samples": 200,
+      "n_mutations": 239,
+      "freq_pct": 6.847,
+      "normalized_burden": 0.130548,
+      "top_variants": [
+        [
+          "p.R2597*",
+          4
+        ],
+        [
+          "p.G2V",
+          2
+        ],
+        [
+          "p.K1225Nfs*9",
+          2
+        ],
+        [
+          "p.L3197I",
+          1
+        ],
+        [
+          "p.S1501I",
+          1
+        ]
+      ]
+    },
+    "KRAS": {
+      "n_samples": 484,
+      "n_mutations": 489,
+      "freq_pct": 16.5697,
+      "normalized_burden": 0.315927,
+      "top_variants": [
+        [
+          "p.G12C",
+          163
+        ],
+        [
+          "p.G12D",
+          97
+        ],
+        [
+          "p.G12V",
+          86
+        ],
+        [
+          "p.G13D",
+          29
+        ],
+        [
+          "p.G12A",
+          27
+        ]
+      ]
+    },
+    "NOM1": {
+      "n_samples": 0,
+      "n_mutations": 0,
+      "freq_pct": 0.0,
+      "normalized_burden": 0.0,
+      "top_variants": []
+    },
+    "ATP10D": {
+      "n_samples": 0,
+      "n_mutations": 0,
+      "freq_pct": 0.0,
+      "normalized_burden": 0.0,
+      "top_variants": []
+    },
+    "RB1": {
+      "n_samples": 228,
+      "n_mutations": 239,
+      "freq_pct": 7.8055,
+      "normalized_burden": 0.148825,
+      "top_variants": [
+        [
+          "p.X46_splice",
+          5
+        ],
+        [
+          "p.X654_splice",
+          5
+        ],
+        [
+          "p.R445*",
+          4
+        ],
+        [
+          "p.Q62*",
+          4
+        ],
+        [
+          "p.R255*",
+          3
+        ]
+      ]
+    },
+    "PTEN": {
+      "n_samples": 183,
+      "n_mutations": 205,
+      "freq_pct": 6.265,
+      "normalized_burden": 0.119452,
+      "top_variants": [
+        [
+          "p.R130*",
+          6
+        ],
+        [
+          "p.T319*",
+          5
+        ],
+        [
+          "p.R130Q",
+          5
+        ],
+        [
+          "p.S229*",
+          4
+        ],
+        [
+          "p.X343_splice",
+          4
+        ]
+      ]
+    },
+    "NRAS": {
+      "n_samples": 121,
+      "n_mutations": 122,
+      "freq_pct": 4.1424,
+      "normalized_burden": 0.078982,
+      "top_variants": [
+        [
+          "p.Q61R",
+          41
+        ],
+        [
+          "p.Q61K",
+          33
+        ],
+        [
+          "p.Q61L",
+          18
+        ],
+        [
+          "p.Q61H",
+          5
+        ],
+        [
+          "p.G12D",
+          4
+        ]
+      ]
+    },
+    "ARID1B": {
+      "n_samples": 112,
+      "n_mutations": 121,
+      "freq_pct": 3.8343,
+      "normalized_burden": 0.073107,
+      "top_variants": [
+        [
+          "p.E1858Q",
+          2
+        ],
+        [
+          "p.S451P",
+          2
+        ],
+        [
+          "p.P737L",
+          1
+        ],
+        [
+          "p.P2066S",
+          1
+        ],
+        [
+          "p.P382S",
+          1
+        ]
+      ]
+    },
+    "ZFHX3": {
+      "n_samples": 141,
+      "n_mutations": 157,
+      "freq_pct": 4.8271,
+      "normalized_burden": 0.092037,
+      "top_variants": [
+        [
+          "p.E763Sfs*61",
+          2
+        ],
+        [
+          "p.D270N",
+          2
+        ],
+        [
+          "p.S430F",
+          2
+        ],
+        [
+          "p.S3601L",
+          2
+        ],
+        [
+          "p.Q1869*",
+          1
+        ]
+      ]
+    },
+    "NOTCH3": {
+      "n_samples": 126,
+      "n_mutations": 144,
+      "freq_pct": 4.3136,
+      "normalized_burden": 0.082245,
+      "top_variants": [
+        [
+          "p.E195D",
+          2
+        ],
+        [
+          "p.H1257R",
+          1
+        ],
+        [
+          "p.A571S",
+          1
+        ],
+        [
+          "p.F1437L",
+          1
+        ],
+        [
+          "p.P995L",
+          1
+        ]
+      ]
+    },
+    "PTPRT": {
+      "n_samples": 230,
+      "n_mutations": 310,
+      "freq_pct": 7.874,
+      "normalized_burden": 0.150131,
+      "top_variants": [
+        [
+          "p.X484_splice",
+          3
+        ],
+        [
+          "p.S33F",
+          3
+        ],
+        [
+          "p.W230*",
+          2
+        ],
+        [
+          "p.R1176C",
+          2
+        ],
+        [
+          "p.R1018Q",
+          2
+        ]
+      ]
+    },
+    "RBM10": {
+      "n_samples": 139,
+      "n_mutations": 146,
+      "freq_pct": 4.7586,
+      "normalized_burden": 0.090731,
+      "top_variants": [
+        [
+          "p.*67*",
+          5
+        ],
+        [
+          "p.E605*",
+          2
+        ],
+        [
+          "p.G649R",
+          2
+        ],
+        [
+          "p.H706Y",
+          2
+        ],
+        [
+          "p.Q664*",
+          2
+        ]
+      ]
+    },
+    "EPHA3": {
+      "n_samples": 144,
+      "n_mutations": 161,
+      "freq_pct": 4.9298,
+      "normalized_burden": 0.093995,
+      "top_variants": [
+        [
+          "p.X566_splice",
+          3
+        ],
+        [
+          "p.R512Q",
+          3
+        ],
+        [
+          "p.P317H",
+          2
+        ],
+        [
+          "p.M951I",
+          2
+        ],
+        [
+          "p.X692_splice",
+          2
+        ]
+      ]
+    },
+    "KEAP1": {
+      "n_samples": 226,
+      "n_mutations": 234,
+      "freq_pct": 7.7371,
+      "normalized_burden": 0.14752,
+      "top_variants": [
+        [
+          "p.G462V",
+          3
+        ],
+        [
+          "p.V155F",
+          3
+        ],
+        [
+          "p.E488K",
+          3
+        ],
+        [
+          "p.G511C",
+          3
+        ],
+        [
+          "p.R320W",
+          2
+        ]
+      ]
+    },
+    "STK11": {
+      "n_samples": 214,
+      "n_mutations": 217,
+      "freq_pct": 7.3263,
+      "normalized_burden": 0.139687,
+      "top_variants": [
+        [
+          "p.X155_splice",
+          12
+        ],
+        [
+          "p.D194Y",
+          6
+        ],
+        [
+          "p.X245_splice",
+          5
+        ],
+        [
+          "p.E223*",
+          5
+        ],
+        [
+          "p.Q37*",
+          4
+        ]
+      ]
+    },
+    "HGF": {
+      "n_samples": 116,
+      "n_mutations": 120,
+      "freq_pct": 3.9712,
+      "normalized_burden": 0.075718,
+      "top_variants": [
+        [
+          "p.E183K",
+          3
+        ],
+        [
+          "p.X482_splice",
+          2
+        ],
+        [
+          "p.E199K",
+          2
+        ],
+        [
+          "p.E301K",
+          2
+        ],
+        [
+          "p.X209_splice",
+          2
+        ]
+      ]
+    },
+    "EPHA5": {
+      "n_samples": 131,
+      "n_mutations": 152,
+      "freq_pct": 4.4848,
+      "normalized_burden": 0.085509,
+      "top_variants": [
+        [
+          "p.N81Kfs*8",
+          2
+        ],
+        [
+          "p.A565S",
+          2
+        ],
+        [
+          "p.T371S",
+          2
+        ],
+        [
+          "p.M882I",
+          2
+        ],
+        [
+          "p.X356_splice",
+          2
+        ]
+      ]
+    },
+    "ATM": {
+      "n_samples": 187,
+      "n_mutations": 222,
+      "freq_pct": 6.4019,
+      "normalized_burden": 0.122063,
+      "top_variants": [
+        [
+          "p.R337C",
+          4
+        ],
+        [
+          "p.X974_splice",
+          4
+        ],
+        [
+          "p.Q401*",
+          2
+        ],
+        [
+          "p.E2904Q",
+          2
+        ],
+        [
+          "p.Q2314*",
+          2
+        ]
+      ]
+    },
+    "ARID2": {
+      "n_samples": 125,
+      "n_mutations": 148,
+      "freq_pct": 4.2794,
+      "normalized_burden": 0.081593,
+      "top_variants": [
+        [
+          "p.R314C",
+          6
+        ],
+        [
+          "p.Q1031*",
+          3
+        ],
+        [
+          "p.Q288*",
+          3
+        ],
+        [
+          "p.X1716_splice",
+          2
+        ],
+        [
+          "p.S297F",
+          2
+        ]
+      ]
+    },
+    "NTRK3": {
+      "n_samples": 117,
+      "n_mutations": 130,
+      "freq_pct": 4.0055,
+      "normalized_burden": 0.076371,
+      "top_variants": [
+        [
+          "p.M615I",
+          2
+        ],
+        [
+          "p.E778K",
+          2
+        ],
+        [
+          "p.N288K",
+          2
+        ],
+        [
+          "p.E412K",
+          2
+        ],
+        [
+          "p.P715S",
+          2
+        ]
+      ]
+    },
+    "NOTCH1": {
+      "n_samples": 129,
+      "n_mutations": 146,
+      "freq_pct": 4.4163,
+      "normalized_burden": 0.084204,
+      "top_variants": [
+        [
+          "p.R365C",
+          2
+        ],
+        [
+          "p.S402L",
+          2
+        ],
+        [
+          "p.E181*",
+          1
+        ],
+        [
+          "p.E159*",
+          1
+        ],
+        [
+          "p.Q1134H",
+          1
+        ]
+      ]
+    },
+    "SLC25A32": {
+      "n_samples": 0,
+      "n_mutations": 0,
+      "freq_pct": 0.0,
+      "normalized_burden": 0.0,
+      "top_variants": []
+    },
+    "KLHL12": {
+      "n_samples": 0,
+      "n_mutations": 0,
+      "freq_pct": 0.0,
+      "normalized_burden": 0.0,
+      "top_variants": []
+    },
+    "PAK7": {
+      "n_samples": 124,
+      "n_mutations": 148,
+      "freq_pct": 4.2451,
+      "normalized_burden": 0.08094,
+      "top_variants": [
+        [
+          "p.M173I",
+          5
+        ],
+        [
+          "p.D421N",
+          4
+        ],
+        [
+          "p.G73E",
+          3
+        ],
+        [
+          "p.E542K",
+          3
+        ],
+        [
+          "p.S594F",
+          2
+        ]
+      ]
+    },
+    "GATA3": {
+      "n_samples": 113,
+      "n_mutations": 115,
+      "freq_pct": 3.8685,
+      "normalized_burden": 0.07376,
+      "top_variants": [
+        [
+          "p.P408Afs*99",
+          10
+        ],
+        [
+          "p.D335Gfs*17",
+          8
+        ],
+        [
+          "p.N331Efs*21",
+          4
+        ],
+        [
+          "p.X308_splice",
+          3
+        ],
+        [
+          "p.S426Ifs*81",
+          3
+        ]
+      ]
+    },
+    "ERBB4": {
+      "n_samples": 146,
+      "n_mutations": 187,
+      "freq_pct": 4.9983,
+      "normalized_burden": 0.0953,
+      "top_variants": [
+        [
+          "p.E452K",
+          6
+        ],
+        [
+          "p.R979*",
+          3
+        ],
+        [
+          "p.R524C",
+          3
+        ],
+        [
+          "p.G1217E",
+          2
+        ],
+        [
+          "p.R711C",
+          2
+        ]
+      ]
+    },
+    "SMARCA4": {
+      "n_samples": 175,
+      "n_mutations": 195,
+      "freq_pct": 5.9911,
+      "normalized_burden": 0.11423,
+      "top_variants": [
+        [
+          "p.T910M",
+          5
+        ],
+        [
+          "p.G1162C",
+          2
+        ],
+        [
+          "p.F1102L",
+          2
+        ],
+        [
+          "p.E821K",
+          2
+        ],
+        [
+          "p.X813_splice",
+          2
+        ]
+      ]
+    },
+    "TP53": {
+      "n_samples": 1532,
+      "n_mutations": 1615,
+      "freq_pct": 52.4478,
+      "normalized_burden": 1.0,
+      "top_variants": [
+        [
+          "p.R175H",
+          48
+        ],
+        [
+          "p.R248Q",
+          34
+        ],
+        [
+          "p.R273H",
+          31
+        ],
+        [
+          "p.X307_splice",
+          27
+        ],
+        [
+          "p.R248W",
+          26
+        ]
+      ]
+    },
+    "MGA": {
+      "n_samples": 126,
+      "n_mutations": 153,
+      "freq_pct": 4.3136,
+      "normalized_burden": 0.082245,
+      "top_variants": [
+        [
+          "p.S2500L",
+          2
+        ],
+        [
+          "p.W142L",
+          1
+        ],
+        [
+          "p.G1092Efs*41",
+          1
+        ],
+        [
+          "p.R819C",
+          1
+        ],
+        [
+          "p.S300*",
+          1
+        ]
+      ]
+    },
+    "ROS1": {
+      "n_samples": 131,
+      "n_mutations": 157,
+      "freq_pct": 4.4848,
+      "normalized_burden": 0.085509,
+      "top_variants": [
+        [
+          "p.E1943K",
+          5
+        ],
+        [
+          "p.R1592C",
+          2
+        ],
+        [
+          "p.G1628E",
+          2
+        ],
+        [
+          "p.S373F",
+          2
+        ],
+        [
+          "p.R1686K",
+          2
+        ]
+      ]
+    },
+    "MED12": {
+      "n_samples": 108,
+      "n_mutations": 118,
+      "freq_pct": 3.6974,
+      "normalized_burden": 0.070496,
+      "top_variants": [
+        [
+          "p.X185_splice",
+          2
+        ],
+        [
+          "p.L1224F",
+          2
+        ],
+        [
+          "p.P1068T",
+          1
+        ],
+        [
+          "p.V1132F",
+          1
+        ],
+        [
+          "p.G1676C",
+          1
+        ]
+      ]
+    },
+    "CDKN2A": {
+      "n_samples": 177,
+      "n_mutations": 370,
+      "freq_pct": 6.0596,
+      "normalized_burden": 0.115535,
+      "top_variants": [
+        [
+          "p.R80*",
+          29
+        ],
+        [
+          "p.R58*",
+          26
+        ],
+        [
+          "p.H83Y",
+          24
+        ],
+        [
+          "p.X51_splice",
+          19
+        ],
+        [
+          "p.E88*",
+          15
+        ]
+      ]
+    },
+    "PTPRD": {
+      "n_samples": 224,
+      "n_mutations": 283,
+      "freq_pct": 7.6686,
+      "normalized_burden": 0.146214,
+      "top_variants": [
+        [
+          "p.E406K",
+          4
+        ],
+        [
+          "p.E776K",
+          3
+        ],
+        [
+          "p.S1896F",
+          2
+        ],
+        [
+          "p.S1033F",
+          2
+        ],
+        [
+          "p.T1100K",
+          2
+        ]
+      ]
+    },
+    "APC": {
+      "n_samples": 265,
+      "n_mutations": 361,
+      "freq_pct": 9.0722,
+      "normalized_burden": 0.172977,
+      "top_variants": [
+        [
+          "p.T1556Nfs*3",
+          13
+        ],
+        [
+          "p.R876*",
+          10
+        ],
+        [
+          "p.R1450*",
+          10
+        ],
+        [
+          "p.S1465Wfs*3",
+          5
+        ],
+        [
+          "p.R216*",
+          4
+        ]
+      ]
+    },
+    "NF1": {
+      "n_samples": 230,
+      "n_mutations": 290,
+      "freq_pct": 7.874,
+      "normalized_burden": 0.150131,
+      "top_variants": [
+        [
+          "p.R1241*",
+          4
+        ],
+        [
+          "p.X1392_splice",
+          3
+        ],
+        [
+          "p.R416*",
+          3
+        ],
+        [
+          "p.X1066_splice",
+          3
+        ],
+        [
+          "p.Y2285Tfs*5",
+          3
+        ]
+      ]
+    },
+    "PIK3C2G": {
+      "n_samples": 127,
+      "n_mutations": 149,
+      "freq_pct": 4.3478,
+      "normalized_burden": 0.082898,
+      "top_variants": [
+        [
+          "p.R738C",
+          5
+        ],
+        [
+          "p.E1394K",
+          3
+        ],
+        [
+          "p.M1078I",
+          3
+        ],
+        [
+          "p.S1238L",
+          2
+        ],
+        [
+          "p.E1231K",
+          2
+        ]
+      ]
+    },
+    "KMT2D": {
+      "n_samples": 149,
+      "n_mutations": 200,
+      "freq_pct": 5.101,
+      "normalized_burden": 0.097258,
+      "top_variants": [
+        [
+          "p.P2354Lfs*30",
+          3
+        ],
+        [
+          "p.S843F",
+          2
+        ],
+        [
+          "p.T1363I",
+          2
+        ],
+        [
+          "p.P2297L",
+          2
+        ],
+        [
+          "p.P2533R",
+          1
+        ]
+      ]
+    },
+    "BRCA2": {
+      "n_samples": 114,
+      "n_mutations": 127,
+      "freq_pct": 3.9028,
+      "normalized_burden": 0.074413,
+      "top_variants": [
+        [
+          "p.R2842C",
+          3
+        ],
+        [
+          "p.T3033Nfs*11",
+          2
+        ],
+        [
+          "p.S2303F",
+          2
+        ],
+        [
+          "p.M965I",
+          2
+        ],
+        [
+          "p.R174C",
+          1
+        ]
+      ]
+    },
+    "SETD2": {
+      "n_samples": 151,
+      "n_mutations": 183,
+      "freq_pct": 5.1695,
+      "normalized_burden": 0.098564,
+      "top_variants": [
+        [
+          "p.H426Y",
+          2
+        ],
+        [
+          "p.R432C",
+          2
+        ],
+        [
+          "p.H150Y",
+          2
+        ],
+        [
+          "p.S418F",
+          2
+        ],
+        [
+          "p.S771F",
+          2
+        ]
+      ]
+    },
+    "BRAF": {
+      "n_samples": 226,
+      "n_mutations": 236,
+      "freq_pct": 7.7371,
+      "normalized_burden": 0.14752,
+      "top_variants": [
+        [
+          "p.V600E",
+          119
+        ],
+        [
+          "p.V600K",
+          13
+        ],
+        [
+          "p.G469A",
+          10
+        ],
+        [
+          "p.G466V",
+          6
+        ],
+        [
+          "p.D594N",
+          6
+        ]
+      ]
+    },
+    "PIK3CA": {
+      "n_samples": 360,
+      "n_mutations": 393,
+      "freq_pct": 12.3245,
+      "normalized_burden": 0.234987,
+      "top_variants": [
+        [
+          "p.E545K",
+          102
+        ],
+        [
+          "p.H1047R",
+          95
+        ],
+        [
+          "p.E542K",
+          52
+        ],
+        [
+          "p.C420R",
+          10
+        ],
+        [
+          "p.H1047L",
+          9
+        ]
+      ]
+    },
+    "FAM72A": {
+      "n_samples": 0,
+      "n_mutations": 0,
+      "freq_pct": 0.0,
+      "normalized_burden": 0.0,
+      "top_variants": []
+    },
+    "EGFR": {
+      "n_samples": 453,
+      "n_mutations": 576,
+      "freq_pct": 15.5084,
+      "normalized_burden": 0.295692,
+      "top_variants": [
+        [
+          "p.L858R",
+          124
+        ],
+        [
+          "p.E746_A750del",
+          119
+        ],
+        [
+          "p.T790M",
+          55
+        ],
+        [
+          "p.L747_P753delinsS",
+          14
+        ],
+        [
+          "p.L861Q",
+          10
+        ]
+      ]
+    },
+    "CREBBP": {
+      "n_samples": 132,
+      "n_mutations": 145,
+      "freq_pct": 4.519,
+      "normalized_burden": 0.086162,
+      "top_variants": [
+        [
+          "p.R1341*",
+          2
+        ],
+        [
+          "p.H1485Y",
+          2
+        ],
+        [
+          "p.P1947Tfs*19",
+          2
+        ],
+        [
+          "p.Q943*",
+          2
+        ],
+        [
+          "p.R1446H",
+          2
+        ]
+      ]
+    },
+    "EPHA7": {
+      "n_samples": 108,
+      "n_mutations": 127,
+      "freq_pct": 3.6974,
+      "normalized_burden": 0.070496,
+      "top_variants": [
+        [
+          "p.E477K",
+          3
+        ],
+        [
+          "p.S225F",
+          2
+        ],
+        [
+          "p.R69Q",
+          2
+        ],
+        [
+          "p.E715K",
+          2
+        ],
+        [
+          "p.G741E",
+          2
+        ]
+      ]
+    },
+    "CTNNB1": {
+      "n_samples": 111,
+      "n_mutations": 117,
+      "freq_pct": 3.8001,
+      "normalized_burden": 0.072454,
+      "top_variants": [
+        [
+          "p.S37F",
+          14
+        ],
+        [
+          "p.S37C",
+          9
+        ],
+        [
+          "p.S45F",
+          7
+        ],
+        [
+          "p.S33C",
+          6
+        ],
+        [
+          "p.S45del",
+          5
+        ]
+      ]
+    },
+    "SLC45A4": {
+      "n_samples": 0,
+      "n_mutations": 0,
+      "freq_pct": 0.0,
+      "normalized_burden": 0.0,
+      "top_variants": []
+    },
+    "ARID1A": {
+      "n_samples": 206,
+      "n_mutations": 239,
+      "freq_pct": 7.0524,
+      "normalized_burden": 0.134465,
+      "top_variants": [
+        [
+          "p.D1850Gfs*4",
+          3
+        ],
+        [
+          "p.S1930*",
+          2
+        ],
+        [
+          "p.Q268*",
+          2
+        ],
+        [
+          "p.P224Rfs*8",
+          2
+        ],
+        [
+          "p.Q766Pfs*51",
+          2
+        ]
+      ]
+    },
+    "SENP8": {
+      "n_samples": 0,
+      "n_mutations": 0,
+      "freq_pct": 0.0,
+      "normalized_burden": 0.0,
+      "top_variants": []
+    }
+  },
+  "top_50_genes": [
+    {
+      "gene": "TP53",
+      "n_samples": 1532
+    },
+    {
+      "gene": "KRAS",
+      "n_samples": 484
+    },
+    {
+      "gene": "EGFR",
+      "n_samples": 453
+    },
+    {
+      "gene": "TERT",
+      "n_samples": 377
+    },
+    {
+      "gene": "PIK3CA",
+      "n_samples": 360
+    },
+    {
+      "gene": "APC",
+      "n_samples": 265
+    },
+    {
+      "gene": "NF1",
+      "n_samples": 230
+    },
+    {
+      "gene": "PTPRT",
+      "n_samples": 230
+    },
+    {
+      "gene": "RB1",
+      "n_samples": 228
+    },
+    {
+      "gene": "BRAF",
+      "n_samples": 226
+    },
+    {
+      "gene": "KEAP1",
+      "n_samples": 226
+    },
+    {
+      "gene": "PTPRD",
+      "n_samples": 224
+    },
+    {
+      "gene": "STK11",
+      "n_samples": 214
+    },
+    {
+      "gene": "ARID1A",
+      "n_samples": 206
+    },
+    {
+      "gene": "FAT1",
+      "n_samples": 200
+    },
+    {
+      "gene": "ATM",
+      "n_samples": 187
+    },
+    {
+      "gene": "GRIN2A",
+      "n_samples": 183
+    },
+    {
+      "gene": "PTEN",
+      "n_samples": 183
+    },
+    {
+      "gene": "CDKN2A",
+      "n_samples": 177
+    },
+    {
+      "gene": "SMARCA4",
+      "n_samples": 175
+    },
+    {
+      "gene": "SETD2",
+      "n_samples": 151
+    },
+    {
+      "gene": "KMT2D",
+      "n_samples": 149
+    },
+    {
+      "gene": "ERBB4",
+      "n_samples": 146
+    },
+    {
+      "gene": "EPHA3",
+      "n_samples": 144
+    },
+    {
+      "gene": "ZFHX3",
+      "n_samples": 141
+    },
+    {
+      "gene": "RBM10",
+      "n_samples": 139
+    },
+    {
+      "gene": "ATRX",
+      "n_samples": 136
+    },
+    {
+      "gene": "CREBBP",
+      "n_samples": 132
+    },
+    {
+      "gene": "EPHA5",
+      "n_samples": 131
+    },
+    {
+      "gene": "ROS1",
+      "n_samples": 131
+    },
+    {
+      "gene": "NOTCH1",
+      "n_samples": 129
+    },
+    {
+      "gene": "PIK3C2G",
+      "n_samples": 127
+    },
+    {
+      "gene": "PBRM1",
+      "n_samples": 127
+    },
+    {
+      "gene": "NOTCH3",
+      "n_samples": 126
+    },
+    {
+      "gene": "ALK",
+      "n_samples": 126
+    },
+    {
+      "gene": "MGA",
+      "n_samples": 126
+    },
+    {
+      "gene": "ARID2",
+      "n_samples": 125
+    },
+    {
+      "gene": "NOTCH4",
+      "n_samples": 125
+    },
+    {
+      "gene": "PAK7",
+      "n_samples": 124
+    },
+    {
+      "gene": "NRAS",
+      "n_samples": 121
+    },
+    {
+      "gene": "PIK3CG",
+      "n_samples": 121
+    },
+    {
+      "gene": "NTRK3",
+      "n_samples": 117
+    },
+    {
+      "gene": "HGF",
+      "n_samples": 116
+    },
+    {
+      "gene": "BRCA2",
+      "n_samples": 114
+    },
+    {
+      "gene": "GATA3",
+      "n_samples": 113
+    },
+    {
+      "gene": "ARID1B",
+      "n_samples": 112
+    },
+    {
+      "gene": "CTNNB1",
+      "n_samples": 111
+    },
+    {
+      "gene": "ERBB2",
+      "n_samples": 110
+    },
+    {
+      "gene": "EPHA7",
+      "n_samples": 108
+    },
+    {
+      "gene": "MED12",
+      "n_samples": 108
+    }
+  ],
+  "unresolved_001_status": "RESOLVED \u2014 brain filter applied via data_clinical_sample.txt"
+}
