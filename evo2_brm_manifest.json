@@ -1,6 +1,6 @@
 {
-  "manifest_version": "1.1.0",
-  "manifest_date": "2026-04-02",
+  "manifest_version": "1.2.0",
+  "manifest_date": "2026-04-10",
   "status": "FROZEN",
   "ruo": true,
   "disclaimer": "Research Use Only. Not cleared for clinical decision-making.",
@@ -142,7 +142,44 @@
       "patches.py: torch.load weights_only=False (global monkey-patch)",
       "patches.py: FP8 disabled via check_fp8_support + fp8_available=True",
       "TE 1.13 pinned (cuDNN 8 compat \u2014 do NOT bump without migrating to cuDNN 9+ base)"
-    ]
+    ],
+    "longevity_validation": {
+      "status": "COMPLETE 2026-04-10",
+      "verdict": "CANCER-ONLY for pathogenicity direction inference. Ancestral alleles (APOE e4) produce positive delta_ll \u2014 sign does not indicate clinical safety. Common longevity SNPs require epidemiological cohort calibration.",
+      "key_finding": "APOE e2 vs e4 separation = 1.646 delta_ll. Largest in panel. Reflects evolutionary allele ancestry (e4 = ancestral = expected by model), not clinical direction.",
+      "regime_b_contract_validated": {
+        "window_bp": 8192,
+        "var_idx": 4095,
+        "start_formula": "pos - 4095",
+        "end_formula": "pos + 4096",
+        "strand": "forward_genomic_GRCh38_Ensembl_only",
+        "anchor": "TP53 R175H chr17:7674220 C>T = -0.4177124500274658",
+        "do_not": "pos +/- 4096 symmetric (8193bp wrong idx), RC for minus-strand genes"
+      },
+      "use_case_manifest": "docs/evo2_scoring_use_case_manifest.md",
+      "panel_scored": [
+        {
+          "variant": "TP53 R175H",
+          "delta_ll": -0.4177,
+          "note": "anchor"
+        },
+        {
+          "variant": "APOE e4",
+          "delta_ll": 0.7635,
+          "note": "ancestral allele \u2014 positive sign expected"
+        },
+        {
+          "variant": "APOE e2",
+          "delta_ll": -0.8826,
+          "note": "derived allele \u2014 separation from e4 = 1.646"
+        },
+        {
+          "variant": "FOXO3 rs2802292",
+          "delta_ll": -0.4673,
+          "note": "longevity SNP \u2014 more negative than TP53, uninformative for longevity"
+        }
+      ]
+    }
   },
   "target_lock_v2": {
     "formula": "0.35 \u00d7 CRISPRa_norm + 0.25 \u00d7 RNA_norm + 0.20 \u00d7 ATAC_norm + 0.15 \u00d7 Clinical_norm + 0.05 \u00d7 Evo2_norm",
