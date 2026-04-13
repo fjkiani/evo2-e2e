@@ -1,6 +1,6 @@
 {
-  "manifest_version": "1.2.0",
-  "manifest_date": "2026-04-10",
+  "manifest_version": "1.3.0",
+  "manifest_date": "2026-04-13",
   "status": "FROZEN",
   "ruo": true,
   "disclaimer": "Research Use Only. Not cleared for clinical decision-making.",
@@ -179,7 +179,53 @@
           "note": "longevity SNP \u2014 more negative than TP53, uninformative for longevity"
         }
       ]
-    }
+    },
+    "honest_auroc": {
+      "status": "FINAL \u2014 do not reopen",
+      "date": "2026-04-13",
+      "auroc": 0.5778,
+      "auprc": 0.76,
+      "precision_at_5": 0.8,
+      "mean_per_step_auroc": 0.578,
+      "old_tautology_auroc": 0.976,
+      "tautology_removed": -0.398,
+      "n_positives": 20,
+      "n_negatives": 9,
+      "negative_set": [
+        "MYC",
+        "AKT1",
+        "CDH1",
+        "KRAS",
+        "SMAD4",
+        "APC",
+        "VEGFB",
+        "MAPK1",
+        "ERBB2"
+      ],
+      "negative_rationale": "solid-tumor false-positives: frequently mutated, NOT enriched in GSE237446 brain screen",
+      "scoring_method": "conditional_ll via crispro-test--score-variant-conditional.modal.run",
+      "scoring_contract": "window=8192bp, var_idx=4095, start=pos-4095, forward GRCh38",
+      "anchor_verified": "TP53 R175H = -0.4177124500274658 (0.000000 deviation across both run dates)",
+      "provenance": "9 genes from 2026-03-28 live_variant_scores.json + 29 re-scored 2026-04-13, cross-check delta=0 for all 9 overlaps",
+      "commit": "e4414db",
+      "failure_mode_1": {
+        "label": "Conservation conflation",
+        "description": "Conserved negatives score as disruptive \u2014 Evo2 cannot distinguish 'essential to all metazoa' from 'BrM-specific'. VEGFB=-0.5536, SMAD4=-0.3819, KRAS=-0.2085.",
+        "implication": "Evo2 penalizes missense at conserved positions regardless of BrM relevance"
+      },
+      "failure_mode_2": {
+        "label": "Functional invisibility",
+        "description": "Best-validated BrM target scores near-neutral. BACE1 +0.0017 despite CRISPRa LFC +7.28 and Chafe 2025 STM validation. BACE1 BrM mechanism (BACE1\u2192EGFR\u2192MEK\u2192ERK) is functional/contextual, invisible to evolutionary sequence constraint.",
+        "implication": "BrM functional mechanisms are not encoded in cross-species nucleotide conservation"
+      },
+      "weight_locked": {
+        "evo2_weight_in_target_lock_v2": 0.05,
+        "locked": true,
+        "rationale": "AUROC 0.5778 confirms r=0.016 Pearson finding. Evo2 measures evolutionary constraint, not BrM biology. 5% weight is the empirically correct and now doubly-validated assignment. Do not increase without a new calibration study showing AUROC > 0.70 on a prospective holdout.",
+        "locked_date": "2026-04-13"
+      }
+    },
+    "use_case_note": "Evo2 1b conditional LL: validated for rare pathogenic hotspots on conserved positions. AUROC=0.5778 on BrM target discrimination (n=29, honest negatives). Not useful for functional BrM mechanisms (BACE1 proof). Not useful for longevity SNPs (FOXO3/APOE analysis 2026-04-10). 5% weight in Target-Lock v2 is LOCKED."
   },
   "target_lock_v2": {
     "formula": "0.35 \u00d7 CRISPRa_norm + 0.25 \u00d7 RNA_norm + 0.20 \u00d7 ATAC_norm + 0.15 \u00d7 Clinical_norm + 0.05 \u00d7 Evo2_norm",
