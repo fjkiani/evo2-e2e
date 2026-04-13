@@ -1,5 +1,5 @@
 {
-  "manifest_version": "1.4.0",
+  "manifest_version": "1.5.0",
   "manifest_date": "2026-04-13",
   "status": "FROZEN",
   "ruo": true,
@@ -379,7 +379,7 @@
     "evo2_alone": 0.5778,
     "abs_crispr_alone": 0.6556,
     "enformer_alone": 0.5278,
-    "target_reached": true,
+    "target_reached": false,
     "signals": [
       "abs_crispr_class_routed",
       "atac_500kb_filled",
@@ -387,6 +387,45 @@
       "enformer_dnase"
     ],
     "key_fix": "ATAC filled for 5 missing ONC genes (KRAS=-1.39 correctly deprioritized)",
-    "architecture": "TSG: 60% CRISPRa + 20% ATAC + 15% Evo2 + 5% Enformer; ONC: 25% CRISPRa + 35% ATAC + 20% Evo2 + 20% Enformer"
+    "architecture": "TSG: 60% CRISPRa + 20% ATAC + 15% Evo2 + 5% Enformer; ONC: 25% CRISPRa + 35% ATAC + 20% Evo2 + 20% Enformer",
+    "auroc_primary": 0.6889,
+    "enformer_status": "NON_DISCRIMINATIVE \u2014 central-bins fix applied in code, deploy+validation pending",
+    "last_updated": "2026-04-13T17:53:48.525201Z",
+    "validation_files_written": true
+  },
+  "validation_files": {
+    "class_aware_composite_final": {
+      "path": "data/validation/class_aware_composite_final.json",
+      "auroc_primary": 0.6889,
+      "auroc_secondary": 0.7479,
+      "n_genes": 29,
+      "enformer_excluded": true,
+      "created": "2026-04-13T17:53:48.525134Z"
+    },
+    "adversarial_negatives_scored": {
+      "path": "data/validation/adversarial_negatives_scored.json",
+      "variants": [
+        "PTPN11 E76K",
+        "PTPRT R1040H",
+        "NF1 R1276Q",
+        "FAT1 Q3044*"
+      ],
+      "strong_concordance": "3/4",
+      "borderline": "1/4",
+      "grin2a_dropped_reason": "No ClinVar entry; canonical transcripts have Lys not Arg at 844",
+      "created": "2026-04-13T17:53:48.525139Z"
+    },
+    "regime_b_longevity_run": {
+      "path": "data/validation/regime_b_longevity_run.json",
+      "n_assessable": 10,
+      "n_concordant": 7,
+      "concordance_fraction": 0.7,
+      "discordant": [
+        "PTEN R130Q",
+        "KMT2C R4854*"
+      ],
+      "caveat": "OS associations approximate from published literature, not individual patient data",
+      "created": "2026-04-13T17:53:48.525141Z"
+    }
   }
 }

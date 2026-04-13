@@ -33,7 +33,7 @@ Validate the anchor before trusting any new variant run.
 
 ```
 evo2-e2e/
-  evo2_brm_manifest.json          ← v1.4.0 — canonical data provenance
+  evo2_brm_manifest.json          ← v1.5.0 — canonical data provenance
   MANIFEST_NOTES.md               ← ATAC discrepancy log + key decisions
   HONEST_AUDIT.md                 ← tautology confession, AUROC history
   docs/evo2_scoring_use_case_manifest.md  ← what Evo2 can/cannot do
@@ -288,7 +288,7 @@ If Ayesha fails → do not push. Fix first.
 - Infer clinical direction from delta_ll sign for common/ancestral alleles (APOE ε4 is positive because it is ancestral — not protective)
 
 ### Weight in Target-Lock v2: **5% — LOCKED**
-Do not increase without AUROC > 0.70 on a prospective holdout. Rationale locked in manifest v1.4.0.
+Do not increase without AUROC > 0.70 on a prospective holdout. Rationale locked in manifest v1.5.0.
 
 ---
 
@@ -308,7 +308,7 @@ The 0.7278 is not comparable to the 0.5778 — it uses a different formula and d
 
 ## Manifest Versioning
 
-`evo2_brm_manifest.json` is currently v1.4.0.
+`evo2_brm_manifest.json` is currently v1.5.0.
 
 When to bump:
 - **Minor (1.x.0):** new data signal, closed unresolved item, new scored panel
@@ -319,7 +319,7 @@ After paper submission: freeze the manifest. No edits after submission.
 
 ---
 
-## Remaining Open Items (from manifest v1.4.0)
+## Remaining Open Items (from manifest v1.5.0)
 
 | ID | Item | Status | Effort |
 |---|---|---|---|

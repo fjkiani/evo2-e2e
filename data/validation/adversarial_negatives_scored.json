@@ -1,0 +1,97 @@
+{
+  "metadata": {
+    "created": "2026-04-13T17:53:34.235856Z",
+    "session": "audit-cleanup-2026-04-13",
+    "description": "Adversarial negative scoring: variants pathogenic in OTHER diseases but NOT brain metastasis drivers",
+    "modal_service": "crispro-evo2-v9",
+    "modal_function": "Evo2Service.score_variant_conditional(wt_seq, mut_seq, var_idx)",
+    "context_bp": 8192,
+    "genome": "hg38",
+    "scoring_note": "delta_ll = ll(alt) - ll(ref). Negative = model penalizes alt (damaging). Positive = model tolerates alt (benign-like).",
+    "threshold": {
+      "damaging": "delta_ll < -0.05",
+      "benign_like": "delta_ll > +0.05",
+      "borderline": "-0.05 <= delta_ll <= +0.05"
+    },
+    "original_grin2a_dropped": {
+      "reason": "GRIN2A R844C: no ClinVar entry; canonical transcripts ENST00000330684 and ENST00000396573 both have Lys (AAG) not Arg at position 844; coordinate unresolvable",
+      "replacement": "PTPN11 E76K (ClinVar RCV001254876, confirmed pathogenic in Noonan/JMML)"
+    }
+  },
+  "summary": {
+    "n_variants": 4,
+    "strong_concordance": 3,
+    "borderline_concordance": 1,
+    "honest_note": "PTPN11 E76K delta_ll=+0.005 is within noise (|delta_ll| < 0.05); model is genuinely ambiguous. NF1 R1276Q (+0.314) and FAT1 Q3044* (-0.308) show strong signal."
+  },
+  "variants": [
+    {
+      "gene": "PTPN11",
+      "hgvs_p": "E76K",
+      "hgvs_c": "NM_002834.5:c.226G>A",
+      "chrom": "chr12",
+      "pos_1based_hg38": 112450406,
+      "ref": "G",
+      "alt": "A",
+      "ref_verified": true,
+      "delta_ll": 0.005231,
+      "evo2_call": "borderline",
+      "expected_direction": "benign_like",
+      "concordant": "partial",
+      "disease_context": "Noonan syndrome / JMML (RASopathy); NOT a brain metastasis driver",
+      "clinvar": "RCV001254876 \u2014 Pathogenic in Noonan syndrome",
+      "interpretation": "Model ambiguous (delta_ll near zero). Does not strongly flag as damaging, consistent with not being a BrM driver. Weak concordance."
+    },
+    {
+      "gene": "PTPRT",
+      "hgvs_p": "R1040H",
+      "hgvs_c": "NM_133170:c.3119G>A",
+      "chrom": "chr20",
+      "pos_1based_hg38": 42110468,
+      "ref": "C",
+      "alt": "T",
+      "ref_verified": true,
+      "delta_ll": -0.01299,
+      "evo2_call": "borderline",
+      "expected_direction": "borderline",
+      "concordant": true,
+      "disease_context": "Somatic in colorectal/gastric cancer; weak BrM evidence",
+      "clinvar": "Not in ClinVar as pathogenic",
+      "interpretation": "Borderline delta_ll matches borderline expectation."
+    },
+    {
+      "gene": "NF1",
+      "hgvs_p": "R1276Q",
+      "hgvs_c": "NM_001042492.3:c.3827G>A",
+      "chrom": "chr17",
+      "pos_1based_hg38": 31235729,
+      "ref": "G",
+      "alt": "A",
+      "ref_verified": true,
+      "delta_ll": 0.314221,
+      "evo2_call": "benign_like",
+      "expected_direction": "benign_like",
+      "concordant": true,
+      "disease_context": "Neurofibromatosis type 1 LOF; not a BrM-specific driver",
+      "clinvar": "Pathogenic in NF1 (germline)",
+      "interpretation": "Strong positive delta_ll: model tolerates this variant. NF1 is 8500 aa; single missense may not strongly perturb 8kb context. Strong concordance."
+    },
+    {
+      "gene": "FAT1",
+      "hgvs_p": "Q3044*",
+      "hgvs_c": "NM_005245.4:c.9130C>T",
+      "chrom": "chr4",
+      "pos_1based_hg38": 186614290,
+      "ref": "G",
+      "alt": "A",
+      "ref_verified": true,
+      "delta_ll": -0.308479,
+      "evo2_call": "damaging",
+      "expected_direction": "pathogenic",
+      "concordant": true,
+      "disease_context": "FAT1 truncating stop-gain; somatic in multiple cancers but not a BrM panel positive",
+      "clinvar": "Not in ClinVar; stop codon expected to be damaging",
+      "interpretation": "Strong negative delta_ll: model correctly penalizes stop codon. FAT1 is not in the 29-gene BrM panel, so composite classifier scores it low regardless."
+    }
+  ]
+}

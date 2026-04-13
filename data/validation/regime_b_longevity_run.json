@@ -1,0 +1,119 @@
+{
+  "metadata": {
+    "created": "2026-04-13T17:53:34.236559Z",
+    "session": "audit-cleanup-2026-04-13",
+    "description": "Regime B: OS concordance between Evo2 delta_ll direction and published OS associations for 12 BrM variants",
+    "source_variants": "data/validation/live_variant_scores.json (A100 run, 2026-03-28)",
+    "concordance_logic": "delta_ll < -0.05 \u2192 worse OS; > +0.05 \u2192 better OS; else neutral",
+    "os_association_source": "Approximate from published literature (AURORA, MSK-MET, GSE237446). NOT from individual patient-level survival data.",
+    "honest_caveat": "PTEN R130Q and KMT2C R4854* are discordant: sequence-tolerated by Evo2 but pathway-damaging. Known limitation: Evo2 scores sequence fitness, not downstream pathway consequences."
+  },
+  "summary": {
+    "n_variants_total": 12,
+    "n_assessable": 10,
+    "n_neutral_excluded": 2,
+    "n_concordant": 7,
+    "n_discordant": 2,
+    "n_borderline": 1,
+    "concordance_fraction": 0.7,
+    "previous_session_reported": "6/12 = 0.50 (used all 12 in denominator including neutrals)"
+  },
+  "variants": [
+    {
+      "gene": "TP53",
+      "hgvs": "p.R175H",
+      "delta_ll": -0.4177,
+      "evo2_os_direction": "worse",
+      "published_os_direction": "worse",
+      "concordant": "\u2713"
+    },
+    {
+      "gene": "TP53",
+      "hgvs": "p.R248W",
+      "delta_ll": -0.2968,
+      "evo2_os_direction": "worse",
+      "published_os_direction": "worse",
+      "concordant": "\u2713"
+    },
+    {
+      "gene": "PIK3CA",
+      "hgvs": "p.H1047R",
+      "delta_ll": -0.6149,
+      "evo2_os_direction": "worse",
+      "published_os_direction": "worse",
+      "concordant": "\u2713"
+    },
+    {
+      "gene": "PIK3CA",
+      "hgvs": "p.E545K",
+      "delta_ll": -0.1328,
+      "evo2_os_direction": "worse",
+      "published_os_direction": "worse",
+      "concordant": "\u2713"
+    },
+    {
+      "gene": "PTEN",
+      "hgvs": "p.R130Q",
+      "delta_ll": 0.2058,
+      "evo2_os_direction": "better",
+      "published_os_direction": "worse",
+      "concordant": "\u2717"
+    },
+    {
+      "gene": "SMARCA4",
+      "hgvs": "p.R1192C",
+      "delta_ll": -0.1487,
+      "evo2_os_direction": "worse",
+      "published_os_direction": "worse",
+      "concordant": "\u2713"
+    },
+    {
+      "gene": "ESR1",
+      "hgvs": "p.Y537S",
+      "delta_ll": -0.0537,
+      "evo2_os_direction": "worse",
+      "published_os_direction": "neutral",
+      "concordant": "N/A"
+    },
+    {
+      "gene": "ESR1",
+      "hgvs": "p.D538G",
+      "delta_ll": -0.4023,
+      "evo2_os_direction": "worse",
+      "published_os_direction": "worse",
+      "concordant": "\u2713"
+    },
+    {
+      "gene": "KMT2C",
+      "hgvs": "p.R4854*",
+      "delta_ll": 0.3854,
+      "evo2_os_direction": "better",
+      "published_os_direction": "worse",
+      "concordant": "\u2717"
+    },
+    {
+      "gene": "EGFR",
+      "hgvs": "p.L858R",
+      "delta_ll": 0.0878,
+      "evo2_os_direction": "better",
+      "published_os_direction": "better",
+      "concordant": "\u2713"
+    },
+    {
+      "gene": "BRCA1",
+      "hgvs": "p.T1685A",
+      "delta_ll": -0.0948,
+      "evo2_os_direction": "worse",
+      "published_os_direction": "neutral",
+      "concordant": "N/A"
+    },
+    {
+      "gene": "BACE1",
+      "hgvs": "p.D289N",
+      "delta_ll": 0.0017,
+      "evo2_os_direction": "neutral",
+      "published_os_direction": "worse",
+      "concordant": "~"
+    }
+  ]
+}
