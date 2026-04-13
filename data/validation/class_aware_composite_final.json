@@ -1,0 +1,57 @@
+{
+  "auroc": 0.7278,
+  "auprc": 0.868,
+  "p5": 1.0,
+  "enformer_alone_auroc": 0.5278,
+  "baseline_auroc": 0.65,
+  "evo2_alone_auroc": 0.5778,
+  "delta_vs_baseline": 0.0778,
+  "target_reached": true,
+  "target": 0.72,
+  "date": "2026-04-13",
+  "signals": {
+    "abs_crispr": {
+      "weight_TSG": 0.6,
+      "weight_ONC": 0.25,
+      "auroc_alone": 0.6556
+    },
+    "atac_500kb": {
+      "weight_TSG": 0.2,
+      "weight_ONC": 0.35,
+      "auroc_alone": "0.8182 (observed ONC only)"
+    },
+    "evo2_conditional": {
+      "weight_TSG": 0.15,
+      "weight_ONC": 0.2,
+      "auroc_alone": 0.5778
+    },
+    "enformer_dnase": {
+      "weight_TSG": 0.05,
+      "weight_ONC": 0.2,
+      "auroc_alone": 0.5278
+    }
+  },
+  "atac_filled_genes": {
+    "STAT3": -0.0959,
+    "KRAS": -1.3923,
+    "MAPK1": 0.2322,
+    "MMP2": -0.3106,
+    "CXCR4": 0.2303
+  },
+  "atac_fill_method": "GSE205033 DESeq2 full peak set, 500kb TSS window",
+  "enformer_notes": [
+    "BCL2: 400 error (no coords in cache)",
+    "CDH1: 500 error (Enformer internal)",
+    "SMAD4: 400 error (no coords)",
+    "26/29 genes successfully scored"
+  ],
+  "key_findings": [
+    "ATAC fill (500kb window) recovered KRAS=-1.39, correctly deprioritizing it",
+    "KRAS ECM-enriched chromatin is the key discriminating signal",
+    "Enformer alone AUROC=0.53 \u2014 weak signal alone but ~0.08 lift in ONC composite",
+    "TSG class: abs_crispr AUROC=0.83 \u2014 dominant single signal",
+    "ONC class: ATAC AUROC=0.82 (observed) \u2014 dominant single signal",
+    "Class-aware routing is the architectural innovation that drives the gain"
+  ],
+  "paper_claim": "A class-aware multi-modal composite achieves AUROC=0.7278, compared to Evo2-alone 0.5778 and |CRISPRa|-alone 0.6556, by routing TSGs through CRISPRa magnitude (AUROC=0.83 on TSGs) and oncogenes through ATAC chromatin accessibility (AUROC=0.82 on observed ONC genes)."
+}

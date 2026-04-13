@@ -1,0 +1,42 @@
+{
+  "STAT3": {
+    "source": "deseq_500kb_window",
+    "n_peaks": 39,
+    "mean_lfc_mbm_ecm": -0.0959,
+    "best_peak_mbm": 849.96,
+    "best_peak_ecm": 1098.76,
+    "closest_peak_dist": 70179
+  },
+  "KRAS": {
+    "source": "deseq_500kb_window",
+    "n_peaks": 5,
+    "mean_lfc_mbm_ecm": -1.3923,
+    "best_peak_mbm": 408.21,
+    "best_peak_ecm": 912.1,
+    "closest_peak_dist": 55490
+  },
+  "MAPK1": {
+    "source": "deseq_500kb_window",
+    "n_peaks": 17,
+    "mean_lfc_mbm_ecm": 0.2322,
+    "best_peak_mbm": 1011.89,
+    "best_peak_ecm": 1022.79,
+    "closest_peak_dist": 70579
+  },
+  "MMP2": {
+    "source": "deseq_500kb_window",
+    "n_peaks": 8,
+    "mean_lfc_mbm_ecm": -0.3106,
+    "best_peak_mbm": 2089.02,
+    "best_peak_ecm": 2786.95,
+    "closest_peak_dist": 65174
+  },
+  "CXCR4": {
+    "source": "deseq_500kb_window",
+    "n_peaks": 9,
+    "mean_lfc_mbm_ecm": 0.2303,
+    "best_peak_mbm": 2429.32,
+    "best_peak_ecm": 2552.41,
+    "closest_peak_dist": 133802
+  }
+}

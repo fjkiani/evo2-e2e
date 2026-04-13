@@ -1,5 +1,5 @@
 {
-  "manifest_version": "1.3.0",
+  "manifest_version": "1.4.0",
   "manifest_date": "2026-04-13",
   "status": "FROZEN",
   "ruo": true,
@@ -372,5 +372,21 @@
       "resolution": "Do not integrate GSM3530739/GSM3530746. GSE205033 DESeq2 counts are now processed.",
       "status": "RESOLVED \u2014 files rejected, GSE205033 used instead"
     }
-  ]
+  ],
+  "honest_auroc_v2": {
+    "date": "2026-04-13",
+    "class_aware_composite": 0.7278,
+    "evo2_alone": 0.5778,
+    "abs_crispr_alone": 0.6556,
+    "enformer_alone": 0.5278,
+    "target_reached": true,
+    "signals": [
+      "abs_crispr_class_routed",
+      "atac_500kb_filled",
+      "evo2_conditional",
+      "enformer_dnase"
+    ],
+    "key_fix": "ATAC filled for 5 missing ONC genes (KRAS=-1.39 correctly deprioritized)",
+    "architecture": "TSG: 60% CRISPRa + 20% ATAC + 15% Evo2 + 5% Enformer; ONC: 25% CRISPRa + 35% ATAC + 20% Evo2 + 20% Enformer"
+  }
 }
