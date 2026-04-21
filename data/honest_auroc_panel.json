@@ -1,0 +1,264 @@
+{
+  "metadata": {
+    "run_date": "2026-04-13",
+    "model": "evo2_1b_base",
+    "hardware": "A100",
+    "endpoint": "https://crispro-test--score-variant-conditional.modal.run",
+    "method": "conditional_log_likelihood",
+    "window_bp": 8192,
+    "var_idx": 4095,
+    "sequence_source": "NCBI_Entrez",
+    "anchor_check": {
+      "gene": "TP53",
+      "variant": "R175H",
+      "delta_ll": -0.4177124500274658,
+      "match": "exact"
+    },
+    "n_positive": 20,
+    "n_negative": 9,
+    "global_auroc": 0.5778,
+    "global_auprc": 0.76,
+    "p_at_3": 0.667,
+    "p_at_5": 0.8,
+    "p_at_10": 0.8,
+    "mean_per_step_auroc": 0.578,
+    "old_tautology_auroc": 0.976,
+    "tautology_discount_removed": 0.398,
+    "honest_range_spec": "0.55-0.75",
+    "in_honest_range": true
+  },
+  "genes": [
+    {
+      "gene": "MMP2",
+      "label": "positive",
+      "delta_ll": -0.462,
+      "strand": "-",
+      "coord_fixed": true,
+      "source": "A100_april13"
+    },
+    {
+      "gene": "MMP9",
+      "label": "positive",
+      "delta_ll": -0.5167,
+      "strand": "-",
+      "coord_fixed": true,
+      "source": "A100_april13"
+    },
+    {
+      "gene": "EGFR",
+      "label": "positive",
+      "delta_ll": 0.0878,
+      "strand": "+",
+      "coord_fixed": false,
+      "source": "A100_april13"
+    },
+    {
+      "gene": "TWIST1",
+      "label": "positive",
+      "delta_ll": 0.2011,
+      "strand": "+",
+      "coord_fixed": true,
+      "source": "A100_april13"
+    },
+    {
+      "gene": "KMT2C",
+      "label": "positive",
+      "delta_ll": 0.3854,
+      "strand": "-",
+      "coord_fixed": false,
+      "source": "A100_april13"
+    },
+    {
+      "gene": "BCL2",
+      "label": "positive",
+      "delta_ll": 0.1341,
+      "strand": "+",
+      "coord_fixed": false,
+      "source": "A100_april13"
+    },
+    {
+      "gene": "BACE1",
+      "label": "positive",
+      "delta_ll": 0.0017,
+      "strand": "-",
+      "coord_fixed": true,
+      "source": "A100_april13"
+    },
+    {
+      "gene": "CXCR4",
+      "label": "positive",
+      "delta_ll": 0.0907,
+      "strand": "-",
+      "coord_fixed": false,
+      "source": "A100_april13"
+    },
+    {
+      "gene": "ICAM1",
+      "label": "positive",
+      "delta_ll": 0.3488,
+      "strand": "+",
+      "coord_fixed": true,
+      "source": "A100_april13"
+    },
+    {
+      "gene": "CLDN5",
+      "label": "positive",
+      "delta_ll": 0.0878,
+      "strand": "-",
+      "coord_fixed": true,
+      "source": "A100_april13"
+    },
+    {
+      "gene": "CCL2",
+      "label": "positive",
+      "delta_ll": -0.0907,
+      "strand": "+",
+      "coord_fixed": true,
+      "source": "A100_april13"
+    },
+    {
+      "gene": "PTEN",
+      "label": "positive",
+      "delta_ll": 0.2058,
+      "strand": "-",
+      "coord_fixed": true,
+      "source": "A100_april13"
+    },
+    {
+      "gene": "TP53",
+      "label": "positive",
+      "delta_ll": -0.4177,
+      "strand": "+",
+      "coord_fixed": false,
+      "source": "A100_april13"
+    },
+    {
+      "gene": "PIK3CA",
+      "label": "positive",
+      "delta_ll": -0.6149,
+      "strand": "+",
+      "coord_fixed": false,
+      "source": "A100_april13"
+    },
+    {
+      "gene": "CDKN2A",
+      "label": "positive",
+      "delta_ll": -0.2147,
+      "strand": "+",
+      "coord_fixed": false,
+      "source": "A100_april13"
+    },
+    {
+      "gene": "SMARCA4",
+      "label": "positive",
+      "delta_ll": -0.1487,
+      "strand": "-",
+      "coord_fixed": false,
+      "source": "A100_april13"
+    },
+    {
+      "gene": "STAT3",
+      "label": "positive",
+      "delta_ll": -0.3206,
+      "strand": "-",
+      "coord_fixed": true,
+      "source": "A100_april13"
+    },
+    {
+      "gene": "ESR1",
+      "label": "positive",
+      "delta_ll": -0.4023,
+      "strand": "-",
+      "coord_fixed": false,
+      "source": "A100_april13"
+    },
+    {
+      "gene": "BRCA1",
+      "label": "positive",
+      "delta_ll": -0.0948,
+      "strand": "+",
+      "coord_fixed": true,
+      "source": "A100_april13"
+    },
+    {
+      "gene": "VEGFA",
+      "label": "positive",
+      "delta_ll": -0.4857,
+      "strand": "-",
+      "coord_fixed": false,
+      "source": "A100_april13"
+    },
+    {
+      "gene": "MYC",
+      "label": "negative",
+      "delta_ll": 0.2581,
+      "strand": "+",
+      "coord_fixed": false,
+      "source": "A100_april13"
+    },
+    {
+      "gene": "AKT1",
+      "label": "negative",
+      "delta_ll": 0.1948,
+      "strand": "-",
+      "coord_fixed": false,
+      "source": "A100_april13"
+    },
+    {
+      "gene": "CDH1",
+      "label": "negative",
+      "delta_ll": 0.0317,
+      "strand": "-",
+      "coord_fixed": true,
+      "source": "A100_april13"
+    },
+    {
+      "gene": "APC",
+      "label": "negative",
+      "delta_ll": 0.3398,
+      "strand": "-",
+      "coord_fixed": false,
+      "source": "A100_april13"
+    },
+    {
+      "gene": "SMAD4",
+      "label": "negative",
+      "delta_ll": -0.3819,
+      "strand": "-",
+      "coord_fixed": true,
+      "source": "A100_april13"
+    },
+    {
+      "gene": "KRAS",
+      "label": "negative",
+      "delta_ll": -0.2085,
+      "strand": "+",
+      "coord_fixed": false,
+      "source": "A100_april13"
+    },
+    {
+      "gene": "VEGFB",
+      "label": "negative",
+      "delta_ll": -0.5536,
+      "strand": "-",
+      "coord_fixed": false,
+      "source": "A100_april13"
+    },
+    {
+      "gene": "MAPK1",
+      "label": "negative",
+      "delta_ll": -0.1124,
+      "strand": "-",
+      "coord_fixed": true,
+      "source": "A100_april13"
+    },
+    {
+      "gene": "ERBB2",
+      "label": "negative",
+      "delta_ll": 0.1378,
+      "strand": "-",
+      "coord_fixed": false,
+      "source": "A100_april13"
+    }
+  ]
+}
