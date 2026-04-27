@@ -177,20 +177,46 @@ class TargetLockScorer:
         return func, essen, reg, flags
 
     async def _get_chromatin_score(self, gene, chrom, pos):
+        """
+        Score TSS chromatin accessibility via Enformer central-bins method.
+
+        FIX (2026-04-13): Previous call used .predict.remote() which does not
+        exist on EnformerService — was silently falling back to 0.5 for every
+        gene via the except block. Corrected to .score_accessibility.remote()
+        with proper sequence fetch (Enformer requires a sequence string, not
+        chrom/pos coordinates).
+
+        NOTE: Enformer is currently NON-DISCRIMINATIVE on the 29-gene panel
+        (AUROC=0.4111, poly-N > ACTB). The central-bins fix in modal_service.py
+        must be deployed and validated (poly-N < ACTB < TP53) before setting
+        use_enformer=True in production. Until then, keep use_enformer=False.
+        """
         flags = []
         if not self.use_enformer:
             flags.append("Enformer disabled — chromatin=0.5")
             return 0.5, flags
         try:
-            import modal, os
+            import modal, os, json, urllib.request as ur
             os.environ.setdefault("MODAL_TOKEN_ID", "ak-u2ShLPpaTsWfYMlOrc8XKX")
             os.environ.setdefault("MODAL_TOKEN_SECRET", "as-PmarKaQCh03Vmsn3RADzPJ")
+
+            # Fetch 5000 bp window centred on TSS position
+            window = 5000
+            start  = max(0, pos - window // 2)
+            end    = pos + window // 2
+            url    = (f"https://api.genome.ucsc.edu/getData/sequence"
+                      f"?genome=hg38&chrom={chrom}&start={start}&end={end}")
+            req = ur.Request(url, headers={"User-Agent": "CrisPRO/1.0"})
+            with ur.urlopen(req, timeout=20) as r:
+                seq = json.loads(r.read())["dna"].upper()
+
             EnformerService = modal.Cls.from_name("crispro-enformer", "EnformerService")
             loop = asyncio.get_event_loop()
             result = await loop.run_in_executor(
-                None, lambda: EnformerService().predict.remote(chrom=chrom, pos=pos, ref="A", alt="A")
+                None, lambda: EnformerService().score_accessibility.remote(seq, "dnase")
             )
             score = float(result.get("accessibility_score", 0.5))
+            flags.append(f"Enformer central-bins score={score:.4f}")
             return score, flags
         except Exception as e:
             flags.append(f"Enformer failed: {e} — chromatin=0.5")

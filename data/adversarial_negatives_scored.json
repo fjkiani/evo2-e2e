@@ -1,0 +1,92 @@
+{
+  "metadata": {
+    "created": "2026-04-13T16:46:04Z",
+    "description": "Adversarial negative variants scored via Evo2 conditional log-likelihood",
+    "model": "evo2_1b_base",
+    "method": "conditional_ll (position-specific, Evo2 paper method)",
+    "assembly": "hg38",
+    "context_bp": 8192,
+    "rationale": "These 4 variants are true negatives for the brain-met panel: they are pathogenic in other contexts (leukemia, NF1 syndrome, HNSCC, colon cancer) but NOT established brain metastasis drivers. GRIN2A R844C was dropped: no ClinVar entry, transcript mismatch across all isoforms, and a 2025 paper [Strehlow et al. IJMS 2025] contradicts GRIN2A's role in tumorigenesis.",
+    "grin2a_replacement_note": "GRIN2A R844C replaced by PTPN11 E76K (ClinVar NM_002834.5:c.226G>A, confirmed pathogenic in Noonan syndrome/leukemia, NOT a brain-met driver). GRIN2A R844C: no ClinVar entry found; canonical transcripts ENST00000330684 and ENST00000396573 both have AAG (Lys) at position 844, not Arg; coordinate unresolvable.",
+    "coordinate_verification": "All ref bases verified against GRCh38 via UCSC hg38 API before scoring",
+    "n_variants": 4,
+    "n_scored": 4,
+    "evo2_only_auroc_extension": {
+      "panel_size": 33,
+      "n_pos": 20,
+      "n_neg": 13,
+      "evo2_auroc": 0.5846,
+      "note": "Adversarials scored Evo2-only (no CRISPRa/ATAC from brain-met screens); composite AUROC not extended"
+    }
+  },
+  "variants": [
+    {
+      "gene": "PTPN11",
+      "variant": "E76K",
+      "hgvs": "NM_002834.5:c.226G>A",
+      "chrom": "chr12",
+      "pos": 112450406,
+      "ref": "G",
+      "alt": "A",
+      "source": "ClinVar RCV001254876 [53]",
+      "true_label": "negative",
+      "true_label_rationale": "Gain-of-function activating mutation in Noonan syndrome/JMML; not a brain-met driver",
+      "ref_verified": true,
+      "delta_ll": 0.005231,
+      "evo2_score": -0.005231,
+      "evo2_interpretation": "benign-like (delta_ll > 0: model assigns higher LL to alt)",
+      "status": "ok"
+    },
+    {
+      "gene": "PTPRT",
+      "variant": "R1040H",
+      "hgvs": "ENST00000373187:CDS_3119",
+      "chrom": "chr20",
+      "pos": 42110468,
+      "ref": "C",
+      "alt": "T",
+      "source": "Ensembl CDS mapping",
+      "true_label": "negative",
+      "true_label_rationale": "Recurrent mutation in colorectal cancer; not established in brain metastasis",
+      "ref_verified": true,
+      "delta_ll": -0.01299,
+      "evo2_score": 0.01299,
+      "evo2_interpretation": "pathogenic-like (delta_ll < 0: model penalizes alt)",
+      "status": "ok"
+    },
+    {
+      "gene": "NF1",
+      "variant": "R1276Gln",
+      "hgvs": "NM_001042492.3:c.3827G>A",
+      "chrom": "chr17",
+      "pos": 31235729,
+      "ref": "G",
+      "alt": "A",
+      "source": "Ensembl VEP",
+      "true_label": "negative",
+      "true_label_rationale": "NF1 syndrome missense; NF1 loss is a RAS pathway event, not BrM-specific",
+      "ref_verified": true,
+      "delta_ll": 0.314221,
+      "evo2_score": -0.314221,
+      "evo2_interpretation": "benign-like (delta_ll > 0: model assigns higher LL to alt)",
+      "status": "ok"
+    },
+    {
+      "gene": "FAT1",
+      "variant": "Q3044*",
+      "hgvs": "ENST00000441802:CDS_9130",
+      "chrom": "chr4",
+      "pos": 186614290,
+      "ref": "G",
+      "alt": "A",
+      "source": "Ensembl CDS mapping",
+      "true_label": "negative",
+      "true_label_rationale": "Truncating mutation in HNSCC; FAT1 not in brain-met panel positives",
+      "ref_verified": true,
+      "delta_ll": -0.308479,
+      "evo2_score": 0.308479,
+      "evo2_interpretation": "pathogenic-like (delta_ll < 0: model penalizes alt)",
+      "status": "ok"
+    }
+  ]
+}

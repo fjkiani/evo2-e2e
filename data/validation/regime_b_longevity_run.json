@@ -1,70 +1,119 @@
-[
-  {
-    "gene": "APOE_e4",
-    "desc": "rs429358 T>C \u2014 APOE \u03b54 (AD risk, REDUCES longevity)",
-    "ref": "T",
-    "alt": "C",
-    "var_idx": 4096,
-    "context_len": 8193,
-    "delta_ll": 0.7714970111846924,
-    "ll_wt_conditional": -1.9994760751724243,
-    "ll_mut_conditional": -1.227979063987732,
-    "impact_label": "UNCERTAIN",
-    "regime": "B_conditional_ll",
-    "service": "crispro-evo2-v9",
-    "model": "evo2_1b_base",
-    "elapsed_s": 1.105,
-    "scored_at": "2026-04-10T06:09:14.529606+00:00"
+{
+  "metadata": {
+    "created": "2026-04-13T17:53:34.236559Z",
+    "session": "audit-cleanup-2026-04-13",
+    "description": "Regime B: OS concordance between Evo2 delta_ll direction and published OS associations for 12 BrM variants",
+    "source_variants": "data/validation/live_variant_scores.json (A100 run, 2026-03-28)",
+    "concordance_logic": "delta_ll < -0.05 \u2192 worse OS; > +0.05 \u2192 better OS; else neutral",
+    "os_association_source": "Approximate from published literature (AURORA, MSK-MET, GSE237446). NOT from individual patient-level survival data.",
+    "honest_caveat": "PTEN R130Q and KMT2C R4854* are discordant: sequence-tolerated by Evo2 but pathway-damaging. Known limitation: Evo2 scores sequence fitness, not downstream pathway consequences."
   },
-  {
-    "gene": "APOE_e2",
-    "desc": "rs7412 C>T \u2014 APOE \u03b52 (protective, INCREASES longevity)",
-    "ref": "C",
-    "alt": "T",
-    "var_idx": 4096,
-    "context_len": 8193,
-    "delta_ll": -0.8396995067596436,
-    "ll_wt_conditional": -1.1689472198486328,
-    "ll_mut_conditional": -2.0086467266082764,
-    "impact_label": "UNCERTAIN",
-    "regime": "B_conditional_ll",
-    "service": "crispro-evo2-v9",
-    "model": "evo2_1b_base",
-    "elapsed_s": 0.934,
-    "scored_at": "2026-04-10T06:09:15.463324+00:00"
+  "summary": {
+    "n_variants_total": 12,
+    "n_assessable": 10,
+    "n_neutral_excluded": 2,
+    "n_concordant": 7,
+    "n_discordant": 2,
+    "n_borderline": 1,
+    "concordance_fraction": 0.7,
+    "previous_session_reported": "6/12 = 0.50 (used all 12 in denominator including neutrals)"
   },
-  {
-    "gene": "FOXO3",
-    "desc": "rs2802292 \u2014 FOXO3 longevity SNP (A\u2192T on + strand)",
-    "ref": "A",
-    "alt": "T",
-    "var_idx": 4096,
-    "context_len": 8193,
-    "delta_ll": -0.2734142541885376,
-    "ll_wt_conditional": -1.1931121349334717,
-    "ll_mut_conditional": -1.4665263891220093,
-    "impact_label": "UNCERTAIN",
-    "regime": "B_conditional_ll",
-    "service": "crispro-evo2-v9",
-    "model": "evo2_1b_base",
-    "elapsed_s": 0.998,
-    "scored_at": "2026-04-10T06:09:16.461571+00:00"
-  },
-  {
-    "gene": "BRCA1_C61G",
-    "desc": "BRCA1 C61G \u2014 pathogenic RING domain (- strand, G\u2192T on +)",
-    "ref": "C",
-    "alt": "T",
-    "var_idx": 4096,
-    "context_len": 8193,
-    "delta_ll": 0.24917829036712646,
-    "ll_wt_conditional": -1.5844188928604126,
-    "ll_mut_conditional": -1.3352406024932861,
-    "impact_label": "UNCERTAIN",
-    "regime": "B_conditional_ll",
-    "service": "crispro-evo2-v9",
-    "model": "evo2_1b_base",
-    "elapsed_s": 0.948,
-    "scored_at": "2026-04-10T06:09:17.409309+00:00"
-  }
-]
+  "variants": [
+    {
+      "gene": "TP53",
+      "hgvs": "p.R175H",
+      "delta_ll": -0.4177,
+      "evo2_os_direction": "worse",
+      "published_os_direction": "worse",
+      "concordant": "\u2713"
+    },
+    {
+      "gene": "TP53",
+      "hgvs": "p.R248W",
+      "delta_ll": -0.2968,
+      "evo2_os_direction": "worse",
+      "published_os_direction": "worse",
+      "concordant": "\u2713"
+    },
+    {
+      "gene": "PIK3CA",
+      "hgvs": "p.H1047R",
+      "delta_ll": -0.6149,
+      "evo2_os_direction": "worse",
+      "published_os_direction": "worse",
+      "concordant": "\u2713"
+    },
+    {
+      "gene": "PIK3CA",
+      "hgvs": "p.E545K",
+      "delta_ll": -0.1328,
+      "evo2_os_direction": "worse",
+      "published_os_direction": "worse",
+      "concordant": "\u2713"
+    },
+    {
+      "gene": "PTEN",
+      "hgvs": "p.R130Q",
+      "delta_ll": 0.2058,
+      "evo2_os_direction": "better",
+      "published_os_direction": "worse",
+      "concordant": "\u2717"
+    },
+    {
+      "gene": "SMARCA4",
+      "hgvs": "p.R1192C",
+      "delta_ll": -0.1487,
+      "evo2_os_direction": "worse",
+      "published_os_direction": "worse",
+      "concordant": "\u2713"
+    },
+    {
+      "gene": "ESR1",
+      "hgvs": "p.Y537S",
+      "delta_ll": -0.0537,
+      "evo2_os_direction": "worse",
+      "published_os_direction": "neutral",
+      "concordant": "N/A"
+    },
+    {
+      "gene": "ESR1",
+      "hgvs": "p.D538G",
+      "delta_ll": -0.4023,
+      "evo2_os_direction": "worse",
+      "published_os_direction": "worse",
+      "concordant": "\u2713"
+    },
+    {
+      "gene": "KMT2C",
+      "hgvs": "p.R4854*",
+      "delta_ll": 0.3854,
+      "evo2_os_direction": "better",
+      "published_os_direction": "worse",
+      "concordant": "\u2717"
+    },
+    {
+      "gene": "EGFR",
+      "hgvs": "p.L858R",
+      "delta_ll": 0.0878,
+      "evo2_os_direction": "better",
+      "published_os_direction": "better",
+      "concordant": "\u2713"
+    },
+    {
+      "gene": "BRCA1",
+      "hgvs": "p.T1685A",
+      "delta_ll": -0.0948,
+      "evo2_os_direction": "worse",
+      "published_os_direction": "neutral",
+      "concordant": "N/A"
+    },
+    {
+      "gene": "BACE1",
+      "hgvs": "p.D289N",
+      "delta_ll": 0.0017,
+      "evo2_os_direction": "neutral",
+      "published_os_direction": "worse",
+      "concordant": "~"
+    }
+  ]
+}

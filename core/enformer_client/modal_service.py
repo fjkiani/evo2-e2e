@@ -67,12 +67,45 @@ class EnformerService:
         return preds["human"][0].cpu().numpy()
 
     @modal.method()
-    def score_accessibility(self, sequence: str, track_type: str = "dnase") -> dict:
-        human  = self._predict(sequence)
+    def score_accessibility(self, sequence: str, track_type: str = "dnase",
+                            central_bins: int = 20) -> dict:
+        """
+        Score chromatin accessibility at the TSS using Enformer predictions.
+
+        FIX (2026-04-13): Previously averaged across ALL 896 output bins, which
+        collapses spatial signal entirely — poly-N scored 0.0218 > ACTB 0.0170
+        (AUROC=0.4111 on 29-gene BrM panel, worse than random).
+
+        Now scores only the central `central_bins` bins (default=20, covering
+        ~2560 bp around the TSS). This preserves the spatial signal that
+        distinguishes active promoters from background sequence.
+
+        Validation required after deploy:
+          assert score(poly_N) < score(ACTB) < score(TP53_TSS)
+        """
+        import numpy as np
+        human  = self._predict(sequence)          # shape: (896, 5313)
         tracks = self.DNASE_TRACKS if track_type == "dnase" else self.ATAC_TRACKS
-        score  = float(human[:, tracks].mean())
-        return {"accessibility_score": score, "track_type": track_type,
-                "n_tracks": len(tracks), "sequence_length": len(sequence)}
+
+        # Central bins only: Enformer output has 896 bins of 128 bp each.
+        # The input sequence is centred, so the TSS is at bin 448 (896//2).
+        n_bins     = human.shape[0]               # 896
+        bin_center = n_bins // 2                  # 448
+        half       = central_bins // 2            # 10
+        b_start    = max(0,       bin_center - half)
+        b_end      = min(n_bins,  bin_center + half)
+
+        score = float(human[b_start:b_end, tracks].mean())
+
+        return {
+            "accessibility_score": score,
+            "track_type":          track_type,
+            "n_tracks":            len(tracks),
+            "sequence_length":     len(sequence),
+            "bins_used":           f"{b_start}-{b_end} of {n_bins}",
+            "aggregation":         "central_bins_mean",
+            "central_bins":        central_bins,
+        }
 
     @modal.method()
     def score_vs_target(self, sequence: str, target_peaks: list = None) -> dict:
