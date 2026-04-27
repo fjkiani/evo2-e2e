@@ -1,0 +1,30 @@
+{
+  "SLC25A32": {
+    "spacer": "CCGGCTTCGCTCACGCGCCT",
+    "pam": "TGG",
+    "nts_23bp": "CCGGCTTCGCTCACGCGCCTTGG",
+    "context_50bp": "ACTAGAGTCTCCGGCTTCGCTCACGCGCCTTGGGCATAAGAGTCCTCTCG",
+    "mrna_pos": 33
+  },
+  "ATP10D": {
+    "spacer": "AGCCTGGCGGAGACGGGAGG",
+    "pam": "AGG",
+    "nts_23bp": "AGCCTGGCGGAGACGGGAGGAGG",
+    "context_50bp": "GCAGCCTGGCGGAGACGGGAGGAGGAGCGGAGGGAGAAGTAGGTT",
+    "mrna_pos": 22
+  },
+  "BACE1": {
+    "spacer": "GCGAGCCGCGAGCTGGATTA",
+    "pam": "TGG",
+    "nts_23bp": "GCGAGCCGCGAGCTGGATTATGG",
+    "context_50bp": "CCCGGGAGCTGCGAGCCGCGAGCTGGATTATGGTGGCCTGAGCAGCCAAC",
+    "mrna_pos": 56
+  },
+  "BIN1": {
+    "spacer": "TCTGTCCCCGCGTCGCTCGC",
+    "pam": "TGG",
+    "nts_23bp": "TCTGTCCCCGCGTCGCTCGCTGG",
+    "context_50bp": "CTCTGTCCCCGCGTCGCTCGCTGGCTAGCTCGCTGGCTCGCTCG",
+    "mrna_pos": 21
+  }
+}

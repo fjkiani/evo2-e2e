@@ -1,0 +1,30 @@
+{
+  "SLC25A32": {
+    "strand": "synthetic",
+    "target_dna_50bp": "GGGGAGGTCCCAGCCTCTCCCGAGTCTCCGCCCTGCCTCGCCCACAAATG",
+    "spacer_confirmed": "ACTGGAAGATCGTCATCAAC",
+    "chrom": "chr8",
+    "note": "spacer is synthetic PAM-scan; using genomic locus context"
+  },
+  "ATP10D": {
+    "strand": "synthetic",
+    "target_dna_50bp": "GGTGCACTGCAGCTCGGGCTGCTCTGCAGCCTGGCGGAGACGGGAGGAGG",
+    "spacer_confirmed": "CGTAGATCACGGTGCTGCAT",
+    "chrom": "chr4",
+    "note": "spacer is synthetic PAM-scan; using genomic locus context"
+  },
+  "BACE1": {
+    "strand": "synthetic",
+    "target_dna_50bp": "GCGGCTGTCAAAGCCAAAAGGTTTTCGCTTTTCCCTGGGATCGCTGGGAA",
+    "spacer_confirmed": "GGATCATCAGCATGGTGGCC",
+    "chrom": "chr11",
+    "note": "spacer is synthetic PAM-scan; using genomic locus context"
+  },
+  "BIN1": {
+    "strand": "synthetic",
+    "target_dna_50bp": "CCTCCTTTTCCAGGGGCTCACCTCCCGCCCGGTGCCCGGTGCCCGGTGCC",
+    "spacer_confirmed": "GCAACTGCAGCTCCGCAGAT",
+    "chrom": "chr2",
+    "note": "spacer is synthetic PAM-scan; using genomic locus context"
+  }
+}

@@ -3,7 +3,7 @@ rank,gene,assassin_score,efficacy,safety,mission,structure,target_lock_v2,gtex_m
 2,SENP8,0.68571,0.4737,0.8715,0.78,0.5,0.4737,1.4,2.2,LOW,7.541,"Cl,E",pending,
 3,ATP10D,0.67049,0.5521,0.8241,0.68,0.5,0.5521,2.4,3.0,LOW,11.881,"Cl,E",spec_ready,
 4,BACE1,0.66105,0.5517,0.4731,1.0,0.5,0.5517,37.1,139.3,MODERATE,7.368,,spec_ready,
-5,SLC25A32,0.64437,0.5538,0.6649,0.75,0.5,0.5538,9.1,16.3,LOW,9.888,"Cl,E",spec_ready,
+5,SLC25A32,0.64437,0.5538,0.6649,0.75,0.5,0.5538,9.1,16.3,LOW,9.888,"Cl,E",partial_submitted_no_cas9_iptm0.42,
 6,NOM1,0.6055,0.4816,0.7744,0.6,0.5,0.4816,3.8,8.5,LOW,8.961,"Cl,E",pending,
 7,KLHL12,0.5986,0.4683,0.5678,0.8,0.5,0.4683,18.8,30.5,MODERATE,7.919,"Cl,E",pending,
 8,ROPN1L,0.59211,0.4563,0.9109,0.45,0.5,0.4563,0.8,1.8,MINIMAL,6.539,"Cl,E",pending,

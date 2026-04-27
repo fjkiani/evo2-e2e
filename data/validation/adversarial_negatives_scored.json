@@ -1,0 +1,46 @@
+{
+  "gtex_verification": {
+    "GRIN2A": "28.4 (GTEx portal, manual)",
+    "PTPRT": "14.2 (GTEx portal, manual)",
+    "FAT1": "5.8 (GTEx portal, manual)",
+    "NF1": "22.1 (GTEx portal, manual)"
+  },
+  "scored": [
+    {
+      "gene": "GRIN2A",
+      "class": "adversarial_negative",
+      "label": 0,
+      "delta_ll": -0.2768237590789795,
+      "gtex_tpm": "28.4 (GTEx portal, manual)",
+      "note": "p.Arg518His \u2014 NMDA receptor subunit, brain-enriched",
+      "elapsed_s": 47.15
+    },
+    {
+      "gene": "PTPRT",
+      "class": "adversarial_negative",
+      "label": 0,
+      "delta_ll": 0.3658294677734375,
+      "gtex_tpm": "14.2 (GTEx portal, manual)",
+      "note": "common missense \u2014 brain phosphatase passenger",
+      "elapsed_s": 5.88
+    },
+    {
+      "gene": "FAT1",
+      "class": "adversarial_negative",
+      "label": 0,
+      "delta_ll": -0.2143867015838623,
+      "gtex_tpm": "5.8 (GTEx portal, manual)",
+      "note": "common missense \u2014 protocadherin, not BrM driver",
+      "elapsed_s": 6.29
+    },
+    {
+      "gene": "NF1",
+      "class": "adversarial_negative",
+      "label": 0,
+      "delta_ll": 0.24879908561706543,
+      "gtex_tpm": "22.1 (GTEx portal, manual)",
+      "note": "p.Arg1947His \u2014 NF1 TSG, glioma-specific not BrM",
+      "elapsed_s": 5.05
+    }
+  ]
+}

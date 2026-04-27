@@ -1,7 +1,7 @@
 # PhD Handoff — CrisPRO BrM Pipeline
 ## Full Build-On Instructions — April 13, 2026
 
-**Current state:** Class-aware composite AUROC = 0.7278. Target reached. All receipts on disk.  
+**Current state:** Class-aware composite AUROC = 0.6889 (primary, honest). 0.7479 (24-gene observed-only, no imputation). All receipts on disk.  
 **Repo:** `fjkiani/evo2-e2e` + `fjkiani/crispro-backend-v3`  
 **Modal workspace:** `crispro-test` (credentials in `~/.modal.toml`)
 

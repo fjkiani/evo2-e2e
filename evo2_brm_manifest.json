@@ -1,5 +1,5 @@
 {
-  "manifest_version": "1.4.0",
+  "manifest_version": "1.4.1",
   "manifest_date": "2026-04-13",
   "status": "FROZEN",
   "ruo": true,
@@ -375,18 +375,56 @@
   ],
   "honest_auroc_v2": {
     "date": "2026-04-13",
-    "class_aware_composite": 0.7278,
-    "evo2_alone": 0.5778,
-    "abs_crispr_alone": 0.6556,
-    "enformer_alone": 0.5278,
-    "target_reached": true,
-    "signals": [
-      "abs_crispr_class_routed",
-      "atac_500kb_filled",
-      "evo2_conditional",
-      "enformer_dnase"
-    ],
-    "key_fix": "ATAC filled for 5 missing ONC genes (KRAS=-1.39 correctly deprioritized)",
-    "architecture": "TSG: 60% CRISPRa + 20% ATAC + 15% Evo2 + 5% Enformer; ONC: 25% CRISPRa + 35% ATAC + 20% Evo2 + 20% Enformer"
+    "auroc_main": 0.6889,
+    "auroc_observed_only": 0.7479,
+    "auroc_posthoc_redistribution": 0.7,
+    "handoff_claim_0.7278": "NOT VERIFIED \u2014 Enformer AUROC=0.41 (non-discriminative), claim retracted",
+    "enformer_status": "BROKEN \u2014 HTTP 500 all inputs, UNRESOLVED-005",
+    "n_genes": 29,
+    "n_positives": 20,
+    "n_negatives": 9,
+    "formula": {
+      "TSG": "0.60*abs_crispr + 0.20*atac + 0.15*evo2 + 0.05*enformer(=0)",
+      "ONC": "0.25*abs_crispr + 0.35*atac + 0.20*evo2 + 0.20*enformer(=0)"
+    },
+    "signals": {
+      "abs_crispr": {
+        "source": "GSE237446",
+        "auroc_alone": 0.6556,
+        "note": "|LFC| not signed"
+      },
+      "atac": {
+        "source": "GSE205033",
+        "auroc_alone": "0.8182 (24 observed ONC genes)",
+        "imputed_genes": [
+          "MMP2",
+          "CXCR4",
+          "STAT3",
+          "KRAS",
+          "MAPK1"
+        ]
+      },
+      "evo2": {
+        "source": "crispro-evo2-v9 A100 conditional_ll",
+        "auroc_alone": 0.5778,
+        "note": "5% weight LOCKED"
+      },
+      "enformer": {
+        "source": "crispro-enformer T4",
+        "auroc_alone": 0.41,
+        "note": "NON-DISCRIMINATIVE \u2014 endpoint broken during run, scores zeroed"
+      }
+    },
+    "adversarial_negatives": {
+      "scored": [
+        "PTPN11_E76K",
+        "PTPRT_R1040H",
+        "NF1_R1276Gln",
+        "FAT1_Q3044*"
+      ],
+      "replaced": "GRIN2A_R844C \u2014 no ClinVar entry, transcript inconsistency",
+      "finding": "PTPN11 E76K +0.005 (benign-like), NF1 +0.314 (benign-like) \u2014 confirm ancestral allele pattern"
+    },
+    "longevity_concordance": "6/12 = 50% overall survival concordance (regime_b_longevity_run.json)"
   }
 }
